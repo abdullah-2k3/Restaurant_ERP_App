@@ -2,7 +2,7 @@
 
 ## 🚀 Team
 This project is being developed by a team of students as part of the "Fundamentals of Software Engineering" course at FAST-NU, Lahore. The team members are:
-bilal
+
 - [**Bilal Ahmad**](https://github.com/ahmddbilall)
 - [**Abdullah Maqsood**](https://github.com/abdullah-2k3)
 - [**Shahzad Waris**](https://github.com/meshahzad92)
@@ -34,4 +34,6 @@ The following functionalities are planned to be implemented in the RestaurantERP
 - **Project Proposal PDF**: Includes the detailed description of the project along with the roles of our team members and project division in iterations. This proposal was submitted to our university.
 
 - **University Guidelines Folder**: Contains the PDF of instructions and requirements provided by the university.
+
+- **Application Folder**: Contains visual studio solution of project 
 
