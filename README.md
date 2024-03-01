@@ -2,7 +2,7 @@
 
 ## 🚀 Team
 This project is being developed by a team of students as part of the "Fundamentals of Software Engineering" course at FAST-NU, Lahore. The team members are:
-
+bilal
 - [**Bilal Ahmad**](https://github.com/ahmddbilall)
 - [**Abdullah Maqsood**](https://github.com/abdullah-2k3)
 - [**Shahzad Waris**](https://github.com/meshahzad92)
