@@ -1,5 +1,11 @@
 <h1>CuisineCraft- Restaurant ERP Desktop Application</h1>
 
+<h2>Team:</h2>
+Bilal Ahmed<br>
+Abdullah Maqsood<br>
+Rana Hashir<br>
+Shahzad Waris<br>
+
  <h2>Problem Statement:</h2>
  Ineffective enterprise resource planning in restaurant operations leads to poor customer
  satisfaction, increased operational expenses, and reduced profitability. Manual
