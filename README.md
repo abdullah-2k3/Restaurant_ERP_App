@@ -1,57 +1,37 @@
-<h1>CuisineCraft- Restaurant ERP Desktop Application</h1>
+# RestaurantERP - Cusine Craft
 
-<h2>Team:</h2>
-Bilal Ahmed  (Project Manager)<br>
-Abdullah Maqsood  (Lead Developer)<br>
-Rana Hashir  (Requirement Engineer, Architect)<br>
-Shahzad Waris (Developer, Tester)<br>
+## 🚀 Team
+This project is being developed by a team of students as part of the "Fundamentals of Software Engineering" course at FAST-NU, Lahore. The team members are:
 
- <h2>Problem Statement:</h2>
- Ineffective enterprise resource planning in restaurant operations leads to poor customer
- satisfaction, increased operational expenses, and reduced profitability. Manual
- procedures for customer service, menu management, table allocation, ordering,
- inventory supervision, financial tracking, and human resource management perpetuate
- errors, delays, and inefficiencies, undermining the restaurant's ability to optimize
- resource utilization and achieve operational excellence.
+- [**Bilal Ahmad**](https://github.com/ahmddbilall)
+- [**Abdullah Maqsood**](https://github.com/abdullah-2k3)
+- [**Shahzad Waris**](https://github.com/meshahzad92)
+- [**Rana Hashir**](https://github.com/RanaHashir0)
+
+## 🎓 About
+RestaurantERP is a desktop application aimed at streamlining restaurant management processes through the implementation of an Enterprise Resource Planning (ERP) system. This project is part of the academic curriculum at FAST Lahore and serves as a practical exercise in software engineering principles and practices.
+
+## 🛠️ Functionalities
+The following functionalities are planned to be implemented in the RestaurantERP application:
+
+1. **Inventory Management**: Track and manage inventory items such as ingredients, supplies, and other stock items.
+2. **Menu Management**: Create, update, and manage menus, including item descriptions, prices, and availability.
+3. **Order Management**: Process and manage customer orders from various channels, including in-house dining and online ordering platforms.
+4. **Table Management**: Manage table reservations, seating arrangements, and waitlists to optimize table turnover and customer experience.
+5. **Employee Management**: Handle employee scheduling, time tracking, and payroll processing.
+6. **Customer Relationship Management (CRM)**: Maintain customer profiles, preferences, and order history to personalize service and analyze customer trends.
+7. **Financial Management**: Handle accounting tasks such as invoicing, billing, and expense tracking.
+8. **Predictive Analytics for Recipe Suggestions**: Implement machine learning algorithms to predict popular recipes or menu items based on historical data and customer preferences.
+
+
  
- <h2>Problem Solution:</h2>
- CuisineCraft aims to optimize restaurant operations by providing a comprehensive
- desktop application solution. The application will automate various tasks involved in
- customer response management (CRM), menu management, table allocation, ordering,
- cuisine suggestions, inventory management, financial records, and human resource
- management. The scope of the project includes developing modules for each aspect of
- restaurant management, ensuring seamless integration and user-friendly interfaces.
- 
- <h2>Basic Features:</h2>
- <h3>HomeDashboard:</h3>
- ○ Provides an overview of restaurant operations and quick access to key
- modules.
- <h3>Customer Response Management (CRM):</h3>
- ○ Recordandmanagecustomerfeedback, complaints, and reservations.
- <h3>MenuManagement:</h3>
- ○ Create, update, and manage menus including dishes, categories, and
- pricing.
-<h3> Table Management:</h3>
- ○ Assign, reserve, and manage tables for customers.
-<h3>Orders Management:</h3>
- ○ Processorders efficiently, track order status, and manage order history.
- <h3>Cuisine Suggestions:</h3>
- ○ Provide personalized recommendations to customers based on
- preferences and order history.
- <h3>Inventory Management:</h3>
- ○ Trackandmanageinventory levels, automate reordering process, and
- generate reports.
- <h3>Financial Records:</h3>
- ○ Recordandtrack sales, expenses, and profits, generate financial reports.
- <h3>HumanResource Management:</h3>
- ○ Manageemployeeinformation, schedules, payroll, and performance
- evaluations.
- 
- 
-<h2>Conclusion</h2>
- CuisineCraft aims to improvise the enterprise resource planning of restaurants by
- providing a comprehensive desktop application solution that streamlines operations,
- enhances customer satisfaction, and improves profitability. With its modular design and
- iterative development approach, CuisineCraft ensures a systematic and efficient
- development process, with clear roles assigned to team members to ensure smooth
- execution.
+# Project Repository
+
+## 📁 Files and Folders
+
+- **Template Folder**: Contains the template of the project created using the pencil tool.
+  
+- **Project Proposal PDF**: Includes the detailed description of the project along with the roles of our team members and project division in iterations. This proposal was submitted to our university.
+
+- **University Guidelines Folder**: Contains the PDF of instructions and requirements provided by the university.
+
