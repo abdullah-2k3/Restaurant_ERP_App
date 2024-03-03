@@ -43,7 +43,9 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.bunifuButton10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -53,9 +55,7 @@
             this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuColorTransition1 = new Bunifu.UI.WinForms.BunifuColorTransition(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +73,6 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.DimGray;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 0;
-            this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.bunifuPanel2.Location = new System.Drawing.Point(200, 0);
             this.bunifuPanel2.Name = "bunifuPanel2";
@@ -81,6 +80,9 @@
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(1000, 700);
             this.bunifuPanel2.TabIndex = 2;
+            this.bunifuPanel2.Click += new System.EventHandler(this.bunifuPanel2_Click);
+            this.bunifuPanel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel2_MouseDown);
+            this.bunifuPanel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel2_MouseMove);
             // 
             // bunifuPanel1
             // 
@@ -108,6 +110,21 @@
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(200, 700);
             this.bunifuPanel1.TabIndex = 1;
+            this.bunifuPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel1_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 18F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 107);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.label1.Size = new System.Drawing.Size(186, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cusine Craft";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // bunifuButton10
             // 
@@ -199,6 +216,17 @@
             this.bunifuButton10.UseDefaultRadiusAndThickness = true;
             this.bunifuButton10.Click += new System.EventHandler(this.bunifuButton10_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::app.Properties.Resources.red_White_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(-11, -31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(227, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // bunifuButton2
             // 
             this.bunifuButton2.AllowAnimations = true;
@@ -287,6 +315,7 @@
             this.bunifuButton2.TextMarginLeft = 0;
             this.bunifuButton2.TextPadding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.bunifuButton2.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click_1);
             // 
             // bunifuButton9
             // 
@@ -376,6 +405,7 @@
             this.bunifuButton9.TextMarginLeft = 0;
             this.bunifuButton9.TextPadding = new System.Windows.Forms.Padding(7, 0, 0, 0);
             this.bunifuButton9.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton9.Click += new System.EventHandler(this.bunifuButton9_Click);
             // 
             // bunifuButton8
             // 
@@ -465,6 +495,7 @@
             this.bunifuButton8.TextMarginLeft = 0;
             this.bunifuButton8.TextPadding = new System.Windows.Forms.Padding(10, 0, -10, 0);
             this.bunifuButton8.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton8.Click += new System.EventHandler(this.bunifuButton8_Click);
             // 
             // bunifuButton7
             // 
@@ -554,6 +585,7 @@
             this.bunifuButton7.TextMarginLeft = 0;
             this.bunifuButton7.TextPadding = new System.Windows.Forms.Padding(4, 0, 0, 0);
             this.bunifuButton7.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton7.Click += new System.EventHandler(this.bunifuButton7_Click);
             // 
             // bunifuButton6
             // 
@@ -643,6 +675,7 @@
             this.bunifuButton6.TextMarginLeft = 0;
             this.bunifuButton6.TextPadding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.bunifuButton6.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton6.Click += new System.EventHandler(this.bunifuButton6_Click);
             // 
             // bunifuButton5
             // 
@@ -732,6 +765,7 @@
             this.bunifuButton5.TextMarginLeft = 0;
             this.bunifuButton5.TextPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bunifuButton5.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton5.Click += new System.EventHandler(this.bunifuButton5_Click);
             // 
             // bunifuButton4
             // 
@@ -821,6 +855,7 @@
             this.bunifuButton4.TextMarginLeft = 0;
             this.bunifuButton4.TextPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.bunifuButton4.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton4.Click += new System.EventHandler(this.bunifuButton4_Click);
             // 
             // bunifuButton3
             // 
@@ -910,6 +945,7 @@
             this.bunifuButton3.TextMarginLeft = 0;
             this.bunifuButton3.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.bunifuButton3.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton3.Click += new System.EventHandler(this.bunifuButton3_Click);
             // 
             // bunifuButton1
             // 
@@ -1001,17 +1037,6 @@
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::app.Properties.Resources.red_White_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(-11, -31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(227, 166);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // bunifuColorTransition1
             // 
             this.bunifuColorTransition1.AutoTransition = false;
@@ -1024,20 +1049,6 @@
             this.bunifuColorTransition1.ProgessValue = 0;
             this.bunifuColorTransition1.StartColor = System.Drawing.Color.White;
             this.bunifuColorTransition1.TransitionControl = this.bunifuButton1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 18F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 107);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(186, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cusine Craft";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // main
             // 

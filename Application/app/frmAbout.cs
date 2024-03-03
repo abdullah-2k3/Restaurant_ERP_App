@@ -16,13 +16,6 @@ namespace app
         public frmAbout()
         {
             InitializeComponent();
-
-            srcCode.Click += new EventHandler(srcCode_Click);
-
-            //srcCode.Location = new System.Drawing.Point(50, 50); // Adjust the X and Y coordinates as needed
-
-            this.Controls.Add(srcCode);
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,9 +28,22 @@ namespace app
 
         }
 
-        private void srcCode_Click(object sender, EventArgs e)
+        
+
+        private void frmAbout_MouseMove(object sender, MouseEventArgs e)
         {
-            Process.Start("https://github.com/ahmddbilall/Resturent_ERP_Csharp");
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+       
+        Point lastPoint;
+
+        private void frmAbout_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
         }
     }
 }
