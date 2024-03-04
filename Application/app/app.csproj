@@ -188,18 +188,32 @@
     <Compile Include="frmAbout.Designer.cs">
       <DependentUpon>frmAbout.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddCustomer.Designer.cs" />
     <Compile Include="frmCRM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCRM.Designer.cs">
-      <DependentUpon>frmCRM.cs</DependentUpon>
-    </Compile>
+    <Compile Include="frmCRM.Designer.cs" />
     <Compile Include="frmCS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCS.Designer.cs">
       <DependentUpon>frmCS.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerProfile.Designer.cs" />
+    <Compile Include="frmDelCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelCustomer.Designer.cs" />
+    <Compile Include="frmFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeedback.Designer.cs" />
     <Compile Include="frmFR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +232,10 @@
     <Compile Include="frmInv.Designer.cs">
       <DependentUpon>frmInv.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLoyalty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoyalty.Designer.cs" />
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,12 +271,14 @@
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCRM.resx">
-      <DependentUpon>frmCRM.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddCustomer.resx" />
+    <EmbeddedResource Include="frmCRM.resx" />
     <EmbeddedResource Include="frmCS.resx">
       <DependentUpon>frmCS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerProfile.resx" />
+    <EmbeddedResource Include="frmDelCustomer.resx" />
+    <EmbeddedResource Include="frmFeedback.resx" />
     <EmbeddedResource Include="frmFR.resx">
       <DependentUpon>frmFR.cs</DependentUpon>
     </EmbeddedResource>
