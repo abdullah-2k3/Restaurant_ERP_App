@@ -242,6 +242,12 @@
     <Compile Include="frmTables.Designer.cs">
       <DependentUpon>frmTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRTransactions.Designer.cs">
+      <DependentUpon>FRTransactions.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTables.resx">
       <DependentUpon>frmTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRTransactions.resx">
+      <DependentUpon>FRTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>

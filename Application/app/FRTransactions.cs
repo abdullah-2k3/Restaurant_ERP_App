@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace app
 {
-    public partial class frmCRM : Form
+    public partial class FRTransactions : Form
     {
-        public frmCRM()
+        public FRTransactions()
         {
             InitializeComponent();
         }
