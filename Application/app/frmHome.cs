@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace app
 {
-    public partial class frmFR : Form
+    public partial class frmHome : Form
     {
-        public frmFR()
+        public frmHome()
         {
             InitializeComponent();
         }
 
-        private void bunifuLabel3_Click(object sender, EventArgs e)
+        private void frmHome_Load(object sender, EventArgs e)
         {
 
         }

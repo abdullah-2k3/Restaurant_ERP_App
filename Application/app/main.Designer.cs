@@ -73,6 +73,7 @@
             this.bunifuPanel2.BorderColor = System.Drawing.Color.DimGray;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 0;
+            this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.bunifuPanel2.Location = new System.Drawing.Point(200, 0);
             this.bunifuPanel2.Name = "bunifuPanel2";

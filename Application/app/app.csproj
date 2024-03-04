@@ -206,6 +206,12 @@
     <Compile Include="frmFR.Designer.cs">
       <DependentUpon>frmFR.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,12 +248,6 @@
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
-    <Compile Include="home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="home.Designer.cs">
-      <DependentUpon>home.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAbout.resx">
@@ -261,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFR.resx">
       <DependentUpon>frmFR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHR.resx">
       <DependentUpon>frmHR.cs</DependentUpon>
@@ -276,9 +279,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTables.resx">
       <DependentUpon>frmTables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="home.resx">
-      <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>

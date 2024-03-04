@@ -1,6 +1,6 @@
 ﻿namespace app
 {
-    partial class frmCRM
+    partial class frmHome
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblTitle
+            // label1
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Constantia", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.lblTitle.Location = new System.Drawing.Point(26, 23);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(362, 27);
-            this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "Customer Response Management";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(3, -1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 26);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Home";
             // 
-            // frmCRM
+            // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(767, 556);
-            this.Controls.Add(this.lblTitle);
+            this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "frmCRM";
-            this.Text = "frmCRM";
+            this.Name = "frmHome";
+            this.Text = "frmHome";
+            this.Load += new System.EventHandler(this.frmHome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,6 +60,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label label1;
     }
 }

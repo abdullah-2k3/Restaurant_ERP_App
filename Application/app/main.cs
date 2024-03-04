@@ -32,7 +32,7 @@ namespace app
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            if (currentWindow !=0)
+            if (currentWindow != 0)
                 Load_FORMS(new frmHome());
             currentWindow = 0;
         }
