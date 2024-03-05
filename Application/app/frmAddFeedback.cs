@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
-using System.Drawing;       
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,37 +11,32 @@ using System.Windows.Forms;
 
 namespace app
 {
-    public partial class frmAddCustomer : Form
+    public partial class frmAddFeedback : Form
     {
-        private string ConnectionString = "Data Source=Customer.db;Version=3;";
-
-        public frmAddCustomer()
+        private string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\abdullah\\Semester 4\\Software Engineering\\project app\\CustomerDb.mdf;Integrated Security=True;Connect Timeout=30;";
+        public frmAddFeedback()
         {
             InitializeComponent();
-
         }
 
-        private void btnAddExit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnAddCustomer_Click(object sender, EventArgs e)
+        private void btnAddFb_Click(object sender, EventArgs e)
         {
-
             SQLiteConnection con = new SQLiteConnection(ConnectionString);
 
             con.Open();
 
 
-            string name = tbName.Text;
-            string email = tbEmail.Text;
+            string C_Id = tbId.Text;
             string phone = tbPhone.Text;
-            string gender = comboBoxGender.SelectedItem.ToString();
-            string city = tbCity.Text;
+            string feedback = tbFb.Text;
 
 
-            string Query = "INSERT INTO CustomerProfTbl(Name, Gender, City, Contact, Email) VALUES ('"+name+"', '"+gender+ "', '"+city+ "', '"+phone+"', '" + email+ "')";
+            string Query = "INSERT INTO FeedbackTbl(Feedback, C_Id, Contact) VALUES ('" + feedback + "', '" + C_Id + "','" + phone + "')";
 
             SQLiteCommand cmd = new SQLiteCommand(Query, con);
 

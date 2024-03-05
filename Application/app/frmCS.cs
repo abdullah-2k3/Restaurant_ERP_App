@@ -16,5 +16,10 @@ namespace app
         {
             InitializeComponent();
         }
+
+        private void frmCS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

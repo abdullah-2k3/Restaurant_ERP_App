@@ -13,10 +13,16 @@ namespace app
 {
     public partial class frmFeedback : Form
     {
-        private string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\abdullah\\Documents\\CustomerDb.mdf;Integrated Security=True;Connect Timeout=30;";
+        private string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\abdullah\\Semester 4\\Software Engineering\\project app\\CustomerDb.mdf;Integrated Security=True;Connect Timeout=30;";
+
+        private frmAddFeedback frmAddFb = new frmAddFeedback();
+        private frmDelFeedback frmDelFb = new frmDelFeedback();
+
         public frmFeedback()
         {
             InitializeComponent();
+            dataGridView2.CellPainting += dataGridView2_CellPainting;
+            showFeedback();
         }
 
         private void showFeedback()
@@ -26,7 +32,7 @@ namespace app
 
             con.Open();
 
-            string Query = "select * from CustomerProfTbl";
+            string Query = "select * from FeedbackTbl";
 
             SqlCommand cmd = new SqlCommand(Query, con);
 
@@ -35,14 +41,42 @@ namespace app
             DataTable table = new DataTable();
             table.Load(reader);
 
-            dataGridView1.DataSource = table;
+            dataGridView2.DataSource = table;
 
             con.Close();
         }
 
-        private void btnAddCustomer_Click(object sender, EventArgs e)
+        private void btnAddFeedback_Click(object sender, EventArgs e)
         {
+            frmAddFb.ShowDialog();
+            showFeedback();
+        }
 
+
+        private void dataGridView2_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            if (e.RowIndex == -1 && e.ColumnIndex >= 0)
+            {
+
+                using (Brush backColorBrush = new SolidBrush(Color.LightBlue))
+                {
+                    e.Graphics.FillRectangle(backColorBrush, e.CellBounds);
+                }
+
+                // Set the font of the header cell to bold
+                e.CellStyle.Font = new Font(dataGridView2.Font, FontStyle.Bold);
+
+                // Draw the cell's text
+                e.PaintContent(e.ClipBounds);
+
+                e.Handled = true;
+            }
+        }
+
+        private void btnDelCustomer_Click(object sender, EventArgs e)
+        {
+            frmDelFb.ShowDialog();
+            showFeedback();
         }
     }
 }

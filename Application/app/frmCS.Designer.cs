@@ -39,6 +39,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCS";
             this.Text = "frmCS";
+            this.Load += new System.EventHandler(this.frmCS_Load);
             this.ResumeLayout(false);
 
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -67,7 +68,6 @@ namespace app
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            lblTitle2.Text = "Home";
             this.PnlFormLoader.Controls.Clear();
             frmHome frmHome_Vrb = new frmHome() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmHome_Vrb.FormBorderStyle = FormBorderStyle.None;

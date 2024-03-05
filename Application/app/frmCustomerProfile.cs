@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,7 +17,8 @@ namespace app
         private frmAddCustomer frmAddCus = new frmAddCustomer();
         private frmDelCustomer frmDelCus = new frmDelCustomer();
 
-        private string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\abdullah\\Documents\\CustomerDb.mdf;Integrated Security=True;Connect Timeout=30;";
+        private string ConnectionString = "Data Source=Customer.db;Version=3;";
+
         public frmCustomerProfile()
         {
             InitializeComponent();
@@ -26,24 +27,25 @@ namespace app
         }
 
         private void showCustomers()
-        {    
+        {
 
-            SqlConnection con = new SqlConnection(ConnectionString);
+            using (SQLiteConnection con = new SQLiteConnection(ConnectionString))
+            {
+                con.Open();
 
-            con.Open();
+                string Query = "SELECT * FROM CustomerProfTbl";
 
-            string Query = "select * from CustomerProfTbl";
+                using (SQLiteCommand cmd = new SQLiteCommand(Query, con))
+                {
+                    using (SQLiteDataReader reader = cmd.ExecuteReader())
+                    {
+                        DataTable table = new DataTable();
+                        table.Load(reader);
 
-            SqlCommand cmd = new SqlCommand(Query, con);
-
-            var reader = cmd.ExecuteReader();
-
-            DataTable table = new DataTable();
-            table.Load(reader);
-
-            dataGridView1.DataSource = table;
-
-            con.Close();
+                        dataGridView1.DataSource = table;
+                    }
+                }
+            }
         }
 
 
