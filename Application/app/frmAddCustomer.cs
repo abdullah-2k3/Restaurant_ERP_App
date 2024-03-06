@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
-using System.Drawing;       
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +18,6 @@ namespace app
         public frmAddCustomer()
         {
             InitializeComponent();
-
         }
 
         private void btnAddExit_Click(object sender, EventArgs e)
@@ -28,7 +27,6 @@ namespace app
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-
             SQLiteConnection con = new SQLiteConnection(ConnectionString);
 
             con.Open();

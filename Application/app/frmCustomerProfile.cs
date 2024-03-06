@@ -27,25 +27,24 @@ namespace app
         }
 
         private void showCustomers()
-        {
+        {    
 
-            using (SQLiteConnection con = new SQLiteConnection(ConnectionString))
-            {
-                con.Open();
+            SQLiteConnection con = new SQLiteConnection(ConnectionString);
 
-                string Query = "SELECT * FROM CustomerProfTbl";
+            con.Open();
 
-                using (SQLiteCommand cmd = new SQLiteCommand(Query, con))
-                {
-                    using (SQLiteDataReader reader = cmd.ExecuteReader())
-                    {
-                        DataTable table = new DataTable();
-                        table.Load(reader);
+            string Query = "select * from CustomerProfTbl";
 
-                        dataGridView1.DataSource = table;
-                    }
-                }
-            }
+            SQLiteCommand cmd = new SQLiteCommand(Query, con);
+
+            var reader = cmd.ExecuteReader();
+
+            DataTable table = new DataTable();
+            table.Load(reader);
+
+            dataGridView1.DataSource = table;
+
+            con.Close();
         }
 
 

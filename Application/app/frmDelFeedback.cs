@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,7 +14,8 @@ namespace app
     public partial class frmDelFeedback : Form
     {
 
-        private string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\abdullah\\Semester 4\\Software Engineering\\project app\\CustomerDb.mdf;Integrated Security=True;Connect Timeout=30;";
+        private string ConnectionString = "Data Source=Customer.db;Version=3;";
+
         public frmDelFeedback()
         {
             InitializeComponent();
@@ -22,22 +23,34 @@ namespace app
 
         private void btnDelFeedback_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(ConnectionString);
+            SQLiteConnection con = new SQLiteConnection(ConnectionString);
             con.Open();
 
             int id = int.Parse(tbID.Text);
 
             
 
-            string Query = "DELETE FROM FeedbackTbl WHERE FId = " + id;
+            string Query = "DELETE FROM FeedbackTbl WHERE F_Id = " + id;
 
-            SqlCommand cmd = new SqlCommand(Query, con);
+            SQLiteCommand cmd = new SQLiteCommand(Query, con);
 
-            cmd.ExecuteNonQuery();
+            using (SQLiteCommand deleteCmd = new SQLiteCommand(Query, con))
+            {
+                deleteCmd.Parameters.AddWithValue("@ID", tbID.Text);
+                int rowsAffected = deleteCmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+
+                    MessageBox.Show("Feedback deleted");
+                }
+                else
+                {
+                    MessageBox.Show("Feedback not found");
+                }
+            }
 
             con.Close();
 
-            MessageBox.Show("Customer has been deleted!");
         }
 
         private void btnAddExit_Click(object sender, EventArgs e)

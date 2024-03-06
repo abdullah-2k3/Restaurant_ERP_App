@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,7 +15,8 @@ namespace app
     public partial class frmDelCustomer : Form
     {
 
-        private string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\abdullah\\Documents\\CustomerDb.mdf;Integrated Security=True;Connect Timeout=30;";
+        private string ConnectionString = "Data Source=Customer.db;Version=3;";
+
         public frmDelCustomer()
         {
             InitializeComponent();
@@ -28,21 +29,28 @@ namespace app
 
         private void btnDelCustomer_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(ConnectionString);
+            SQLiteConnection con = new SQLiteConnection(ConnectionString);
             con.Open();
 
-            int id = int.Parse(tbID.Text);
-          
-
-            string Query = "DELETE FROM CustomerProfTbl WHERE CustomerProfTbl.Id = " + id;
-
-            SqlCommand cmd = new SqlCommand(Query, con);
-
-            cmd.ExecuteNonQuery();
-
+            string deleteQuery = "DELETE FROM CustomerProfTbl WHERE ID = @ID";
+            using (SQLiteCommand deleteCmd = new SQLiteCommand(deleteQuery, con))
+            {
+                deleteCmd.Parameters.AddWithValue("@ID", tbID.Text);
+                int rowsAffected = deleteCmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    
+                    MessageBox.Show("Customer deleted");
+                }
+                else
+                {
+                    MessageBox.Show("Customer not found");
+                }
+            }
+                     
+            
             con.Close();
-
-            MessageBox.Show("Customer has been deleted!");
         }
+
     }
 }

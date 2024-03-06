@@ -13,7 +13,8 @@ namespace app
 {
     public partial class frmAddFeedback : Form
     {
-        private string ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\abdullah\\Semester 4\\Software Engineering\\project app\\CustomerDb.mdf;Integrated Security=True;Connect Timeout=30;";
+        private string ConnectionString = "Data Source=Customer.db;Version=3;";
+
         public frmAddFeedback()
         {
             InitializeComponent();
@@ -44,7 +45,7 @@ namespace app
 
             con.Close();
 
-            MessageBox.Show("Customer has been added!");
+            MessageBox.Show("Feedback has been added!");
         }
     }
 }

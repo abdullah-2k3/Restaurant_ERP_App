@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -61,5 +61,15 @@ namespace app
             this.Controls.Add(frmFb);
             frmFb.Show();
         }
+
+        private void btnLoyalty_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            frmLoyalty frmLyl = new frmLoyalty() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmLyl.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmLyl);
+            frmLyl.Show();
+        }
+
     }
 }
