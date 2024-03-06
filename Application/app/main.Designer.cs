@@ -1173,16 +1173,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnAbout;
-        private System.Windows.Forms.Button btnMenu;
-        private System.Windows.Forms.Button btnFR;
-        private System.Windows.Forms.Button btnTables;
-        private System.Windows.Forms.Button btnCRM;
-        private System.Windows.Forms.Button btnInv;
-        private System.Windows.Forms.Button btnHR;
-        private System.Windows.Forms.Button btnCS;
-        private System.Windows.Forms.Button btnOrders;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;

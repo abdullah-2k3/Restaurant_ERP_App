@@ -63,16 +63,6 @@ namespace app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap me {
-            get {
-                object obj = ResourceManager.GetObject("me", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap red_Black_logo {
             get {
                 object obj = ResourceManager.GetObject("red Black logo", resourceCulture);

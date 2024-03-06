@@ -293,6 +293,12 @@
     <Compile Include="frmInv.Designer.cs">
       <DependentUpon>frmInv.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLoyalty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,6 +316,12 @@
     </Compile>
     <Compile Include="frmOrders.Designer.cs">
       <DependentUpon>frmOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignup.designer.cs">
+      <DependentUpon>frmSignup.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTables.cs">
       <SubType>Form</SubType>
@@ -433,6 +445,9 @@
     <EmbeddedResource Include="frmInv.resx">
       <DependentUpon>frmInv.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLoyalty.resx">
       <DependentUpon>frmLoyalty.cs</DependentUpon>
     </EmbeddedResource>
@@ -441,6 +456,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOrders.resx">
       <DependentUpon>frmOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignup.resx">
+      <DependentUpon>frmSignup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTables.resx">
       <DependentUpon>frmTables.cs</DependentUpon>

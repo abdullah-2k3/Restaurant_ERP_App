@@ -71,5 +71,9 @@ namespace app
             frmLyl.Show();
         }
 
+        private void customerFlow_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

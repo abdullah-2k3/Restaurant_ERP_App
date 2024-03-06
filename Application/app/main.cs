@@ -18,6 +18,9 @@ namespace app
         {
             InitializeComponent();
 
+            frmLogin login = new frmLogin();
+            login.ShowDialog();
+
             lblTitle2.Text = "Home";
             this.PnlFormLoader.Controls.Clear();
             frmHome frmHome_Vrb = new frmHome() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
