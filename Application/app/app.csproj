@@ -507,6 +507,9 @@
     <EmbeddedResource Include="StatementCashFlow.resx">
       <DependentUpon>StatementCashFlow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SummaryFR.resx">
+      <DependentUpon>SummaryFR.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Customer.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
