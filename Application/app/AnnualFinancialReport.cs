@@ -25,5 +25,10 @@ namespace app
             this.Controls.Add(frmFb);
             frmFb.Show();
         }
+
+        private void AnnualFinancialReport_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

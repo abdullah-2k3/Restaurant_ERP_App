@@ -48,6 +48,8 @@ namespace app
             con.Close();
 
             MessageBox.Show("Customer has been added!");
+            this.Close();
+
         }
     }
 }
