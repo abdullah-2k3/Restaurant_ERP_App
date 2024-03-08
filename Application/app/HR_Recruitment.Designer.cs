@@ -29,28 +29,24 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HR_Recruitment));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.btnUpdateEmp = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnDelEmp = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnAddEmp = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbName = new System.Windows.Forms.TextBox();
+            this.tbTitle = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbDes = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbPhone = new System.Windows.Forms.TextBox();
+            this.tbDeadline = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tbDept = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tbSalary = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbStatus = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbAge = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.tbID = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,11 +71,11 @@
             this.btnUpdateEmp.ColorContrastOnClick = 45;
             this.btnUpdateEmp.ColorContrastOnHover = 45;
             this.btnUpdateEmp.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnUpdateEmp.CustomizableEdges = borderEdges4;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.btnUpdateEmp.CustomizableEdges = borderEdges13;
             this.btnUpdateEmp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnUpdateEmp.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUpdateEmp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -144,6 +140,7 @@
             this.btnUpdateEmp.TextMarginLeft = 0;
             this.btnUpdateEmp.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnUpdateEmp.UseDefaultRadiusAndThickness = true;
+            this.btnUpdateEmp.Click += new System.EventHandler(this.btnUpdateEmp_Click);
             // 
             // btnDelEmp
             // 
@@ -164,11 +161,11 @@
             this.btnDelEmp.ColorContrastOnClick = 45;
             this.btnDelEmp.ColorContrastOnHover = 45;
             this.btnDelEmp.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnDelEmp.CustomizableEdges = borderEdges5;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.btnDelEmp.CustomizableEdges = borderEdges14;
             this.btnDelEmp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDelEmp.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDelEmp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -233,6 +230,7 @@
             this.btnDelEmp.TextMarginLeft = 0;
             this.btnDelEmp.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnDelEmp.UseDefaultRadiusAndThickness = true;
+            this.btnDelEmp.Click += new System.EventHandler(this.btnDelEmp_Click);
             // 
             // btnAddEmp
             // 
@@ -253,11 +251,11 @@
             this.btnAddEmp.ColorContrastOnClick = 45;
             this.btnAddEmp.ColorContrastOnHover = 45;
             this.btnAddEmp.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnAddEmp.CustomizableEdges = borderEdges6;
+            borderEdges15.BottomLeft = true;
+            borderEdges15.BottomRight = true;
+            borderEdges15.TopLeft = true;
+            borderEdges15.TopRight = true;
+            this.btnAddEmp.CustomizableEdges = borderEdges15;
             this.btnAddEmp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddEmp.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddEmp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -322,15 +320,16 @@
             this.btnAddEmp.TextMarginLeft = 0;
             this.btnAddEmp.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAddEmp.UseDefaultRadiusAndThickness = true;
+            this.btnAddEmp.Click += new System.EventHandler(this.btnAddEmp_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(308, 79);
+            this.dataGridView1.Location = new System.Drawing.Point(349, 73);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(744, 371);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 371);
             this.dataGridView1.TabIndex = 88;
             // 
             // label1
@@ -345,69 +344,69 @@
             this.label1.TabIndex = 85;
             this.label1.Text = "Recruitments";
             // 
-            // tbName
+            // tbTitle
             // 
-            this.tbName.Location = new System.Drawing.Point(173, 170);
-            this.tbName.Margin = new System.Windows.Forms.Padding(2);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(82, 20);
-            this.tbName.TabIndex = 98;
+            this.tbTitle.Location = new System.Drawing.Point(190, 177);
+            this.tbTitle.Margin = new System.Windows.Forms.Padding(2);
+            this.tbTitle.Name = "tbTitle";
+            this.tbTitle.Size = new System.Drawing.Size(82, 20);
+            this.tbTitle.TabIndex = 98;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(36, 170);
+            this.label8.Location = new System.Drawing.Point(57, 176);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 21);
+            this.label8.Size = new System.Drawing.Size(79, 21);
             this.label8.TabIndex = 112;
-            this.label8.Text = "Name:";
+            this.label8.Text = "Job Title:";
             // 
-            // tbEmail
+            // tbDes
             // 
-            this.tbEmail.Location = new System.Drawing.Point(173, 251);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(82, 20);
-            this.tbEmail.TabIndex = 100;
+            this.tbDes.Location = new System.Drawing.Point(190, 295);
+            this.tbDes.Margin = new System.Windows.Forms.Padding(2);
+            this.tbDes.Name = "tbDes";
+            this.tbDes.Size = new System.Drawing.Size(82, 20);
+            this.tbDes.TabIndex = 100;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(36, 252);
+            this.label7.Location = new System.Drawing.Point(51, 295);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 21);
+            this.label7.Size = new System.Drawing.Size(102, 21);
             this.label7.TabIndex = 111;
-            this.label7.Text = "Email:";
+            this.label7.Text = "Description:";
             // 
-            // tbPhone
+            // tbDeadline
             // 
-            this.tbPhone.Location = new System.Drawing.Point(173, 293);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(2);
-            this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(82, 20);
-            this.tbPhone.TabIndex = 101;
+            this.tbDeadline.Location = new System.Drawing.Point(190, 413);
+            this.tbDeadline.Margin = new System.Windows.Forms.Padding(2);
+            this.tbDeadline.Name = "tbDeadline";
+            this.tbDeadline.Size = new System.Drawing.Size(82, 20);
+            this.tbDeadline.TabIndex = 101;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label6.Location = new System.Drawing.Point(36, 293);
+            this.label6.Location = new System.Drawing.Point(74, 354);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 21);
+            this.label6.Size = new System.Drawing.Size(62, 21);
             this.label6.TabIndex = 110;
-            this.label6.Text = "Phone:";
+            this.label6.Text = "Salary:";
             // 
             // tbDept
             // 
-            this.tbDept.Location = new System.Drawing.Point(173, 337);
+            this.tbDept.Location = new System.Drawing.Point(190, 237);
             this.tbDept.Margin = new System.Windows.Forms.Padding(2);
             this.tbDept.Name = "tbDept";
             this.tbDept.Size = new System.Drawing.Size(82, 20);
@@ -418,7 +417,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label5.Location = new System.Drawing.Point(36, 336);
+            this.label5.Location = new System.Drawing.Point(51, 234);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 21);
@@ -427,7 +426,7 @@
             // 
             // tbSalary
             // 
-            this.tbSalary.Location = new System.Drawing.Point(173, 381);
+            this.tbSalary.Location = new System.Drawing.Point(190, 357);
             this.tbSalary.Margin = new System.Windows.Forms.Padding(2);
             this.tbSalary.Name = "tbSalary";
             this.tbSalary.Size = new System.Drawing.Size(82, 20);
@@ -438,56 +437,16 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label4.Location = new System.Drawing.Point(36, 382);
+            this.label4.Location = new System.Drawing.Point(57, 410);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 21);
+            this.label4.Size = new System.Drawing.Size(83, 21);
             this.label4.TabIndex = 108;
-            this.label4.Text = "Salary:";
-            // 
-            // tbStatus
-            // 
-            this.tbStatus.Location = new System.Drawing.Point(173, 426);
-            this.tbStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.tbStatus.Name = "tbStatus";
-            this.tbStatus.Size = new System.Drawing.Size(82, 20);
-            this.tbStatus.TabIndex = 104;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(36, 426);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 21);
-            this.label3.TabIndex = 107;
-            this.label3.Text = "Status:";
-            // 
-            // tbAge
-            // 
-            this.tbAge.Location = new System.Drawing.Point(173, 212);
-            this.tbAge.Margin = new System.Windows.Forms.Padding(2);
-            this.tbAge.Name = "tbAge";
-            this.tbAge.Size = new System.Drawing.Size(82, 20);
-            this.tbAge.TabIndex = 99;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(36, 213);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 21);
-            this.label2.TabIndex = 106;
-            this.label2.Text = "Age:";
+            this.label4.Text = "Deadline:";
             // 
             // tbID
             // 
-            this.tbID.Location = new System.Drawing.Point(173, 121);
+            this.tbID.Location = new System.Drawing.Point(190, 116);
             this.tbID.Margin = new System.Windows.Forms.Padding(2);
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(82, 20);
@@ -498,12 +457,12 @@
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblID.Location = new System.Drawing.Point(36, 122);
+            this.lblID.Location = new System.Drawing.Point(57, 116);
             this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(107, 21);
+            this.lblID.Size = new System.Drawing.Size(62, 21);
             this.lblID.TabIndex = 105;
-            this.lblID.Text = "EmployeeID:";
+            this.lblID.Text = "Job ID:";
             // 
             // HR_Recruitment
             // 
@@ -511,20 +470,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1081, 547);
-            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.tbTitle);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbDes);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.tbPhone);
+            this.Controls.Add(this.tbDeadline);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbDept);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbSalary);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tbStatus);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.tbAge);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.tbID);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.btnUpdateEmp);
@@ -547,20 +502,16 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddEmp;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.TextBox tbTitle;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbDes;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbPhone;
+        private System.Windows.Forms.TextBox tbDeadline;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tbDept;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbSalary;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbStatus;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbAge;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.Label lblID;
     }
