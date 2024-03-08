@@ -20,13 +20,11 @@ namespace app
 
         public void Open()
         {
-            // Open the SQLite connection
             Con.Open();
         }
 
         public void Close()
         {
-            // Close the SQLite connection
             Con.Close();
         }
 

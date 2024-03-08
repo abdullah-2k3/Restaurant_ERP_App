@@ -29,22 +29,22 @@ namespace app
         private void showCustomers()
         {    
 
-            SQLiteConnection con = new SQLiteConnection(ConnectionString);
+            //SQLiteConnection con = new SQLiteConnection(ConnectionString);
 
-            con.Open();
+            //con.Open();
 
-            string Query = "select * from CustomerProfTbl";
+            //string Query = "select * from CustomerProfTbl";
 
-            SQLiteCommand cmd = new SQLiteCommand(Query, con);
+            //SQLiteCommand cmd = new SQLiteCommand(Query, con);
 
-            var reader = cmd.ExecuteReader();
+            //var reader = cmd.ExecuteReader();
 
-            DataTable table = new DataTable();
-            table.Load(reader);
+            //DataTable table = new DataTable();
+            //table.Load(reader);
 
-            dataGridView1.DataSource = table;
+            //dataGridView1.DataSource = table;
 
-            con.Close();
+            //con.Close();
         }
 
 
@@ -92,7 +92,9 @@ namespace app
             }
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-
+        }
     }
 }
