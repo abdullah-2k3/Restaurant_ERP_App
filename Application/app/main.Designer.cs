@@ -142,6 +142,7 @@
             this.PnlFormLoader.ShowBorders = true;
             this.PnlFormLoader.Size = new System.Drawing.Size(1081, 547);
             this.PnlFormLoader.TabIndex = 3;
+            this.PnlFormLoader.Click += new System.EventHandler(this.PnlFormLoader_Click);
             // 
             // bunifuPanel1
             // 
@@ -1147,7 +1148,7 @@
             this.lblTitle1.Size = new System.Drawing.Size(158, 32);
             this.lblTitle1.TabIndex = 0;
             this.lblTitle1.Text = "Cusine Craft";
-
+            // 
             // main
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
