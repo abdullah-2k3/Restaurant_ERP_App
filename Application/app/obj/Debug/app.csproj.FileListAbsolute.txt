@@ -400,3 +400,14 @@ C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ER
 C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.csproj.CopyComplete
 C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.exe
 C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.pdb
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.frmVisits.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.AddInvoiceForm.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.AddPaymentForm.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.DeleteInvoice.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.DeletePayment.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.DeleteTransaction.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.ImageCSuggestion.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.OpenInvoice.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.SearchCsuggestion.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.SummaryFR.resources
+C:\Users\abdullah\Semester 4\Software Engineering\myProjectVersion\Restaurant_ERP_App\Application\app\obj\Debug\app.UpdateTransaction.resources

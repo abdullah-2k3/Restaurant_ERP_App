@@ -1,0 +1,80 @@
+name,ingredients,prep_time,cook_time,state,course,No_of_People_Liked,Increase_in_Demand_Per_Year,Profit_Per_Item
+boondi,"Gram flour, ghee, sugar",80,30,Rajasthan,dessert,722,929,14
+gajar ka halwa,"Carrots, milk, sugar, ghee, cashews, raisins",15,60,Punjab,dessert,886,840,18
+ghevar,"Flour, ghee, kewra, milk, clarified butter, sugar, almonds, pistachio, saffron, green cardamom",15,30,Rajasthan,dessert,745,552,18
+gulab jamun,"Milk powder, plain flour, baking powder, ghee, milk, sugar, water, rose water",15,40,West Bengal,dessert,817,407,15
+imarti,"Sugar syrup, lentil flour",10,50,West Bengal,dessert,751,810,29
+jalebi,"Maida, corn flour, baking soda, vinegar, curd, water, turmeric, saffron, cardamom",10,50,Uttar Pradesh,dessert,966,379,5
+kalakand,"Milk, cottage cheese, sugar",20,30,West Bengal,dessert,655,593,23
+lassi,"Yogurt, milk, nuts, sugar",5,5,Punjab,dessert,543,244,22
+phirni,"Rice, sugar, nuts",30,20,Odisha,dessert,587,293,20
+rabri,"Condensed milk, sugar, spices, nuts",10,45,Uttar Pradesh,dessert,520,431,12
+sheera,"Semolina, ghee, nuts, milk",10,25,Maharashtra,dessert,132,313,29
+sohan halwa,"Corn flour, ghee, dry fruits",10,60,Uttar Pradesh,dessert,496,217,21
+sohan papdi,"Gram flour, ghee, sugar, milk, cardamom",-1,60,Maharashtra,dessert,816,690,13
+chhena kheeri,"Chhena, sugar, milk",-1,60,Odisha,dessert,832,397,2
+cham cham,"Flour, cream, sugar, saffron, lemon juice, coconut flakes",40,60,West Bengal,dessert,992,828,16
+ledikeni,"Chhena, sugar, ghee",45,45,West Bengal,dessert,389,466,11
+lyangcha,"Flour, fried milk power, sugar syrup",20,30,Assam,dessert,672,675,24
+malapua,"Yoghurt, refined flour, ghee, fennel seeds",10,120,Bihar,dessert,636,946,21
+misti doi,"Milk, jaggery",480,30,West Bengal,dessert,618,474,28
+pithe,"Rice flour, wheat flour",15,35,Assam,dessert,454,206,23
+ras malai,"Chhena, reduced milk, pistachio",180,60,West Bengal,dessert,389,128,10
+rasgulla,"Chhena, sugar, cardamom",10,90,West Bengal,dessert,777,646,18
+sandesh,"Milk, sugar, saffron, cardamom",30,20,West Bengal,dessert,172,343,11
+adhirasam,"Rice flour, jaggery, ghee, vegetable oil, elachi",10,50,West Bengal,dessert,324,506,16
+ariselu,"Rice flour, jaggery, ghee",15,75,Andhra Pradesh,dessert,514,815,27
+bandar laddu,"Besan, jaggery, cardamom powder, ghee, cashews and raisins, jaggery syrup, sugar",5,35,Andhra Pradesh,dessert,957,697,3
+chikki,"Peanuts, jaggery",10,20,Maharashtra,dessert,501,105,24
+dharwad pedha,"Milk, Sugar, Dharwadi buffalo milk",20,60,Karnataka,dessert,683,515,13
+double ka meetha,"Loaf bread, milk",20,30,Telangana,dessert,801,809,23
+gavvalu,"Rice flour, sugar, salt, ghee, semolina",10,30,Andhra Pradesh,dessert,897,735,20
+kakinada khaja,"Wheat flour, sugar",10,30,Andhra Pradesh,dessert,112,996,10
+kuzhi paniyaram,"Black lentils, rice",10,20,Kerala,dessert,179,248,3
+mysore pak,"Besan flour, semolina, mung bean, jaggery, coconut, skimmed milk powder, sugar, ghee",5,20,Karnataka,dessert,342,890,6
+poornalu,"Chana dal, jaggery",240,60,Andhra Pradesh,dessert,935,617,25
+pootharekulu,"Rice flour, powdered sugar, ghee",10,60,Andhra Pradesh,dessert,435,538,22
+qubani ka meetha,"Apricots, sugar syrup",10,20,Telangana,dessert,530,728,27
+sheer korma,"Vermicelli pudding, milk",10,20,Telangana,dessert,431,218,6
+unni appam,"Rice flour, banana, jaggery, coconut",10,20,Tamil Nadu,dessert,428,106,14
+kajjikaya,"Rice flour, jaggery, coconut",40,15,Andhra Pradesh,dessert,539,177,2
+anarsa,"Rice flour, jaggery, khus-khus seeds",10,50,Maharashtra,dessert,300,193,4
+basundi,"Sugar, milk, nuts",10,35,Gujarat,dessert,791,951,28
+doodhpak,"Milk, rice, sugar, dry fruits",10,60,Gujarat,dessert,434,609,18
+modak,"Rice flour, coconut, jaggery ",10,15,Maharashtra,dessert,619,254,12
+shankarpali,"Sugar, ghee, maida flour, semolina",10,35,Maharashtra,dessert,764,675,10
+shrikhand,"Curd, sugar, saffron, cardamom",10,720,Maharashtra,dessert,179,408,10
+sutar feni,"Maida, sugar, ghee",15,55,Maharashtra,dessert,161,406,16
+maach jhol,"Fish, potol, tomato, chillies, ginger, garlic",10,40,Assam,main course,712,499,13
+chak hao kheer,"Rice, milk, sugar, cardamom",240,45,Manipur,dessert,514,237,7
+aloo gobi,"Cauliflower, potato, garam masala, turmeric, curry leaves",10,20,Punjab,main course,340,620,13
+aloo tikki,"Rice flour, potato, bread crumbs, garam masala, salt",5,20,Punjab,main course,871,541,28
+aloo matar,"Potato, peas, chillies, ginger, garam masala, garlic",5,40,Punjab,main course,652,214,23
+aloo methi,"Potato, fenugreek leaves, chillies, salt, oil",10,40,Punjab,main course,450,830,23
+aloo shimla mirch,"Potato, shimla mirch, garam masala, amchur powder, salt",10,40,Punjab,main course,800,249,11
+bhatura,"Chole, rava, yogurt, plain flour, baking soda",20,20,Punjab,main course,175,986,6
+bhindi masala,"Ladies finger, garam masala, kasuri methi, tomatoes, chili powder",20,30,Punjab,main course,980,141,5
+biryani,"Chicken thighs, basmati rice, star anise, sweet, green chillies",30,120,Telangana,main course,267,684,18
+butter chicken,"Chicken, greek yogurt, cream, garam masala powder, cashew nuts, butter",10,35,NCT of Delhi,main course,104,724,3
+chana masala,"Chickpeas, tomato paste, garam masala, ginger, red onion, avocado oil",20,30,Punjab,main course,377,777,3
+chapati,"Whole wheat flour, olive oil, hot water, all purpose flour",10,10,Maharashtra,main course,691,949,8
+chicken razala,"Chicken, dahi, sesame seeds, garam masala powder, cashew nuts, saffron",10,35,West Bengal,main course,822,961,9
+chicken tikka masala,"Naan bread, tomato sauce, skinless chicken breasts, heavy cream, garam masala",10,50,Punjab,main course,506,130,11
+chicken tikka,"Chicken, whole wheat bread, rice flour, garam masala powder, whole egg",120,45,Punjab,starter,726,382,9
+daal baati churma,"Moong dal, masoor dal, chana dal, wheat flour, almond",10,90,Rajasthan,main course,514,261,22
+daal puri,"Moong dal, garam masala powder, garlic, green chilli, all purpose flour",30,30,West Bengal,main course,421,317,28
+dal tadka,"Pigeon peas, garam masala, ginger, red onion, kasuri methi",10,30,Punjab,main course,659,813,15
+dum aloo,"Baby potatoes, garam masala, cashew nuts, kasuri methi, tomatoes",20,50,Jammu & Kashmir,main course,369,851,11
+poha,"Beaten rice flakes, potato, curry leaves, green chilies, lemon juice",20,30,Maharashtra,snack,753,468,14
+kachori,"Moong dal, rava, garam masala, dough, fennel seeds",30,60,Uttar Pradesh,snack,692,485,22
+kadai paneer,"Cottage cheese, bell peppers, gravy, garam masala, cashew nuts",20,30,Punjab,main course,630,360,15
+kadhi pakoda,"Besan, garam masala powder, gram flour, ginger, curry leaves",10,60,Haryana,main course,853,303,9
+karela bharta,"Bitter gourd, fennel, garam masala powder, chili powder, amchur powder",20,50,Punjab,main course,325,185,9
+kofta,"Paneer, potato, cream, corn flour, garam masala",20,40,Uttar Pradesh,main course,201,121,5
+litti chokha,"Wheat flour, roasted gram flour, tomato, nigella seeds, chilli",45,60,Bihar,main course,360,713,24
+makki di roti sarson da saag,"Palak, makki atta, mustard green, garam masala, ginger",25,30,Punjab,main course,207,653,27
+misi roti,"Whole wheat flour, chickpea flour, green chilies",30,30,Punjab,main course,687,518,22
+naan,"Whole wheat flour, honey, butter, garlic",60,30,Punjab,main course,281,441,11
+navrattan korma,"Green beans, potatoes, khus khus, low fat, garam masala powder",25,40,Uttar Pradesh,main course,988,629,19
+palak paneer,"Cottage cheese, palak, cream, garam masala, butter",20,40,Punjab,main course,105,400,17
+paneer butter masala,"Paneer, whipping cream, garam masala, cashew nuts, butter",20,40,Punjab,main course,459,722,28

@@ -137,5 +137,28 @@ namespace app
         {
             LoadForm(new HR_Employees());
         }
+
+        private void btnManager_Click(object sender, EventArgs e)
+        {
+            if (tbManager.Text != "")
+            {
+                lblManagerName.Text = tbManager.Text;
+                MessageBox.Show("Manager Changed");
+            }
+        }
+
+        private void btnEvent_Click(object sender, EventArgs e)
+        {
+            if (tbEvent.Text != "")
+            {
+                lblEvent.Text = tbEvent.Text;
+                MessageBox.Show("Event Added");
+            }
+        }
+
+        private void frmHR_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

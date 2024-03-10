@@ -23,8 +23,63 @@ namespace app
         {
             InitializeComponent();
             dataGridView1.CellPainting += dataGridView1_CellPainting;
+            //InitializeCustomers();
             showCustomers();
         }
+
+        private void InitializeCustomers()
+        {
+            SQLiteConnection con = new SQLiteConnection(ConnectionString);
+
+            con.Open();
+
+            string[] names = {
+            "Ali", "Ahmed", "Ameer", "Ahsan", "Usman",
+            "Bilal", "Hassan", "Farhan", "Saad", "Imran"
+            };
+
+
+            string[] gender = {
+            "Male", "Male", "Male", "Male", "Male",
+            "Male", "Male", "Male", "Male", "Male"
+            };
+
+
+            string[] city= {
+            "Lahore", "Karachi", "Islamabad", "Multan", "LahoreUsman",
+            "Sahiwal", "Lahore", "Lahore", "Multan", "Faisalabad"
+            };
+
+            string[] contact = { "0321001112", "0321300312", "03210120443", "032434212"};
+
+            string[] email = { "email1", "email2", "email3", "email4" };
+
+
+            for (int i = 0; i < names.Length; i++)
+            {
+                string query = "INSERT INTO CustomerProfTbl(Id, Name, Gender, City, Contact, Email)VALUES ('"+(i+1)+"', '" + names[i] + "' , '" + gender[i] + "', '" + city[i] + "', '" + contact[i % 4] + "', '" + email[i % 4] + "')";
+
+                try
+                {
+                    using (SQLiteCommand cmd = new SQLiteCommand(query, con))
+                    {
+
+                        cmd.ExecuteNonQuery();
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                    break;
+                }
+            }
+
+
+            con.Close();
+        }
+
+
 
         private void showCustomers()
         {    
@@ -64,11 +119,6 @@ namespace app
         private void frmCustomerProfile_Load(object sender, EventArgs e)
         {
 
-        }
-
-        public void ResizeForm(int width, int height)
-        {
-            this.Size = new Size(width, height);
         }
 
 

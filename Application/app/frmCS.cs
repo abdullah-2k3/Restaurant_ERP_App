@@ -21,5 +21,23 @@ namespace app
         {
 
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            SearchCsuggestion frmFb = new SearchCsuggestion() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmFb.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmFb);
+            frmFb.Show();
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            ImageCSuggestion frmFb = new ImageCSuggestion() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmFb.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmFb);
+            frmFb.Show();
+        }
     }
 }

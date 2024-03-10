@@ -24,7 +24,7 @@ namespace app
         {
             InitializeComponent();
             dataGridView1.CellPainting += dataGridView1_CellPainting;
-            //InitializeAttendance();
+            InitializeAttendance();
             showAttendance();
         }
 
@@ -158,6 +158,13 @@ namespace app
                 MessageBox.Show("Could not add attendance");
 
             showAttendance();
+        }
+
+        private void btnDate_Click(object sender, EventArgs e)
+        {
+
+                lblDate.Text = dateTimePicker1.Value.ToString("dd-MM-yyyy");
+                MessageBox.Show("Week Date Upadted");
         }
     }
 }

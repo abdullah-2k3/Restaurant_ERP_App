@@ -25,8 +25,8 @@ namespace app
             InitializeComponent();
             InitializeChart();
             UpdateCircularProgress();
-        }
 
+        }
 
         private void InitializeChart()
         {
@@ -67,33 +67,6 @@ namespace app
 
 
 
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            this.Controls.Clear();
-            frmCustomerProfile frmCus_Vrb = new frmCustomerProfile() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmCus_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.Controls.Add(frmCus_Vrb);
-            frmCus_Vrb.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Controls.Clear();
-            frmFeedback frmFb = new frmFeedback() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmFb.FormBorderStyle = FormBorderStyle.None;
-            this.Controls.Add(frmFb);
-            frmFb.Show();
-        }
-
-        private void btnLoyalty_Click(object sender, EventArgs e)
-        {
-            this.Controls.Clear();
-            frmLoyalty frmLyl = new frmLoyalty() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            frmLyl.FormBorderStyle = FormBorderStyle.None;
-            this.Controls.Add(frmLyl);
-            frmLyl.Show();
-        }
-
         private void customerFlow_Click(object sender, EventArgs e)
         {
 
@@ -105,7 +78,7 @@ namespace app
         }
 
 
-        private void UpdateCircularProgress()
+        public void UpdateCircularProgress()
         {
             int totalCustomers = GetTotalCustomers();
             int satisfiedCustomers = GetSatisfiedCustomers();
@@ -113,8 +86,9 @@ namespace app
             // Calculate the percentage of satisfied customers
             double percentage = totalCustomers > 0 ? ((double)satisfiedCustomers / totalCustomers) * 100 : 0;
 
+
             // Update the Bunifu circular progress control with the calculated percentage
-            circularBar.Value = 69; // Round the percentage to the nearest integer
+            circularBar.Value = (int)percentage; // Round the percentage to the nearest integer
             circularBar.Text = $"{percentage:F2}%"; // Update the center text
             lblProgress.Text = $"Satisfied Customers: {percentage:F2}%"; // Update the label text
 
@@ -177,5 +151,40 @@ namespace app
             return satisfiedCustomers;
         }
 
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            frmCustomerProfile frmCus_Vrb = new frmCustomerProfile() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmCus_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmCus_Vrb);
+            frmCus_Vrb.Show();
+        }
+
+        private void btnFeedback_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            frmFeedback frmFb = new frmFeedback() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmFb.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmFb);
+            frmFb.Show();
+        }
+
+        private void btnLoyalty_Click_1(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            frmLoyalty frmLyl = new frmLoyalty() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmLyl.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmLyl);
+            frmLyl.Show();
+        }
+
+        private void btnVisits_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            frmVisits frmLyl = new frmVisits() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmLyl.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmLyl);
+            frmLyl.Show();
+        }
     }
 }

@@ -16,5 +16,14 @@ namespace app
         {
             InitializeComponent();
         }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            frmFR frmFb = new frmFR() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmFb.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmFb);
+            frmFb.Show();
+        }
     }
 }

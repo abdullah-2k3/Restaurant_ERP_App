@@ -1147,8 +1147,7 @@
             this.lblTitle1.Size = new System.Drawing.Size(158, 32);
             this.lblTitle1.TabIndex = 0;
             this.lblTitle1.Text = "Cusine Craft";
-            this.lblTitle1.Click += new System.EventHandler(this.label1_Click);
-            // 
+
             // main
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1159,7 +1158,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.main_Load);
             this.PnlTop.ResumeLayout(false);
             this.PnlTop.PerformLayout();
             this.bunifuPanel1.ResumeLayout(false);
