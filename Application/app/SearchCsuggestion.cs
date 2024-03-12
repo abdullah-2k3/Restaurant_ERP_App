@@ -2,21 +2,31 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Data.SQLite;
+
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using System.Xml;
 
 namespace app
 {
     public partial class SearchCsuggestion : Form
     {
+
+        private string ConnectionString = "Data Source=Cuisine.db;";
+
         public SearchCsuggestion()
         {
             InitializeComponent();
 
             hideAll();
+            ingredientstext.Multiline = true;
+            ingredientstext.Multiline = true;
         }
 
         private void hideAll()
@@ -85,10 +95,56 @@ namespace app
             this.Controls.Add(frmFb);
             frmFb.Show();
         }
+        
 
+            
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            showContent();
+
+            string name = searchbox.Text.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(name))
+            {
+                MessageBox.Show("Please enter a name to search.");
+                return;
+            }
+
+            using (SQLiteConnection con = new SQLiteConnection(ConnectionString))
+            {
+                con.Open();
+
+                string query = "SELECT * FROM search_info WHERE name = @Name";
+                SQLiteCommand cmd = new SQLiteCommand(query, con);
+                cmd.Parameters.AddWithValue("@Name", name);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        nametext.Text = reader["name"].ToString();
+                        ingredientstext.Text = reader["ingredients"].ToString();
+                        preptext.Text = reader["prep_time"].ToString();
+                        cooktext.Text = reader["cook_time"].ToString();
+                        origintext.Text = reader["state"].ToString();
+                        coursetext.Text = reader["course"].ToString();
+                        peopletext.Text = reader["People_liked"].ToString();
+                        demandtext.Text = reader["demand_increase_per_year"].ToString();
+                        profittext.Text = reader["Profit_Per-Item"].ToString();
+                        showContent();
+                    }
+                    else
+                    {
+                        notfound.Visible = true;
+                    }
+                }
+
+            }
+            searchbox.Clear();
+        }
+
+        private void ingredientstext_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

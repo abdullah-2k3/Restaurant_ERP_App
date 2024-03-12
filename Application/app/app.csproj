@@ -690,7 +690,13 @@
     <EmbeddedResource Include="UpdateTransaction.resx">
       <DependentUpon>UpdateTransaction.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Cuisine.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Customer.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Finance.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="HR.db">

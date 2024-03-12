@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace app
 {
     public partial class ImageCSuggestion : Form
     {
+        private string ConnectionString = "Data Source=Cuisine.db;";
+
         public ImageCSuggestion()
         {
             InitializeComponent();
@@ -45,6 +48,9 @@ namespace app
 
             notfound.Visible = false;
 
+            Classifybtn.Visible = false;
+            picture.Visible = false;
+
         }
 
         private void showContent()
@@ -70,6 +76,9 @@ namespace app
             demandtext.Visible = true;
             profitheading.Visible = true;
             profittext.Visible = true;
+
+            Classifybtn.Visible = false;
+            picture.Visible = false;
         }
 
 
@@ -87,7 +96,59 @@ namespace app
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            //open and select
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg;)|*.jpg; *.jpeg;";
+            open.ShowDialog();
+            if (open.FileName != "")
+            {
+                picture.ImageLocation = open.FileName;
+                Classifybtn.Visible = true;
+                picture.Visible = true;
+            }
+
+            
+
         }
+
+
+
+        private void readDataFromDB(string name)
+        {
+
+            using (SQLiteConnection con = new SQLiteConnection(ConnectionString))
+            {
+                con.Open();
+
+                string query = "SELECT * FROM Image_info WHERE name = @Name";
+                SQLiteCommand cmd = new SQLiteCommand(query, con);
+                cmd.Parameters.AddWithValue("@Name", name);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        nametext.Text = reader["name"].ToString();
+                        ingredientstext.Text = reader["ingredients"].ToString();
+                        preptext.Text = reader["prep_time"].ToString();
+                        cooktext.Text = reader["cook_time"].ToString();
+                        origintext.Text = reader["state"].ToString();
+                        coursetext.Text = reader["course"].ToString();
+                        peopletext.Text = reader["People_liked"].ToString();
+                        demandtext.Text = reader["demand_increase_per_year"].ToString();
+                        profittext.Text = reader["Profit_Per-Item"].ToString();
+                        showContent();
+                    }
+                    else
+                    {
+                        notfound.Visible = true;
+                    }
+                }
+
+            }
+
+        }
+
+
+
     }
 }

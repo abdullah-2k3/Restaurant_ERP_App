@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImageCSuggestion));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.profittext = new Bunifu.UI.WinForms.BunifuLabel();
@@ -53,7 +54,10 @@
             this.ingredientsheading = new Bunifu.UI.WinForms.BunifuLabel();
             this.prepheading = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.picture = new System.Windows.Forms.PictureBox();
+            this.Classifybtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel4
@@ -475,12 +479,112 @@
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
+            // picture
+            // 
+            this.picture.Location = new System.Drawing.Point(319, 144);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(421, 231);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture.TabIndex = 51;
+            this.picture.TabStop = false;
+            // 
+            // Classifybtn
+            // 
+            this.Classifybtn.AllowAnimations = true;
+            this.Classifybtn.AllowMouseEffects = true;
+            this.Classifybtn.AllowToggling = false;
+            this.Classifybtn.AnimationSpeed = 200;
+            this.Classifybtn.AutoGenerateColors = false;
+            this.Classifybtn.AutoRoundBorders = false;
+            this.Classifybtn.AutoSizeLeftIcon = true;
+            this.Classifybtn.AutoSizeRightIcon = true;
+            this.Classifybtn.BackColor = System.Drawing.Color.Transparent;
+            this.Classifybtn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(60)))), ((int)(((byte)(92)))));
+            this.Classifybtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Classifybtn.BackgroundImage")));
+            this.Classifybtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Classifybtn.ButtonText = "Classify Image";
+            this.Classifybtn.ButtonTextMarginLeft = 0;
+            this.Classifybtn.ColorContrastOnClick = 45;
+            this.Classifybtn.ColorContrastOnHover = 45;
+            this.Classifybtn.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.Classifybtn.CustomizableEdges = borderEdges2;
+            this.Classifybtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Classifybtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Classifybtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Classifybtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Classifybtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Classifybtn.Font = new System.Drawing.Font("Roboto Slab Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Classifybtn.ForeColor = System.Drawing.Color.White;
+            this.Classifybtn.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Classifybtn.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.Classifybtn.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.Classifybtn.IconMarginLeft = 11;
+            this.Classifybtn.IconPadding = 10;
+            this.Classifybtn.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Classifybtn.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.Classifybtn.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.Classifybtn.IconSize = 25;
+            this.Classifybtn.IdleBorderColor = System.Drawing.Color.Black;
+            this.Classifybtn.IdleBorderRadius = 35;
+            this.Classifybtn.IdleBorderThickness = 1;
+            this.Classifybtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(60)))), ((int)(((byte)(92)))));
+            this.Classifybtn.IdleIconLeftImage = null;
+            this.Classifybtn.IdleIconRightImage = null;
+            this.Classifybtn.IndicateFocus = false;
+            this.Classifybtn.Location = new System.Drawing.Point(432, 404);
+            this.Classifybtn.Name = "Classifybtn";
+            this.Classifybtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Classifybtn.OnDisabledState.BorderRadius = 35;
+            this.Classifybtn.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Classifybtn.OnDisabledState.BorderThickness = 1;
+            this.Classifybtn.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Classifybtn.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Classifybtn.OnDisabledState.IconLeftImage = null;
+            this.Classifybtn.OnDisabledState.IconRightImage = null;
+            this.Classifybtn.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Classifybtn.onHoverState.BorderRadius = 35;
+            this.Classifybtn.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Classifybtn.onHoverState.BorderThickness = 1;
+            this.Classifybtn.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.Classifybtn.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.Classifybtn.onHoverState.IconLeftImage = null;
+            this.Classifybtn.onHoverState.IconRightImage = null;
+            this.Classifybtn.OnIdleState.BorderColor = System.Drawing.Color.Black;
+            this.Classifybtn.OnIdleState.BorderRadius = 35;
+            this.Classifybtn.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Classifybtn.OnIdleState.BorderThickness = 1;
+            this.Classifybtn.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(60)))), ((int)(((byte)(92)))));
+            this.Classifybtn.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.Classifybtn.OnIdleState.IconLeftImage = null;
+            this.Classifybtn.OnIdleState.IconRightImage = null;
+            this.Classifybtn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.Classifybtn.OnPressedState.BorderRadius = 35;
+            this.Classifybtn.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Classifybtn.OnPressedState.BorderThickness = 1;
+            this.Classifybtn.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.Classifybtn.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.Classifybtn.OnPressedState.IconLeftImage = null;
+            this.Classifybtn.OnPressedState.IconRightImage = null;
+            this.Classifybtn.Size = new System.Drawing.Size(194, 36);
+            this.Classifybtn.TabIndex = 52;
+            this.Classifybtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Classifybtn.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Classifybtn.TextMarginLeft = 0;
+            this.Classifybtn.TextPadding = new System.Windows.Forms.Padding(0);
+            this.Classifybtn.UseDefaultRadiusAndThickness = true;
+            // 
             // ImageCSuggestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1058, 463);
+            this.Controls.Add(this.Classifybtn);
+            this.Controls.Add(this.picture);
             this.Controls.Add(this.bunifuButton1);
             this.Controls.Add(this.profittext);
             this.Controls.Add(this.profitheading);
@@ -508,6 +612,7 @@
             this.Name = "ImageCSuggestion";
             this.Text = "ImageCSuggestion";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -538,5 +643,7 @@
         private Bunifu.UI.WinForms.BunifuLabel ingredientsheading;
         private Bunifu.UI.WinForms.BunifuLabel prepheading;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
+        private System.Windows.Forms.PictureBox picture;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Classifybtn;
     }
 }

@@ -138,13 +138,22 @@
         OQtDmaZ8EHqhLcI+0B1sA4UFsUorKukggiBSPi6/ovj/KTI1ZRi/AShRUnNDuv0kAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="idbox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQQAAAAlCAYAAACkj5ctAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAChSURBVHhe7dRRCQMxAETB+FeVIzIqowJaAuHBacgM7M8K
-        eAPgZa31mXP+zOzO7QacHIyxD+BeuwEnB4IAtxMEIIIARBCACAIQQQAiCEAEAYggABEEIIIARBCACAIQ
-        QQAiCEAEAYggABEEIIIARBCACAIQQQAiCEAEAYggABEEIIIARBCACAIQQQAiCEAEAcgrCM/zfPdhZndu
-        N+DkAGAb4w+nE+UJeFzTQQAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALDSURBVHhe7d2/btpQFMdxjx0zduwjZMzYJ6gy5hGqbh0r
+        9QG6dctQKUOnDpW6VepUMNdQhBARQqhJlQBRhBCiiBDUWgQheo45uEJF+dMp8f1+pDsQ+zrT+fn6XrgO
+        AODOcrncbhRFH4vF4qG2fD6/oNFo97Ot6lRrVmp3T9ojK+X/JxfZcs69CcNwVq/XL3q93mI0GiUNwP21
+        qlOt2UajMS4UCrEExDup6cdW3ncjyfJM2uj09DSez+f2bwA8RFrDZ2dnM6npsQTDCyvz25FOL2u12nA2
+        m9nlAGSBBkOz2RyWSqUDK/fraRhoB+sPIINarVYsofDByn4zfUzQkYH1AZBhx8fHY+fcKyv/dTrZoM8X
+        zBcAftBaL5fLP6X2ty0G/tIZSJ10sHMBeGAwGOgS5VeLgSVdo9RlCUYHgH8kECaSAU8sDpJA2NO1SjsO
+        wCMnJydxGIavLQ6Sx4XP/X7fDgPwiX6BSTLg0OIgWV34Ph4zQAB8FMfxwjk3sDgIAv2gfwTgJ/39g8VB
+        EOgHAP4iEACkCAQAKQIBQIpAAJAiEACkCAQAKQIBQIpAAJBaC4RCoTCeTqd2CIBv1gIhiqLWZDKxQwB8
+        ooMBHRRYHCS/dvw2HLJzGuAjHQzooMDiINkP4fnR0dEvOw7AI+12W7dnf2txsNxP0TlHIAAeqlQqI8mA
+        HYuDJd1XTfdXA+CPfx4XViQhtsvl8oWdB8AD+opGqf1di4F1pVJpX54nLu1cABnW7Xav5Mngk5X/ZhIK
+        Ya/Xu7I+ADJIt0yUWm/I6OD6t0LrCRoKnU7nt/UFkCF6w5eRwQ+p9S0r+5tJKBxUq9URr34HskEnEHXO
+        QGr7y40jg02k01PdnlmXJc7Pz5PdWQE8HFqz3W53oTd3XU2Qmt48gXgXcpEd59y+7s6s33mm0WgPo2nN
+        ShC815u7lTMA3EYQ/AHmLu3kwiLrHgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">

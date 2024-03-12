@@ -34,10 +34,14 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.trends = new Bunifu.UI.WinForms.BunifuLabel();
             this.ingredientsheading = new Bunifu.UI.WinForms.BunifuLabel();
             this.prepheading = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.searchbox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -50,7 +54,6 @@
             this.coursetext = new Bunifu.UI.WinForms.BunifuLabel();
             this.cooktext = new Bunifu.UI.WinForms.BunifuLabel();
             this.preptext = new Bunifu.UI.WinForms.BunifuLabel();
-            this.ingredientstext = new Bunifu.UI.WinForms.BunifuLabel();
             this.notfound = new Bunifu.UI.WinForms.BunifuLabel();
             this.peopletext = new Bunifu.UI.WinForms.BunifuLabel();
             this.peopleheading = new Bunifu.UI.WinForms.BunifuLabel();
@@ -58,6 +61,7 @@
             this.demandheading = new Bunifu.UI.WinForms.BunifuLabel();
             this.profittext = new Bunifu.UI.WinForms.BunifuLabel();
             this.profitheading = new Bunifu.UI.WinForms.BunifuLabel();
+            this.ingredientstext = new Bunifu.UI.WinForms.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,79 +110,79 @@
             this.prepheading.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.prepheading.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuTextBox1
+            // searchbox
             // 
-            this.bunifuTextBox1.AcceptsReturn = false;
-            this.bunifuTextBox1.AcceptsTab = false;
-            this.bunifuTextBox1.AnimationSpeed = 200;
-            this.bunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTextBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox1.BackgroundImage")));
-            this.bunifuTextBox1.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.bunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuTextBox1.BorderColorIdle = System.Drawing.Color.Silver;
-            this.bunifuTextBox1.BorderRadius = 35;
-            this.bunifuTextBox1.BorderThickness = 1;
-            this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Roboto Slab", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTextBox1.DefaultText = "";
-            this.bunifuTextBox1.FillColor = System.Drawing.Color.White;
-            this.bunifuTextBox1.HideSelection = true;
-            this.bunifuTextBox1.IconLeft = null;
-            this.bunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.IconPadding = 10;
-            this.bunifuTextBox1.IconRight = null;
-            this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(370, 73);
-            this.bunifuTextBox1.MaxLength = 32767;
-            this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bunifuTextBox1.Modified = false;
-            this.bunifuTextBox1.Multiline = false;
-            this.bunifuTextBox1.Name = "bunifuTextBox1";
+            this.searchbox.AcceptsReturn = false;
+            this.searchbox.AcceptsTab = false;
+            this.searchbox.AnimationSpeed = 200;
+            this.searchbox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.searchbox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.searchbox.BackColor = System.Drawing.Color.Transparent;
+            this.searchbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("searchbox.BackgroundImage")));
+            this.searchbox.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.searchbox.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.searchbox.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.searchbox.BorderColorIdle = System.Drawing.Color.Silver;
+            this.searchbox.BorderRadius = 35;
+            this.searchbox.BorderThickness = 1;
+            this.searchbox.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.searchbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchbox.DefaultFont = new System.Drawing.Font("Roboto Slab", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchbox.DefaultText = "";
+            this.searchbox.FillColor = System.Drawing.Color.White;
+            this.searchbox.HideSelection = true;
+            this.searchbox.IconLeft = null;
+            this.searchbox.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchbox.IconPadding = 10;
+            this.searchbox.IconRight = null;
+            this.searchbox.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchbox.Lines = new string[0];
+            this.searchbox.Location = new System.Drawing.Point(370, 73);
+            this.searchbox.MaxLength = 32767;
+            this.searchbox.MinimumSize = new System.Drawing.Size(1, 1);
+            this.searchbox.Modified = false;
+            this.searchbox.Multiline = false;
+            this.searchbox.Name = "searchbox";
             stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties1.FillColor = System.Drawing.Color.Empty;
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties1;
+            this.searchbox.OnActiveState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties2;
+            this.searchbox.OnDisabledState = stateProperties2;
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.FillColor = System.Drawing.Color.Empty;
             stateProperties3.ForeColor = System.Drawing.Color.Empty;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties3;
+            this.searchbox.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties4;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox1.PasswordChar = '\0';
-            this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.bunifuTextBox1.PlaceholderText = "Search a dish";
-            this.bunifuTextBox1.ReadOnly = false;
-            this.bunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.bunifuTextBox1.SelectedText = "";
-            this.bunifuTextBox1.SelectionLength = 0;
-            this.bunifuTextBox1.SelectionStart = 0;
-            this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(260, 36);
-            this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox1.TabIndex = 7;
-            this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuTextBox1.TextMarginBottom = 0;
-            this.bunifuTextBox1.TextMarginLeft = 1;
-            this.bunifuTextBox1.TextMarginTop = 0;
-            this.bunifuTextBox1.TextPlaceholder = "Search a dish";
-            this.bunifuTextBox1.UseSystemPasswordChar = false;
-            this.bunifuTextBox1.WordWrap = true;
+            this.searchbox.OnIdleState = stateProperties4;
+            this.searchbox.Padding = new System.Windows.Forms.Padding(3);
+            this.searchbox.PasswordChar = '\0';
+            this.searchbox.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.searchbox.PlaceholderText = "Search a dish";
+            this.searchbox.ReadOnly = false;
+            this.searchbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.searchbox.SelectedText = "";
+            this.searchbox.SelectionLength = 0;
+            this.searchbox.SelectionStart = 0;
+            this.searchbox.ShortcutsEnabled = true;
+            this.searchbox.Size = new System.Drawing.Size(260, 36);
+            this.searchbox.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.searchbox.TabIndex = 7;
+            this.searchbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.searchbox.TextMarginBottom = 0;
+            this.searchbox.TextMarginLeft = 1;
+            this.searchbox.TextMarginTop = 0;
+            this.searchbox.TextPlaceholder = "Search a dish";
+            this.searchbox.UseSystemPasswordChar = false;
+            this.searchbox.WordWrap = true;
             // 
             // bunifuPictureBox1
             // 
@@ -188,7 +192,7 @@
             this.bunifuPictureBox1.BorderRadius = 23;
             this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(0, -2);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(0, 14);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(47, 47);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -201,6 +205,7 @@
             // 
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.Font = new System.Drawing.Font("Roboto Slab Medium", 18F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel4.Location = new System.Drawing.Point(400, 23);
@@ -361,9 +366,10 @@
             // 
             this.nametext.AllowParentOverrides = false;
             this.nametext.AutoEllipsis = false;
+            this.nametext.Cursor = System.Windows.Forms.Cursors.Default;
             this.nametext.CursorType = System.Windows.Forms.Cursors.Default;
             this.nametext.Font = new System.Drawing.Font("Calibri", 14F);
-            this.nametext.Location = new System.Drawing.Point(168, 142);
+            this.nametext.Location = new System.Drawing.Point(157, 142);
             this.nametext.Name = "nametext";
             this.nametext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.nametext.Size = new System.Drawing.Size(86, 23);
@@ -378,7 +384,7 @@
             this.origintext.AutoEllipsis = false;
             this.origintext.CursorType = null;
             this.origintext.Font = new System.Drawing.Font("Calibri", 14F);
-            this.origintext.Location = new System.Drawing.Point(168, 187);
+            this.origintext.Location = new System.Drawing.Point(158, 187);
             this.origintext.Name = "origintext";
             this.origintext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.origintext.Size = new System.Drawing.Size(86, 23);
@@ -393,7 +399,7 @@
             this.coursetext.AutoEllipsis = false;
             this.coursetext.CursorType = null;
             this.coursetext.Font = new System.Drawing.Font("Calibri", 14F);
-            this.coursetext.Location = new System.Drawing.Point(176, 230);
+            this.coursetext.Location = new System.Drawing.Point(168, 230);
             this.coursetext.Name = "coursetext";
             this.coursetext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.coursetext.Size = new System.Drawing.Size(95, 23);
@@ -408,7 +414,7 @@
             this.cooktext.AutoEllipsis = false;
             this.cooktext.CursorType = null;
             this.cooktext.Font = new System.Drawing.Font("Calibri", 14F);
-            this.cooktext.Location = new System.Drawing.Point(224, 276);
+            this.cooktext.Location = new System.Drawing.Point(209, 276);
             this.cooktext.Name = "cooktext";
             this.cooktext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cooktext.Size = new System.Drawing.Size(121, 23);
@@ -423,7 +429,7 @@
             this.preptext.AutoEllipsis = false;
             this.preptext.CursorType = null;
             this.preptext.Font = new System.Drawing.Font("Calibri", 14F);
-            this.preptext.Location = new System.Drawing.Point(284, 324);
+            this.preptext.Location = new System.Drawing.Point(275, 324);
             this.preptext.Name = "preptext";
             this.preptext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.preptext.Size = new System.Drawing.Size(118, 23);
@@ -431,21 +437,6 @@
             this.preptext.Text = "Prep Time Here";
             this.preptext.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.preptext.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // ingredientstext
-            // 
-            this.ingredientstext.AllowParentOverrides = false;
-            this.ingredientstext.AutoEllipsis = true;
-            this.ingredientstext.CursorType = null;
-            this.ingredientstext.Font = new System.Drawing.Font("Calibri", 14F);
-            this.ingredientstext.Location = new System.Drawing.Point(271, 372);
-            this.ingredientstext.Name = "ingredientstext";
-            this.ingredientstext.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ingredientstext.Size = new System.Drawing.Size(88, 23);
-            this.ingredientstext.TabIndex = 21;
-            this.ingredientstext.Text = "Ingrediants";
-            this.ingredientstext.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.ingredientstext.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // notfound
             // 
@@ -498,7 +489,7 @@
             this.demandtext.AutoEllipsis = true;
             this.demandtext.CursorType = null;
             this.demandtext.Font = new System.Drawing.Font("Calibri", 14F);
-            this.demandtext.Location = new System.Drawing.Point(888, 281);
+            this.demandtext.Location = new System.Drawing.Point(854, 281);
             this.demandtext.Name = "demandtext";
             this.demandtext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.demandtext.Size = new System.Drawing.Size(63, 23);
@@ -528,7 +519,7 @@
             this.profittext.AutoEllipsis = true;
             this.profittext.CursorType = null;
             this.profittext.Font = new System.Drawing.Font("Calibri", 14F);
-            this.profittext.Location = new System.Drawing.Point(888, 363);
+            this.profittext.Location = new System.Drawing.Point(798, 363);
             this.profittext.Name = "profittext";
             this.profittext.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.profittext.Size = new System.Drawing.Size(43, 23);
@@ -552,12 +543,89 @@
             this.profitheading.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.profitheading.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // ingredientstext
+            // 
+            this.ingredientstext.AcceptsReturn = false;
+            this.ingredientstext.AcceptsTab = false;
+            this.ingredientstext.AnimationSpeed = 200;
+            this.ingredientstext.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.ingredientstext.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.ingredientstext.BackColor = System.Drawing.Color.Transparent;
+            this.ingredientstext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ingredientstext.BackgroundImage")));
+            this.ingredientstext.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            this.ingredientstext.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ingredientstext.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            this.ingredientstext.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            this.ingredientstext.BorderRadius = 1;
+            this.ingredientstext.BorderThickness = 1;
+            this.ingredientstext.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.ingredientstext.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ingredientstext.DefaultFont = new System.Drawing.Font("Calibri", 14F);
+            this.ingredientstext.DefaultText = "";
+            this.ingredientstext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            this.ingredientstext.ForeColor = System.Drawing.Color.Black;
+            this.ingredientstext.HideSelection = true;
+            this.ingredientstext.IconLeft = null;
+            this.ingredientstext.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.ingredientstext.IconPadding = 10;
+            this.ingredientstext.IconRight = null;
+            this.ingredientstext.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.ingredientstext.Lines = new string[0];
+            this.ingredientstext.Location = new System.Drawing.Point(213, 364);
+            this.ingredientstext.MaxLength = 32767;
+            this.ingredientstext.MinimumSize = new System.Drawing.Size(1, 1);
+            this.ingredientstext.Modified = false;
+            this.ingredientstext.Multiline = true;
+            this.ingredientstext.Name = "ingredientstext";
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ingredientstext.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.ingredientstext.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ingredientstext.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            stateProperties8.ForeColor = System.Drawing.Color.Black;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.ingredientstext.OnIdleState = stateProperties8;
+            this.ingredientstext.Padding = new System.Windows.Forms.Padding(3);
+            this.ingredientstext.PasswordChar = '\0';
+            this.ingredientstext.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.ingredientstext.PlaceholderText = "";
+            this.ingredientstext.ReadOnly = false;
+            this.ingredientstext.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.ingredientstext.SelectedText = "";
+            this.ingredientstext.SelectionLength = 0;
+            this.ingredientstext.SelectionStart = 0;
+            this.ingredientstext.ShortcutsEnabled = true;
+            this.ingredientstext.Size = new System.Drawing.Size(417, 151);
+            this.ingredientstext.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.ingredientstext.TabIndex = 30;
+            this.ingredientstext.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ingredientstext.TextMarginBottom = 0;
+            this.ingredientstext.TextMarginLeft = 3;
+            this.ingredientstext.TextMarginTop = 0;
+            this.ingredientstext.TextPlaceholder = "";
+            this.ingredientstext.UseSystemPasswordChar = false;
+            this.ingredientstext.WordWrap = true;
+            this.ingredientstext.TextChanged += new System.EventHandler(this.ingredientstext_TextChanged);
+            // 
             // SearchCsuggestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1058, 463);
+            this.ClientSize = new System.Drawing.Size(1058, 527);
+            this.Controls.Add(this.ingredientstext);
             this.Controls.Add(this.profittext);
             this.Controls.Add(this.profitheading);
             this.Controls.Add(this.demandtext);
@@ -565,7 +633,6 @@
             this.Controls.Add(this.peopletext);
             this.Controls.Add(this.peopleheading);
             this.Controls.Add(this.notfound);
-            this.Controls.Add(this.ingredientstext);
             this.Controls.Add(this.preptext);
             this.Controls.Add(this.cooktext);
             this.Controls.Add(this.coursetext);
@@ -578,7 +645,7 @@
             this.Controls.Add(this.bunifuButton1);
             this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.bunifuPictureBox1);
-            this.Controls.Add(this.bunifuTextBox1);
+            this.Controls.Add(this.searchbox);
             this.Controls.Add(this.trends);
             this.Controls.Add(this.ingredientsheading);
             this.Controls.Add(this.prepheading);
@@ -594,7 +661,7 @@
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
+        private Bunifu.UI.WinForms.BunifuTextBox searchbox;
         private Bunifu.UI.WinForms.BunifuLabel trends;
         private Bunifu.UI.WinForms.BunifuLabel ingredientsheading;
         private Bunifu.UI.WinForms.BunifuLabel prepheading;
@@ -610,7 +677,6 @@
         private Bunifu.UI.WinForms.BunifuLabel coursetext;
         private Bunifu.UI.WinForms.BunifuLabel cooktext;
         private Bunifu.UI.WinForms.BunifuLabel preptext;
-        private Bunifu.UI.WinForms.BunifuLabel ingredientstext;
         private Bunifu.UI.WinForms.BunifuLabel notfound;
         private Bunifu.UI.WinForms.BunifuLabel peopletext;
         private Bunifu.UI.WinForms.BunifuLabel peopleheading;
@@ -618,5 +684,6 @@
         private Bunifu.UI.WinForms.BunifuLabel demandheading;
         private Bunifu.UI.WinForms.BunifuLabel profittext;
         private Bunifu.UI.WinForms.BunifuLabel profitheading;
+        private Bunifu.UI.WinForms.BunifuTextBox ingredientstext;
     }
 }
