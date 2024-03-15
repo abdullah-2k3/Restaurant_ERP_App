@@ -25,7 +25,7 @@ namespace app
         private void PopulateDropdown()
         {
             string[] optionsType = { "INFLOW", "OUTFLOW" };
-            string[] optionsarea = { "OPERATING", "INVESTING", "GOODS SOLD", "TAXES & Others" };
+            string[] optionsarea = { "OPERATING", "INVESTING", "GOODS SOLD", "TAXES & Others", "TIPS" };
 
             typemenu.Items.AddRange(optionsType);
 
@@ -72,6 +72,11 @@ namespace app
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void UpdateTransaction_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

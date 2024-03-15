@@ -58,10 +58,10 @@
             this.descriptionbox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.dateTime = new System.Windows.Forms.DateTimePicker();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.typemenu = new Bunifu.UI.WinForms.BunifuDropdown();
             this.areamenu = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.dateTime = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.SuspendLayout();
             // 
             // bunifuButton1
@@ -555,13 +555,6 @@
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // dateTime
-            // 
-            this.dateTime.Location = new System.Drawing.Point(556, 268);
-            this.dateTime.Name = "dateTime";
-            this.dateTime.Size = new System.Drawing.Size(200, 20);
-            this.dateTime.TabIndex = 28;
-            // 
             // bunifuLabel8
             // 
             this.bunifuLabel8.AllowParentOverrides = false;
@@ -661,16 +654,40 @@
             this.areamenu.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.areamenu.TextLeftMargin = 5;
             // 
+            // dateTime
+            // 
+            this.dateTime.BackColor = System.Drawing.Color.White;
+            this.dateTime.BorderRadius = 1;
+            this.dateTime.CalendarTrailingForeColor = System.Drawing.Color.White;
+            this.dateTime.Color = System.Drawing.Color.White;
+            this.dateTime.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.dateTime.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.dateTime.DisabledColor = System.Drawing.Color.White;
+            this.dateTime.DisplayWeekNumbers = false;
+            this.dateTime.DPHeight = 0;
+            this.dateTime.FillDatePicker = false;
+            this.dateTime.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dateTime.ForeColor = System.Drawing.Color.Black;
+            this.dateTime.Icon = ((System.Drawing.Image)(resources.GetObject("dateTime.Icon")));
+            this.dateTime.IconColor = System.Drawing.Color.Black;
+            this.dateTime.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.dateTime.LeftTextMargin = 5;
+            this.dateTime.Location = new System.Drawing.Point(541, 263);
+            this.dateTime.MinimumSize = new System.Drawing.Size(0, 32);
+            this.dateTime.Name = "dateTime";
+            this.dateTime.Size = new System.Drawing.Size(220, 32);
+            this.dateTime.TabIndex = 33;
+            // 
             // AddTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 528);
+            this.Controls.Add(this.dateTime);
             this.Controls.Add(this.areamenu);
             this.Controls.Add(this.typemenu);
             this.Controls.Add(this.bunifuLabel8);
-            this.Controls.Add(this.dateTime);
             this.Controls.Add(this.bunifuLabel7);
             this.Controls.Add(this.descriptionbox);
             this.Controls.Add(this.bunifuLabel6);
@@ -685,6 +702,7 @@
             this.Controls.Add(this.bunifuButton1);
             this.Name = "AddTransaction";
             this.Text = "AddTransaction";
+            this.Load += new System.EventHandler(this.AddTransaction_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -704,9 +722,9 @@
         private Bunifu.UI.WinForms.BunifuTextBox descriptionbox;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
-        private System.Windows.Forms.DateTimePicker dateTime;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuDropdown typemenu;
         private Bunifu.UI.WinForms.BunifuDropdown areamenu;
+        private Bunifu.UI.WinForms.BunifuDatePicker dateTime;
     }
 }

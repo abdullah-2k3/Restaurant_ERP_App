@@ -271,7 +271,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+  <data name="income.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 30pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
@@ -303,7 +303,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
+  <data name="expense.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 30pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
@@ -335,7 +335,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel6.BaseStylesheet" xml:space="preserve">
+  <data name="Profit.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 30pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel7.BaseStylesheet" xml:space="preserve">
@@ -367,7 +367,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel8.BaseStylesheet" xml:space="preserve">
+  <data name="percentageincome.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 30pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel9.BaseStylesheet" xml:space="preserve">
@@ -399,7 +399,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel10.BaseStylesheet" xml:space="preserve">
+  <data name="percentageexpense.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 30pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel11.BaseStylesheet" xml:space="preserve">
@@ -431,16 +431,32 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuLabel12.BaseStylesheet" xml:space="preserve">
+  <data name="percentageprofit.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 30pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="bunifuLabel13.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 13pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
   <data name="bunifuLabel14.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Roboto Slab Medium'; font-size: 14.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="getbtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMLSURBVHhe7dy9b9NAGAZw2+dznA8qo6Yl0NImoh8pKRBF
+        CAKqEAgJVUKgLkiMjIi/gLEDAxIbAwMbM/8AEytiyojEUIkBgfhQCAgKZDD32G75uih2ay/N80q/qlEv
+        biU/urw9n20krLayLqTzTNhOxxL2e/Xap70H5xbnGNTrdWVVSbU8dfCHliV6ucK+7uRs3a8un/Frx1f8
+        hVOX/OVza7QH4dziHAPOeWFsvGuaZt+y5WOViWoYjR2WKcRdYctupdbo19ur2j+ARkdj5Yo/tdjybcft
+        YrJREXHDpMQvTzi55+Xphc2ls5e1v4RGFwKGyUbI3EuVlUoYmeFVtXP5F7ON9g/dQYm2zLUuYPZ6ozLT
+        DKMzuDyECm/QHYjoX2iRZM59p7IzuO/Cxx9nKkpq/uRF35buhoqQFybpjxLSuT8xs7SpeyPRMNOLrZ+2
+        dJ5Ecdquiurye2jKdG8iisNxC59Uln73W/jXEV2+bjBRXDON0+oj0XkaxcpwLWF/5rICpcES8qvKVLAE
+        sYpVVd0goqS8yRkE6yZW1x8cPHJMO4goqe2PQ1xQxrU/3SCipLD0oFqr16pxlxtcEKW0oFc3LeubgS9s
+        3ClNqscCQ/tDop1isCgTDBZlgsGiTDBYlAkGizLBYFEmgmDhzgtul6E0BcHC8juW4XUDiJLCJIXJCnux
+        Orh3TDeIKCncjxjcyCyE/ejQ/AntIKKksKEBGxvQvN8YK0990Q0iSmri8EJfNe53ECzPssR33SCipP7a
+        946NWdigpRtIFBe2X2EbVhCqqJpImm4wUVzF/ROYrdbCSEXFWYt2QzdbbVVFOvlXfDQRJYWNotItvVUZ
+        qodR+r+aTr74gSvxlETRK38UwrkWZUhfasBVhIvPw6JhMFMhVLaduxXFZ2g18XgarsjTIOip8PE3dKbS
+        FJ7n0HFLXpd38dAW9OCl8UovatQH9lRx6jwOIh23V56e62MWYw82WnDOD9SO+ngGbXAd0DCuh9FIp5DO
+        25jFgqvX4WYuGgE454Zp3lPf46nZMcowfgG30PbC1YENWwAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>

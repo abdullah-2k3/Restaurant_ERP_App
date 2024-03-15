@@ -28,7 +28,7 @@ namespace app
         private void PopulateDropdown()
         {
             string[] optionsType = { "INFLOW", "OUTFLOW" };
-            string[] optionsarea = { "OPERATING", "INVESTING", "GOODS SOLD", "TAXES & Others" };
+            string[] optionsarea = { "OPERATING", "INVESTING", "GOODS SOLD", "TAXES & Others","TIPS" };
 
             typemenu.Items.AddRange(optionsType);
 
@@ -47,7 +47,7 @@ namespace app
             string description = descriptionbox.Text;
             string type = typemenu.SelectedItem.ToString();
             string areaOfExpenditure = areamenu.SelectedItem.ToString();
-            DateTime date = dateTime.Value.Date;
+            DateTime date = dateTime.Value;
             int amount = Convert.ToInt32(amountbox.Text);
 
             try
@@ -76,6 +76,11 @@ namespace app
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void AddTransaction_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

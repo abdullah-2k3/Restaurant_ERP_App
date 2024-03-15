@@ -2,19 +2,73 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.Design.AxImporter;
 
 namespace app
 {
     public partial class frmFR : Form
     {
+
+        private string ConnectionString = "Data Source=Finance.db;Version=3;";
+
         public frmFR()
         {
             InitializeComponent();
+            display();
+        }
+
+
+        private void display()
+        {
+            try
+            {
+                using (SQLiteConnection connection = new SQLiteConnection(ConnectionString))
+                {
+                    connection.Open();
+
+                    string incomeQuery = "SELECT SUM(Amount) AS total_income FROM Transactions WHERE Type = 'INFLOW'";
+
+                    string expenseQuery = "SELECT SUM(Amount) AS total_expense FROM Transactions WHERE Type = 'OUTFLOW'";
+
+
+
+                    double totalIncome = 0;
+                    double totalExpense = 0;
+                    using (SQLiteCommand command = new SQLiteCommand(connection))
+                    {
+                        command.CommandText = incomeQuery;
+                        object incomeResult = command.ExecuteScalar();
+                        if (incomeResult != DBNull.Value)
+                        {
+                            totalIncome = Convert.ToDouble(incomeResult);
+                        }
+
+                        command.CommandText = expenseQuery;
+                        object expenseResult = command.ExecuteScalar();
+                        if (expenseResult != DBNull.Value)
+                        {
+                            totalExpense = Convert.ToDouble(expenseResult);
+                        }
+                    }
+
+                    double netProfit = totalIncome - totalExpense;
+                    
+                    sales.Text = totalIncome.ToString();
+                    purchase.Text = totalExpense.ToString();
+                    profit.Text = netProfit.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
@@ -69,6 +123,11 @@ namespace app
             frmFb.FormBorderStyle = FormBorderStyle.None;
             this.Controls.Add(frmFb);
             frmFb.Show();
+        }
+
+        private void frmFR_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
