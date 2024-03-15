@@ -25,7 +25,7 @@ namespace app
         private void PopulateDropdown()
         {
             string[] optionsType = { "INFLOW", "OUTFLOW" };
-            string[] optionsarea = { "OPERATING", "INVESTING", "GOODS SOLD", "TAXES & Others", "TIPS" };
+            string[] optionsarea = { "OPERATING", "INVESTING", "GOODS SOLD", "GOODS BUY", "TAXES & Others", "TIPS" };
 
             typemenu.Items.AddRange(optionsType);
 

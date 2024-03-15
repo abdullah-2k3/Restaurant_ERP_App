@@ -28,23 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FR_ExpenseTracking));
             this.label1 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.monthly = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.areavsmoney = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monthly)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.areavsmoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,78 +56,60 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Expense Tracking";
             // 
-            // chart1
+            // monthly
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(562, 189);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(380, 240);
-            this.chart1.TabIndex = 1;
-            this.chart1.Text = "chart1";
+            chartArea3.Name = "ChartArea1";
+            this.monthly.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.monthly.Legends.Add(legend3);
+            this.monthly.Location = new System.Drawing.Point(544, 178);
+            this.monthly.Name = "monthly";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.monthly.Series.Add(series3);
+            this.monthly.Size = new System.Drawing.Size(398, 240);
+            this.monthly.TabIndex = 1;
+            this.monthly.Text = "chart1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto Slab Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(540, 163);
+            this.label2.Font = new System.Drawing.Font("Roboto Slab Medium", 18F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(593, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(425, 22);
+            this.label2.Size = new System.Drawing.Size(318, 32);
             this.label2.TabIndex = 2;
-            this.label2.Text = "one axis will tell the product and other will tell amount";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(580, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(385, 26);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "make a table in finacnce db. now when a order come save it in finance db table \r\n" +
-    "in this graph the product and number of orders for that product\r\n";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(132, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(218, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "from operationalCost table display graph here";
+            this.label2.Text = "Monthly Trend in Expense";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto Slab Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(131, 163);
+            this.label5.Font = new System.Drawing.Font("Roboto Slab Medium", 18F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(92, 135);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(225, 22);
+            this.label5.Size = new System.Drawing.Size(337, 32);
             this.label5.TabIndex = 5;
             this.label5.Text = "area of spenditure vs money";
             // 
-            // chart2
+            // areavsmoney
             // 
-            this.chart2.BorderlineColor = System.Drawing.Color.Black;
-            this.chart2.BorderlineWidth = 3;
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(67, 189);
-            this.chart2.Name = "chart2";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(360, 240);
-            this.chart2.TabIndex = 4;
-            this.chart2.Text = "chart2";
+            this.areavsmoney.BorderlineColor = System.Drawing.Color.Black;
+            this.areavsmoney.BorderlineWidth = 3;
+            chartArea4.Name = "ChartArea1";
+            this.areavsmoney.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.areavsmoney.Legends.Add(legend4);
+            this.areavsmoney.Location = new System.Drawing.Point(74, 178);
+            this.areavsmoney.Name = "areavsmoney";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.areavsmoney.Series.Add(series4);
+            this.areavsmoney.Size = new System.Drawing.Size(387, 240);
+            this.areavsmoney.TabIndex = 4;
+            this.areavsmoney.Text = "chart2";
             // 
             // bunifuPictureBox1
             // 
@@ -155,18 +135,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1058, 463);
             this.Controls.Add(this.bunifuPictureBox1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.chart2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.areavsmoney);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.monthly);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FR_ExpenseTracking";
             this.Text = "FR_ExpenseTracking";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            this.Load += new System.EventHandler(this.FR_ExpenseTracking_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.monthly)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.areavsmoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,12 +155,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart monthly;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart areavsmoney;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
     }
 }
