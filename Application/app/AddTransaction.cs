@@ -27,8 +27,8 @@ namespace app
 
         private void PopulateDropdown()
         {
-            string[] optionsType = { "InFlow", "OutFlow" };
-            string[] optionsarea = { "Operating", "Investing", "Goods Sold", "Taxes and Others" };
+            string[] optionsType = { "INFLOW", "OUTFLOW" };
+            string[] optionsarea = { "OPERATING", "INVESTING", "GOODS SOLD", "TAXES & Others" };
 
             typemenu.Items.AddRange(optionsType);
 
@@ -37,28 +37,34 @@ namespace app
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            if (idbox.Text == "" || titlebox.Text == "" || descriptionbox.Text == "" || typemenu.SelectedItem == null || areamenu.SelectedItem == null)
+            {
+                MessageBox.Show("Please enter the complete data.");
+                return;
+            }
             int id = Convert.ToInt32(idbox.Text);
             string title = titlebox.Text;
             string description = descriptionbox.Text;
             string type = typemenu.SelectedItem.ToString();
             string areaOfExpenditure = areamenu.SelectedItem.ToString();
-            DateTime date = dateTime.Value;
+            DateTime date = dateTime.Value.Date;
+            int amount = Convert.ToInt32(amountbox.Text);
 
             try
             {
                 using (SQLiteConnection connection = new SQLiteConnection(ConnectionString))
                 {
                     connection.Open();
-                    string query = "INSERT INTO Transactions (id, title, description, Type, ExpenseArea, date) " +
-                                   "VALUES (@Id, @Title, @Description, @Type, @ExpenseArea, @date)";
+                    string query = "INSERT INTO Transactions (id, Title, Description, Type, ExpenseArea, date,Amount) VALUES (@Id, @Title, @Description, @Type, @ExpenseArea, @date,@Amount)";
                     using (SQLiteCommand command = new SQLiteCommand(query, connection))
                     {
                         command.Parameters.AddWithValue("@Id", id);
                         command.Parameters.AddWithValue("@Title", title);
                         command.Parameters.AddWithValue("@Description", description);
                         command.Parameters.AddWithValue("@Type", type);
-                        command.Parameters.AddWithValue("@AreaOfExpenditure", areaOfExpenditure);
-                        command.Parameters.AddWithValue("@Date", date);
+                        command.Parameters.AddWithValue("@ExpenseArea", areaOfExpenditure);
+                        command.Parameters.AddWithValue("@date", date);
+                        command.Parameters.AddWithValue("@Amount", amount);
                         command.ExecuteNonQuery();
                     }
                 }

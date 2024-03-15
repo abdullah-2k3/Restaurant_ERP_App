@@ -24,7 +24,11 @@ namespace app
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-
+            if (idbox.Text == "" || titlebox.Text == "" || descriptionbox.Text == "")
+            {
+                MessageBox.Show("Please enter the complete data.");
+                return;
+            }
            
             int id;
             if (!int.TryParse(idbox.Text, out id))
