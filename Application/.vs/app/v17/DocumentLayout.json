@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\restaurant_erp_app\\application\\app\\fr_expensetracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\fr_expensetracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\restaurant_erp_app\\application\\app\\fr_expensetracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\fr_expensetracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\summaryfr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\summaryfr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\frmfr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\frmfr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\frmfr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\frmfr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,67 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FR_ExpenseTracking.cs",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\FR_ExpenseTracking.cs",
-              "RelativeDocumentMoniker": "app\\FR_ExpenseTracking.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\FR_ExpenseTracking.cs",
-              "RelativeToolTip": "app\\FR_ExpenseTracking.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAmwEMAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T16:27:49.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FR_ExpenseTracking.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\FR_ExpenseTracking.cs",
-              "RelativeDocumentMoniker": "app\\FR_ExpenseTracking.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\FR_ExpenseTracking.cs [Design]",
-              "RelativeToolTip": "app\\FR_ExpenseTracking.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T13:01:36.452Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmFR.cs",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\frmFR.cs",
-              "RelativeDocumentMoniker": "app\\frmFR.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\frmFR.cs",
-              "RelativeToolTip": "app\\frmFR.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:58:03.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmFR.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\frmFR.cs",
-              "RelativeDocumentMoniker": "app\\frmFR.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\frmFR.cs [Design]",
-              "RelativeToolTip": "app\\frmFR.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:57:26.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SummaryFR.cs",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\SummaryFR.cs",
-              "RelativeDocumentMoniker": "app\\SummaryFR.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Restaurant_ERP_App\\Application\\app\\SummaryFR.cs",
-              "RelativeToolTip": "app\\SummaryFR.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:00:49.434Z",
-              "EditorCaption": ""
             }
           ]
         }
