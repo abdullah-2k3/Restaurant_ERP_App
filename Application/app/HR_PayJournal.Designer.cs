@@ -32,6 +32,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.tbEID = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tbAmount = new System.Windows.Forms.TextBox();
@@ -53,14 +54,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnSetMonth = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbEID
             // 
-            this.tbEID.Location = new System.Drawing.Point(183, 251);
+            this.tbEID.Location = new System.Drawing.Point(176, 265);
             this.tbEID.Margin = new System.Windows.Forms.Padding(2);
             this.tbEID.Name = "tbEID";
             this.tbEID.Size = new System.Drawing.Size(82, 20);
@@ -71,7 +74,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(32, 202);
+            this.label8.Location = new System.Drawing.Point(25, 216);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 21);
@@ -80,7 +83,7 @@
             // 
             // tbAmount
             // 
-            this.tbAmount.Location = new System.Drawing.Point(183, 341);
+            this.tbAmount.Location = new System.Drawing.Point(176, 355);
             this.tbAmount.Margin = new System.Windows.Forms.Padding(2);
             this.tbAmount.Name = "tbAmount";
             this.tbAmount.Size = new System.Drawing.Size(82, 20);
@@ -91,7 +94,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(53, 341);
+            this.label7.Location = new System.Drawing.Point(46, 355);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 21);
@@ -100,7 +103,7 @@
             // 
             // tbTax
             // 
-            this.tbTax.Location = new System.Drawing.Point(183, 385);
+            this.tbTax.Location = new System.Drawing.Point(176, 399);
             this.tbTax.Margin = new System.Windows.Forms.Padding(2);
             this.tbTax.Name = "tbTax";
             this.tbTax.Size = new System.Drawing.Size(82, 20);
@@ -111,7 +114,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label6.Location = new System.Drawing.Point(32, 385);
+            this.label6.Location = new System.Drawing.Point(25, 399);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(140, 21);
@@ -120,7 +123,7 @@
             // 
             // tbDate
             // 
-            this.tbDate.Location = new System.Drawing.Point(183, 295);
+            this.tbDate.Location = new System.Drawing.Point(176, 309);
             this.tbDate.Margin = new System.Windows.Forms.Padding(2);
             this.tbDate.Name = "tbDate";
             this.tbDate.Size = new System.Drawing.Size(82, 20);
@@ -131,7 +134,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label5.Location = new System.Drawing.Point(56, 295);
+            this.label5.Location = new System.Drawing.Point(49, 309);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 21);
@@ -140,7 +143,7 @@
             // 
             // tbDes
             // 
-            this.tbDes.Location = new System.Drawing.Point(183, 433);
+            this.tbDes.Location = new System.Drawing.Point(176, 447);
             this.tbDes.Margin = new System.Windows.Forms.Padding(2);
             this.tbDes.Name = "tbDes";
             this.tbDes.Size = new System.Drawing.Size(82, 20);
@@ -151,7 +154,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label4.Location = new System.Drawing.Point(38, 433);
+            this.label4.Location = new System.Drawing.Point(31, 447);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 21);
@@ -160,7 +163,7 @@
             // 
             // tbStatus
             // 
-            this.tbStatus.Location = new System.Drawing.Point(183, 485);
+            this.tbStatus.Location = new System.Drawing.Point(176, 499);
             this.tbStatus.Margin = new System.Windows.Forms.Padding(2);
             this.tbStatus.Name = "tbStatus";
             this.tbStatus.Size = new System.Drawing.Size(82, 20);
@@ -171,7 +174,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(32, 485);
+            this.label3.Location = new System.Drawing.Point(25, 499);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 21);
@@ -180,7 +183,7 @@
             // 
             // tbTID
             // 
-            this.tbTID.Location = new System.Drawing.Point(183, 202);
+            this.tbTID.Location = new System.Drawing.Point(176, 216);
             this.tbTID.Margin = new System.Windows.Forms.Padding(2);
             this.tbTID.Name = "tbTID";
             this.tbTID.Size = new System.Drawing.Size(82, 20);
@@ -191,7 +194,7 @@
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblID.Location = new System.Drawing.Point(33, 251);
+            this.lblID.Location = new System.Drawing.Point(26, 265);
             this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(111, 21);
@@ -471,7 +474,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(293, 95);
+            this.dataGridView1.Location = new System.Drawing.Point(317, 79);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -494,7 +497,7 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.lblDate);
             this.panel1.Location = new System.Drawing.Point(29, 79);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
@@ -506,31 +509,130 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(16, 24);
+            this.label2.Location = new System.Drawing.Point(17, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 25);
             this.label2.TabIndex = 34;
             this.label2.Text = "Current Month:";
             // 
-            // label9
+            // lblDate
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label9.Location = new System.Drawing.Point(38, 49);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 25);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "March 2024";
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblDate.Location = new System.Drawing.Point(38, 49);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(111, 25);
+            this.lblDate.TabIndex = 35;
+            this.lblDate.Text = "March 2024";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(29, 180);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 85;
+            // 
+            // btnSetMonth
+            // 
+            this.btnSetMonth.AllowAnimations = true;
+            this.btnSetMonth.AllowMouseEffects = true;
+            this.btnSetMonth.AllowToggling = false;
+            this.btnSetMonth.AnimationSpeed = 200;
+            this.btnSetMonth.AutoGenerateColors = false;
+            this.btnSetMonth.AutoRoundBorders = false;
+            this.btnSetMonth.AutoSizeLeftIcon = true;
+            this.btnSetMonth.AutoSizeRightIcon = true;
+            this.btnSetMonth.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetMonth.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.btnSetMonth.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSetMonth.BackgroundImage")));
+            this.btnSetMonth.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSetMonth.ButtonText = "Save";
+            this.btnSetMonth.ButtonTextMarginLeft = 0;
+            this.btnSetMonth.ColorContrastOnClick = 45;
+            this.btnSetMonth.ColorContrastOnHover = 45;
+            this.btnSetMonth.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnSetMonth.CustomizableEdges = borderEdges4;
+            this.btnSetMonth.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSetMonth.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnSetMonth.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSetMonth.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSetMonth.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnSetMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetMonth.ForeColor = System.Drawing.Color.Navy;
+            this.btnSetMonth.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSetMonth.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnSetMonth.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnSetMonth.IconMarginLeft = 11;
+            this.btnSetMonth.IconPadding = 10;
+            this.btnSetMonth.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSetMonth.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnSetMonth.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnSetMonth.IconSize = 25;
+            this.btnSetMonth.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.btnSetMonth.IdleBorderRadius = 25;
+            this.btnSetMonth.IdleBorderThickness = 1;
+            this.btnSetMonth.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.btnSetMonth.IdleIconLeftImage = null;
+            this.btnSetMonth.IdleIconRightImage = null;
+            this.btnSetMonth.IndicateFocus = false;
+            this.btnSetMonth.Location = new System.Drawing.Point(235, 180);
+            this.btnSetMonth.Name = "btnSetMonth";
+            this.btnSetMonth.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnSetMonth.OnDisabledState.BorderRadius = 25;
+            this.btnSetMonth.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSetMonth.OnDisabledState.BorderThickness = 1;
+            this.btnSetMonth.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnSetMonth.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnSetMonth.OnDisabledState.IconLeftImage = null;
+            this.btnSetMonth.OnDisabledState.IconRightImage = null;
+            this.btnSetMonth.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
+            this.btnSetMonth.onHoverState.BorderRadius = 25;
+            this.btnSetMonth.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSetMonth.onHoverState.BorderThickness = 1;
+            this.btnSetMonth.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.btnSetMonth.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSetMonth.onHoverState.IconLeftImage = null;
+            this.btnSetMonth.onHoverState.IconRightImage = null;
+            this.btnSetMonth.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSetMonth.OnIdleState.BorderRadius = 25;
+            this.btnSetMonth.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSetMonth.OnIdleState.BorderThickness = 1;
+            this.btnSetMonth.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.btnSetMonth.OnIdleState.ForeColor = System.Drawing.Color.Navy;
+            this.btnSetMonth.OnIdleState.IconLeftImage = null;
+            this.btnSetMonth.OnIdleState.IconRightImage = null;
+            this.btnSetMonth.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnSetMonth.OnPressedState.BorderRadius = 25;
+            this.btnSetMonth.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnSetMonth.OnPressedState.BorderThickness = 1;
+            this.btnSetMonth.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(250)))));
+            this.btnSetMonth.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnSetMonth.OnPressedState.IconLeftImage = null;
+            this.btnSetMonth.OnPressedState.IconRightImage = null;
+            this.btnSetMonth.Size = new System.Drawing.Size(65, 23);
+            this.btnSetMonth.TabIndex = 86;
+            this.btnSetMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSetMonth.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSetMonth.TextMarginLeft = 0;
+            this.btnSetMonth.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnSetMonth.UseDefaultRadiusAndThickness = true;
+            this.btnSetMonth.Click += new System.EventHandler(this.btnSetMonth_Click);
             // 
             // HR_PayJournal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1048, 574);
+            this.ClientSize = new System.Drawing.Size(1081, 547);
+            this.Controls.Add(this.btnSetMonth);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbEID);
             this.Controls.Add(this.label8);
@@ -584,6 +686,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSetMonth;
     }
 }

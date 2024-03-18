@@ -92,12 +92,13 @@
             this.PnlTop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlTop.BackgroundImage")));
             this.PnlTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PnlTop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.PnlTop.BorderRadius = 3;
-            this.PnlTop.BorderThickness = 1;
+            this.PnlTop.BorderRadius = 0;
+            this.PnlTop.BorderThickness = 0;
             this.PnlTop.Controls.Add(this.btnExit);
             this.PnlTop.Controls.Add(this.lblTitle2);
             this.PnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlTop.Location = new System.Drawing.Point(200, 0);
+            this.PnlTop.Margin = new System.Windows.Forms.Padding(0);
             this.PnlTop.Name = "PnlTop";
             this.PnlTop.ShowBorders = true;
             this.PnlTop.Size = new System.Drawing.Size(1080, 110);

@@ -12,14 +12,41 @@ namespace app
 {
     public partial class frmMenu : Form
     {
+        private frmViewMenu view = new frmViewMenu();
+        private frmEditMenu edit = new frmEditMenu();
         public frmMenu()
         {
             InitializeComponent();
         }
 
-        private void frmMenu_Load(object sender, EventArgs e)
+        public void LoadForm(Form form)
         {
 
+            this.Controls.Clear();
+
+            Form newForm = (Form)Activator.CreateInstance(form.GetType());
+
+            newForm.Dock = DockStyle.Fill;
+            newForm.TopLevel = false;
+            newForm.TopMost = true;
+            newForm.FormBorderStyle = FormBorderStyle.None;
+
+            this.Controls.Add(newForm);
+
+            newForm.Show();
+        }
+
+
+
+
+        private void btnViewMenu_Click(object sender, EventArgs e)
+        {
+            LoadForm(view);
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            LoadForm(edit);
         }
     }
 }

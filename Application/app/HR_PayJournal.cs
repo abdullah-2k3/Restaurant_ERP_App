@@ -20,6 +20,7 @@ namespace app
         {
             InitializeComponent();
             dataGridView1.CellPainting += dataGridView1_CellPainting;
+            lblDate.Text = dateTimePicker1.Value.ToString("MMMM-yyyy");
             showPayroll();
         }
 
@@ -251,6 +252,13 @@ namespace app
                 UpdateRecord();
 
             showPayroll();
+        }
+
+        private void btnSetMonth_Click(object sender, EventArgs e)
+        {
+            lblDate.Text = dateTimePicker1.Value.ToString("MMMM-yyyy");
+
+            MessageBox.Show("Month Upadted");
         }
     }
 }

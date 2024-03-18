@@ -24,7 +24,6 @@ namespace app
         {
             InitializeComponent();
             dataGridView1.CellPainting += dataGridView1_CellPainting;
-            InitializeAttendance();
             showAttendance();
         }
 

@@ -23,6 +23,7 @@ namespace app
             InitializeChart();
 
             lblEmployeeCount.Text = getEmployees().ToString();
+            lblManagerName.Text = getManager();
         }
 
 
@@ -131,6 +132,24 @@ namespace app
             con.Close();
 
             return count;
+        }
+
+        private string getManager()
+        {
+            string manager = "";
+            using (SQLiteConnection con = new SQLiteConnection(ConnectionString))
+            {
+                con.Open();
+
+                string query = "SELECT Name FROM Attendance Where Department = 'Reception' LIMIT 1";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, con))
+                {
+                    //manager = cmd.ExecuteScalar().ToString();
+                   
+                }
+            }
+            return manager;
         }
 
         private void btnEmployees_Click_1(object sender, EventArgs e)

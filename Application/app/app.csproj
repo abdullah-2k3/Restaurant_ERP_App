@@ -284,6 +284,18 @@
     <Compile Include="frmAddLoyalty.Designer.cs">
       <DependentUpon>frmAddLoyalty.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddMenu.designer.cs">
+      <DependentUpon>frmAddMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddOrder.designer.cs">
+      <DependentUpon>frmAddOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCRM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,6 +331,18 @@
     </Compile>
     <Compile Include="frmDelLoyalty.Designer.cs">
       <DependentUpon>frmDelLoyalty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelMenu.designer.cs">
+      <DependentUpon>frmDelMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditMenu.Designer.cs">
+      <DependentUpon>frmEditMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFeedback.cs">
       <SubType>Form</SubType>
@@ -385,6 +409,18 @@
     </Compile>
     <Compile Include="frmUpdateAttendance.Designer.cs">
       <DependentUpon>frmUpdateAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateMenu.designer.cs">
+      <DependentUpon>frmUpdateMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewMenu.designer.cs">
+      <DependentUpon>frmViewMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmVisits.cs">
       <SubType>Form</SubType>
@@ -562,6 +598,9 @@
     <EmbeddedResource Include="frmAddLoyalty.resx">
       <DependentUpon>frmAddLoyalty.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAddOrder.resx">
+      <DependentUpon>frmAddOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCRM.resx">
       <DependentUpon>frmCRM.cs</DependentUpon>
     </EmbeddedResource>
@@ -579,6 +618,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDelLoyalty.resx">
       <DependentUpon>frmDelLoyalty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelMenu.resx">
+      <DependentUpon>frmDelMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditMenu.resx">
+      <DependentUpon>frmEditMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFeedback.resx">
       <DependentUpon>frmFeedback.cs</DependentUpon>
@@ -609,6 +654,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTables.resx">
       <DependentUpon>frmTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewMenu.resx">
+      <DependentUpon>frmViewMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVisits.resx">
       <DependentUpon>frmVisits.cs</DependentUpon>
@@ -700,7 +748,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="HR.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Menu.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

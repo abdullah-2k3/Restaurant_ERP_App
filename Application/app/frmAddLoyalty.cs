@@ -35,7 +35,7 @@ namespace app
                     string id = tbID.Text;
                     string name = tbName.Text;
                     string visits = tbVisits.Text;
-                    string date = tbreg.Text;
+                    string date = dateTimePicker1.Value.ToString("dd-MM-yyyy");
                     string mem = tbmembership.Text;
                     string email = tbEmail.Text;
 
