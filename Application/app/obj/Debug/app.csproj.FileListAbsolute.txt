@@ -796,7 +796,6 @@ C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Deb
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmDelCustomer.resources
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmDelFeedback.resources
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmDelLoyalty.resources
-C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmDelMenu.resources
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmEditMenu.resources
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmFeedback.resources
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmFR.resources

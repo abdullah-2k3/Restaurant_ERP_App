@@ -284,12 +284,6 @@
     <Compile Include="frmAddLoyalty.Designer.cs">
       <DependentUpon>frmAddLoyalty.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAddMenu.designer.cs">
-      <DependentUpon>frmAddMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAddOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,12 +325,6 @@
     </Compile>
     <Compile Include="frmDelLoyalty.Designer.cs">
       <DependentUpon>frmDelLoyalty.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmDelMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDelMenu.designer.cs">
-      <DependentUpon>frmDelMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditMenu.cs">
       <SubType>Form</SubType>
@@ -409,12 +397,6 @@
     </Compile>
     <Compile Include="frmUpdateAttendance.Designer.cs">
       <DependentUpon>frmUpdateAttendance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmUpdateMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUpdateMenu.designer.cs">
-      <DependentUpon>frmUpdateMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmViewMenu.cs">
       <SubType>Form</SubType>
@@ -618,9 +600,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDelLoyalty.resx">
       <DependentUpon>frmDelLoyalty.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDelMenu.resx">
-      <DependentUpon>frmDelMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditMenu.resx">
       <DependentUpon>frmEditMenu.cs</DependentUpon>
