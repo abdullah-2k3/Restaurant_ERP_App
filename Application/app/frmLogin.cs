@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,26 +13,12 @@ namespace app
 {
     public partial class frmLogin : Form
     {
+        string connectionstring = "Data Source = HR.db; version = 3";
         public frmLogin()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -40,27 +27,65 @@ namespace app
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            string name = tbName.Text;
+            string pass = tbPass.Text;
+
+            if (name == "" ||  pass == "")
+            {
+                MessageBox.Show("Enter both username and password");
+                return;
+            } 
+           
+            string query = "SELECT COUNT(*) FROM Admin WHERE Name = @name AND Password = @pass";
+
+            using (SQLiteConnection con = new SQLiteConnection(connectionstring))
+            {
+                con.Open();
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@pass", pass);
+
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (count == 0)
+                    {
+                        MessageBox.Show("Invalid username or password.");
+                        tbName.Clear();
+                        tbPass.Clear();
+                    }
+                    else
+                    {
+                        this.Close();
+                    }
+
+                }
+                con.Close();
+            }
+            
         }
 
         private void login_registerHere_Click(object sender, EventArgs e)
         {
             frmSignup sForm = new frmSignup();
-            sForm.ShowDialog();
             this.Hide();
+            sForm.ShowDialog();
+            this.Show();
+           
         }
 
         private void login_showpass_CheckedChanged(object sender, EventArgs e)
         {
             if (login_showpass.Checked)
             {
-                login_password.PasswordChar = '\0';
-                login_password.Font = new Font(login_password.Font.FontFamily, 10, FontStyle.Regular);
+                tbPass.PasswordChar = '\0';
+                tbPass.Font = new Font(tbPass.Font.FontFamily, 10, FontStyle.Regular);
             }
             else
             {
-                login_password.PasswordChar = '*';
-                login_password.Font = new Font(login_password.Font.FontFamily, 12, FontStyle.Bold);
+                tbPass.PasswordChar = '*';
+                tbPass.Font = new Font(tbPass.Font.FontFamily, 12, FontStyle.Bold);
             }
         }
     }

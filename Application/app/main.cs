@@ -27,10 +27,11 @@ namespace app
         private frmAbout about = new frmAbout();
         public main() 
         {
-            InitializeComponent();
 
             frmLogin login = new frmLogin();
             login.ShowDialog();
+            
+            InitializeComponent();
 
             lblTitle2.Text = "Home";
             this.PnlFormLoader.Controls.Clear();

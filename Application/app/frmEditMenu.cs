@@ -54,7 +54,7 @@ namespace app
             string price = tbPrice.Text;
 
             string query = "INSERT INTO Items(Id, ItemName, Category, Price) " +
-                            "VALUES (@id @name, @category, @price)";
+                            "VALUES (@id, @name, @category, @price)";
 
             try
             {
@@ -136,7 +136,7 @@ namespace app
             List<string> columnsToUpdate = new List<string>();
 
             if (!string.IsNullOrEmpty(name))
-                columnsToUpdate.Add("Name = @name");
+                columnsToUpdate.Add("ItemName = @name");
             if (!string.IsNullOrEmpty(category))
                 columnsToUpdate.Add("Category = @category");
             if (!string.IsNullOrEmpty(price))
@@ -210,6 +210,11 @@ namespace app
         {
             UpdateItem();
             showMenu();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

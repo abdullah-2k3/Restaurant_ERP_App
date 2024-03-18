@@ -43,6 +43,7 @@
             this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.lstfastprice = new System.Windows.Forms.ListBox();
             this.lstdessertprice = new System.Windows.Forms.ListBox();
@@ -52,7 +53,6 @@
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel12 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
             this.SuspendLayout();
             // 
@@ -98,7 +98,7 @@
             this.bunifuLabel2.AutoEllipsis = true;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.ForeColor = System.Drawing.Color.Red;
+            this.bunifuLabel2.ForeColor = System.Drawing.Color.Maroon;
             this.bunifuLabel2.Location = new System.Drawing.Point(12, 300);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -110,10 +110,10 @@
             // 
             // lstfastfood
             // 
-            this.lstfastfood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstfastfood.BackColor = System.Drawing.Color.DimGray;
             this.lstfastfood.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstfastfood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstfastfood.ForeColor = System.Drawing.Color.Red;
+            this.lstfastfood.ForeColor = System.Drawing.Color.DarkRed;
             this.lstfastfood.FormattingEnabled = true;
             this.lstfastfood.ItemHeight = 20;
             this.lstfastfood.Items.AddRange(new object[] {
@@ -135,10 +135,10 @@
             // 
             // lstJuices
             // 
-            this.lstJuices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstJuices.BackColor = System.Drawing.Color.DimGray;
             this.lstJuices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstJuices.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstJuices.ForeColor = System.Drawing.Color.Red;
+            this.lstJuices.ForeColor = System.Drawing.Color.DarkRed;
             this.lstJuices.FormattingEnabled = true;
             this.lstJuices.ItemHeight = 20;
             this.lstJuices.Items.AddRange(new object[] {
@@ -158,10 +158,10 @@
             // 
             // lstDessert
             // 
-            this.lstDessert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstDessert.BackColor = System.Drawing.Color.DimGray;
             this.lstDessert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstDessert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstDessert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lstDessert.ForeColor = System.Drawing.Color.NavajoWhite;
             this.lstDessert.FormattingEnabled = true;
             this.lstDessert.ItemHeight = 20;
             this.lstDessert.Items.AddRange(new object[] {
@@ -182,10 +182,10 @@
             // 
             // lstDesi
             // 
-            this.lstDesi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstDesi.BackColor = System.Drawing.Color.DimGray;
             this.lstDesi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstDesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstDesi.ForeColor = System.Drawing.Color.Red;
+            this.lstDesi.ForeColor = System.Drawing.Color.DarkRed;
             this.lstDesi.FormattingEnabled = true;
             this.lstDesi.ItemHeight = 20;
             this.lstDesi.Items.AddRange(new object[] {
@@ -220,10 +220,10 @@
             // 
             // lstContinental
             // 
-            this.lstContinental.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstContinental.BackColor = System.Drawing.Color.DimGray;
             this.lstContinental.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstContinental.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstContinental.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lstContinental.ForeColor = System.Drawing.Color.NavajoWhite;
             this.lstContinental.FormattingEnabled = true;
             this.lstContinental.ItemHeight = 20;
             this.lstContinental.Items.AddRange(new object[] {
@@ -250,7 +250,7 @@
             this.bunifuLabel4.AutoEllipsis = true;
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel4.ForeColor = System.Drawing.Color.Red;
+            this.bunifuLabel4.ForeColor = System.Drawing.Color.DarkRed;
             this.bunifuLabel4.Location = new System.Drawing.Point(741, 313);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -282,7 +282,7 @@
             this.bunifuLabel6.AutoEllipsis = true;
             this.bunifuLabel6.CursorType = null;
             this.bunifuLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel6.ForeColor = System.Drawing.Color.Red;
+            this.bunifuLabel6.ForeColor = System.Drawing.Color.DarkRed;
             this.bunifuLabel6.Location = new System.Drawing.Point(741, 398);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -332,7 +332,7 @@
             this.bunifuLabel9.AutoEllipsis = true;
             this.bunifuLabel9.CursorType = null;
             this.bunifuLabel9.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel9.ForeColor = System.Drawing.Color.Red;
+            this.bunifuLabel9.ForeColor = System.Drawing.Color.Maroon;
             this.bunifuLabel9.Location = new System.Drawing.Point(767, 12);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -342,12 +342,31 @@
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuLabel12
+            // 
+            this.bunifuLabel12.AllowParentOverrides = false;
+            this.bunifuLabel12.AutoEllipsis = true;
+            this.bunifuLabel12.AutoSize = false;
+            this.bunifuLabel12.AutoSizeHeightOnly = true;
+            this.bunifuLabel12.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel12.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel12.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuLabel12.Location = new System.Drawing.Point(651, 12);
+            this.bunifuLabel12.Name = "bunifuLabel12";
+            this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel12.Size = new System.Drawing.Size(59, 30);
+            this.bunifuLabel12.TabIndex = 32;
+            this.bunifuLabel12.Text = "Price";
+            this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // lstfastprice
             // 
-            this.lstfastprice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstfastprice.BackColor = System.Drawing.Color.DimGray;
             this.lstfastprice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstfastprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstfastprice.ForeColor = System.Drawing.Color.Red;
+            this.lstfastprice.ForeColor = System.Drawing.Color.DarkRed;
             this.lstfastprice.FormattingEnabled = true;
             this.lstfastprice.ItemHeight = 20;
             this.lstfastprice.Items.AddRange(new object[] {
@@ -360,10 +379,10 @@
             // 
             // lstdessertprice
             // 
-            this.lstdessertprice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstdessertprice.BackColor = System.Drawing.Color.DimGray;
             this.lstdessertprice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstdessertprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstdessertprice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lstdessertprice.ForeColor = System.Drawing.Color.NavajoWhite;
             this.lstdessertprice.FormattingEnabled = true;
             this.lstdessertprice.ItemHeight = 20;
             this.lstdessertprice.Items.AddRange(new object[] {
@@ -375,10 +394,10 @@
             // 
             // lstDesiPrice
             // 
-            this.lstDesiPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstDesiPrice.BackColor = System.Drawing.Color.DimGray;
             this.lstDesiPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstDesiPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstDesiPrice.ForeColor = System.Drawing.Color.Red;
+            this.lstDesiPrice.ForeColor = System.Drawing.Color.DarkRed;
             this.lstDesiPrice.FormattingEnabled = true;
             this.lstDesiPrice.ItemHeight = 20;
             this.lstDesiPrice.Items.AddRange(new object[] {
@@ -390,10 +409,10 @@
             // 
             // lstContPrice
             // 
-            this.lstContPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstContPrice.BackColor = System.Drawing.Color.DimGray;
             this.lstContPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstContPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstContPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lstContPrice.ForeColor = System.Drawing.Color.NavajoWhite;
             this.lstContPrice.FormattingEnabled = true;
             this.lstContPrice.ItemHeight = 20;
             this.lstContPrice.Items.AddRange(new object[] {
@@ -405,10 +424,10 @@
             // 
             // lstjuicesprice
             // 
-            this.lstjuicesprice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lstjuicesprice.BackColor = System.Drawing.Color.DimGray;
             this.lstjuicesprice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstjuicesprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstjuicesprice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lstjuicesprice.ForeColor = System.Drawing.Color.DarkRed;
             this.lstjuicesprice.FormattingEnabled = true;
             this.lstjuicesprice.ItemHeight = 20;
             this.lstjuicesprice.Items.AddRange(new object[] {
@@ -475,25 +494,6 @@
             this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel12
-            // 
-            this.bunifuLabel12.AllowParentOverrides = false;
-            this.bunifuLabel12.AutoEllipsis = true;
-            this.bunifuLabel12.AutoSize = false;
-            this.bunifuLabel12.AutoSizeHeightOnly = true;
-            this.bunifuLabel12.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel12.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel12.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuLabel12.Location = new System.Drawing.Point(651, 12);
-            this.bunifuLabel12.Name = "bunifuLabel12";
-            this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel12.Size = new System.Drawing.Size(59, 30);
-            this.bunifuLabel12.TabIndex = 32;
-            this.bunifuLabel12.Text = "Price";
-            this.bunifuLabel12.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel12.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // bunifuLabel13
             // 
             this.bunifuLabel13.AllowParentOverrides = false;
@@ -517,7 +517,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1081, 547);
             this.Controls.Add(this.bunifuLabel13);
             this.Controls.Add(this.bunifuLabel12);
@@ -554,6 +554,7 @@
         }
 
         #endregion
+
         private Bunifu.UI.WinForms.BunifuLabel Brugers;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
@@ -568,6 +569,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel12;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.ListBox lstfastprice;
         private System.Windows.Forms.ListBox lstdessertprice;
@@ -577,7 +579,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel12;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel13;
     }
 }

@@ -758,6 +758,8 @@
     <Content Include="Resources\feedback2.jpg" />
     <Content Include="Resources\loyalty.png" />
     <Content Include="Resources\loyalty3.jpg" />
+    <None Include="Resources\menu2.jpg" />
+    <None Include="Resources\menu1.jpg" />
     <Content Include="Resources\people.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

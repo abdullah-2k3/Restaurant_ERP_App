@@ -396,6 +396,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(624, 362);
             this.dataGridView1.TabIndex = 48;
             this.dataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tbName
             // 
