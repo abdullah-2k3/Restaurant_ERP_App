@@ -13,10 +13,9 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace app
 {
+
     public partial class frmCRM : Form
     {
-
-
 
         private string ConnectionString = "Data Source=Customer.db;Version=3;";
 
@@ -24,8 +23,27 @@ namespace app
         {
             InitializeComponent();
             InitializeChart();
-            UpdateCircularProgress();
+            UpdateProgressChart();
 
+
+        }
+
+
+        private int getItemCount(string query)
+        {
+            int count;
+            using (SQLiteConnection con = new SQLiteConnection(ConnectionString))
+            {
+                con.Open();
+
+                using (SQLiteCommand cmd = new SQLiteCommand(query, con))
+                {
+                    count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                }
+                con.Close();
+            }
+            return count;
         }
 
         private void InitializeChart()
@@ -44,11 +62,54 @@ namespace app
             series.ChartType = SeriesChartType.Column;
 
 
-            series.Points.AddXY("WeekDays", 25);
-            series.Points.AddXY("WeekEnds", 56);
+            float mondaycount, tuesdaycount, wednesdaycount, thursdaycount, fridaycount, saturdaycount, sundaycount;
+
+            string query = "SELECT Count(*) FROM Visits WHERE Visitday = 'Monday'";
+            mondaycount = getItemCount(query);
+
+            query = "SELECT Count(*) FROM Visits WHERE Visitday = 'Monday'";
+            mondaycount = getItemCount(query);
+
+            query = "SELECT Count(*) FROM Visits WHERE Visitday = 'Tuesday'";
+            tuesdaycount = getItemCount(query);
+
+            query = "SELECT Count(*) FROM Visits WHERE Visitday = 'Wednesday'";
+            wednesdaycount = getItemCount(query);
+
+            query = "SELECT Count(*) FROM Visits WHERE Visitday = 'Thursday'";
+            thursdaycount = getItemCount(query);
+
+            query = "SELECT Count(*) FROM Visits WHERE Visitday = 'Friday'";
+            fridaycount = getItemCount(query);
+
+            query = "SELECT Count(*) FROM Visits WHERE Visitday = 'Saturday'";
+            saturdaycount = getItemCount(query);
+
+            query = "SELECT Count(*) FROM Visits WHERE Visitday = 'Sunday'";
+            sundaycount = getItemCount(query);
+
+            query = "SELECT Count(*) FROM Visits";
+            float totalcount = getItemCount(query);
+
+            mondaycount = mondaycount / totalcount * 100;
+            tuesdaycount =  tuesdaycount / totalcount * 100;
+            wednesdaycount =  wednesdaycount / totalcount * 100;
+            thursdaycount =  thursdaycount / totalcount * 100;
+            fridaycount =  fridaycount / totalcount * 100;
+            saturdaycount =  saturdaycount / totalcount * 100;
+            sundaycount =  sundaycount / totalcount * 100;
 
 
-         
+            series.Points.AddXY("Monday", mondaycount);
+            series.Points.AddXY("Tuesday", tuesdaycount);
+            series.Points.AddXY("Wednesday", wednesdaycount);
+            series.Points.AddXY("Thursday", thursdaycount);
+            series.Points.AddXY("Friday", fridaycount);
+            series.Points.AddXY("Saturday", saturdaycount);
+            series.Points.AddXY("Sunday", sundaycount);
+
+
+
             customerFlowChart.Series.Add(series);
 
             customerFlowChart.ChartAreas[0].AxisX.Title = "Days";
@@ -67,31 +128,51 @@ namespace app
 
 
 
-        private void customerFlow_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        public void UpdateCircularProgress()
+        public void UpdateProgressChart()
         {
             int totalCustomers = GetTotalCustomers();
-            int satisfiedCustomers = GetSatisfiedCustomers();
+            int membershipCustomers = GetSatisfiedCustomers();
 
             // Calculate the percentage of satisfied customers
-            double percentage = totalCustomers > 0 ? ((double)satisfiedCustomers / totalCustomers) * 100 : 0;
+            double percentage = totalCustomers > 0 ? ((double)membershipCustomers / totalCustomers) * 100 : 0;
+
+            // Clear any existing series from the chart
+            chart.Series.Clear();
+            chart.Legends.Clear();
+
+            // Add a new series for the donut chart
+            Series series = chart.Series.Add("Donut");
+            series.ChartType = SeriesChartType.Doughnut;
+            series["PieLabelStyle"] = "Outside";
+
+            // Add data points to the series
+            DataPoint point1 = series.Points.Add(percentage);
+
+            DataPoint point2 = series.Points.Add(100 - percentage);
+
+            // Set the palette for the chart
+            chart.Palette = ChartColorPalette.BrightPastel;
+
+            // Set the chart title
+            Title title = new Title("Membership Percentage");
+            title.Font = new Font("Arial", 12, FontStyle.Bold);
+            chart.Titles.Add(title);
+
+            // Set the color of the donut chart
+            series.Points[0].Color = Color.DarkBlue; // Outer color
+            series.Points[1].Color = Color.Aqua; // Inner color
+
+            
+            chart.ChartAreas[0].InnerPlotPosition.Auto = false;
+            chart.ChartAreas[0].InnerPlotPosition.Width = 90; 
+            chart.ChartAreas[0].InnerPlotPosition.Height = 90;
+            chart.ChartAreas[0].InnerPlotPosition.X = 5; 
+            chart.ChartAreas[0].InnerPlotPosition.Y = 5; 
 
 
-            // Update the Bunifu circular progress control with the calculated percentage
-            circularBar.Value = (int)percentage; // Round the percentage to the nearest integer
-            circularBar.Text = $"{percentage:F2}%"; // Update the center text
-            lblProgress.Text = $"Satisfied Customers: {percentage:F2}%"; // Update the label text
+            chart.Invalidate();
 
+            lblProgress.Text = $"Membership Customers: {percentage:F2}%";
         }
 
 

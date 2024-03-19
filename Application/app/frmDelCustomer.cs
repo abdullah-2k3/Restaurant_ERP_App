@@ -33,6 +33,7 @@ namespace app
             con.Open();
 
             string deleteQuery = "DELETE FROM CustomerProfTbl WHERE ID = @ID";
+            string query = "DELETE FROM CustomerLoyaltyTbl WHERE C_ID = @ID";
             using (SQLiteCommand deleteCmd = new SQLiteCommand(deleteQuery, con))
             {
                 deleteCmd.Parameters.AddWithValue("@ID", tbID.Text);
@@ -47,6 +48,10 @@ namespace app
                     MessageBox.Show("Customer not found");
                 }
             }
+
+            SQLiteCommand cmd = new SQLiteCommand(query, con);
+            cmd.Parameters.AddWithValue("@ID", tbID.Text);
+            cmd.ExecuteNonQuery();
                      
             
             con.Close();

@@ -28,8 +28,8 @@ namespace app
         public main() 
         {
 
-            frmLogin login = new frmLogin();
-            login.ShowDialog();
+            //frmLogin login = new frmLogin();
+            //login.ShowDialog();
             
             InitializeComponent();
 

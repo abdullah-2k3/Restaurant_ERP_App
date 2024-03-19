@@ -110,7 +110,7 @@
             // 
             // lstfastfood
             // 
-            this.lstfastfood.BackColor = System.Drawing.Color.DimGray;
+            this.lstfastfood.BackColor = System.Drawing.Color.DarkGray;
             this.lstfastfood.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstfastfood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstfastfood.ForeColor = System.Drawing.Color.DarkRed;
@@ -135,7 +135,7 @@
             // 
             // lstJuices
             // 
-            this.lstJuices.BackColor = System.Drawing.Color.DimGray;
+            this.lstJuices.BackColor = System.Drawing.Color.DarkGray;
             this.lstJuices.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstJuices.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstJuices.ForeColor = System.Drawing.Color.DarkRed;
@@ -158,7 +158,7 @@
             // 
             // lstDessert
             // 
-            this.lstDessert.BackColor = System.Drawing.Color.DimGray;
+            this.lstDessert.BackColor = System.Drawing.Color.Gray;
             this.lstDessert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstDessert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstDessert.ForeColor = System.Drawing.Color.NavajoWhite;
@@ -182,7 +182,7 @@
             // 
             // lstDesi
             // 
-            this.lstDesi.BackColor = System.Drawing.Color.DimGray;
+            this.lstDesi.BackColor = System.Drawing.Color.DarkGray;
             this.lstDesi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstDesi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstDesi.ForeColor = System.Drawing.Color.DarkRed;
@@ -220,7 +220,7 @@
             // 
             // lstContinental
             // 
-            this.lstContinental.BackColor = System.Drawing.Color.DimGray;
+            this.lstContinental.BackColor = System.Drawing.Color.Gray;
             this.lstContinental.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstContinental.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstContinental.ForeColor = System.Drawing.Color.NavajoWhite;
@@ -363,7 +363,7 @@
             // 
             // lstfastprice
             // 
-            this.lstfastprice.BackColor = System.Drawing.Color.DimGray;
+            this.lstfastprice.BackColor = System.Drawing.Color.DarkGray;
             this.lstfastprice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstfastprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstfastprice.ForeColor = System.Drawing.Color.DarkRed;
@@ -379,7 +379,7 @@
             // 
             // lstdessertprice
             // 
-            this.lstdessertprice.BackColor = System.Drawing.Color.DimGray;
+            this.lstdessertprice.BackColor = System.Drawing.Color.DarkGray;
             this.lstdessertprice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstdessertprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstdessertprice.ForeColor = System.Drawing.Color.NavajoWhite;
@@ -394,7 +394,7 @@
             // 
             // lstDesiPrice
             // 
-            this.lstDesiPrice.BackColor = System.Drawing.Color.DimGray;
+            this.lstDesiPrice.BackColor = System.Drawing.Color.DarkGray;
             this.lstDesiPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstDesiPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstDesiPrice.ForeColor = System.Drawing.Color.DarkRed;
@@ -409,7 +409,7 @@
             // 
             // lstContPrice
             // 
-            this.lstContPrice.BackColor = System.Drawing.Color.DimGray;
+            this.lstContPrice.BackColor = System.Drawing.Color.DarkGray;
             this.lstContPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstContPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstContPrice.ForeColor = System.Drawing.Color.NavajoWhite;
@@ -424,7 +424,7 @@
             // 
             // lstjuicesprice
             // 
-            this.lstjuicesprice.BackColor = System.Drawing.Color.DimGray;
+            this.lstjuicesprice.BackColor = System.Drawing.Color.DarkGray;
             this.lstjuicesprice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstjuicesprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstjuicesprice.ForeColor = System.Drawing.Color.DarkRed;
@@ -432,7 +432,7 @@
             this.lstjuicesprice.ItemHeight = 20;
             this.lstjuicesprice.Items.AddRange(new object[] {
             " "});
-            this.lstjuicesprice.Location = new System.Drawing.Point(384, 336);
+            this.lstjuicesprice.Location = new System.Drawing.Point(384, 333);
             this.lstjuicesprice.Name = "lstjuicesprice";
             this.lstjuicesprice.Size = new System.Drawing.Size(64, 202);
             this.lstjuicesprice.TabIndex = 28;
@@ -517,7 +517,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1081, 547);
             this.Controls.Add(this.bunifuLabel13);
             this.Controls.Add(this.bunifuLabel12);

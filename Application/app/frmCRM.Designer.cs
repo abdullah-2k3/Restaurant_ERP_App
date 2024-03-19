@@ -37,8 +37,10 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.customerFlowChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.circularBar = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.PnlChart = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -58,6 +60,7 @@
             this.btnLoyalty = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnCustomers = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.customerFlowChart)).BeginInit();
             this.PnlChart.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -71,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.SuspendLayout();
             // 
             // customerFlowChart
@@ -90,54 +94,17 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.customerFlowChart.Series.Add(series1);
-            this.customerFlowChart.Size = new System.Drawing.Size(392, 205);
+            this.customerFlowChart.Size = new System.Drawing.Size(432, 236);
             this.customerFlowChart.TabIndex = 8;
             this.customerFlowChart.Text = "CustomerFlow";
-            this.customerFlowChart.Click += new System.EventHandler(this.customerFlow_Click);
-            // 
-            // circularBar
-            // 
-            this.circularBar.Animated = false;
-            this.circularBar.AnimationInterval = 1;
-            this.circularBar.AnimationSpeed = 1;
-            this.circularBar.BackColor = System.Drawing.Color.Transparent;
-            this.circularBar.CircleMargin = 10;
-            this.circularBar.Font = new System.Drawing.Font("Nirmala UI", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.circularBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularBar.IsPercentage = false;
-            this.circularBar.LineProgressThickness = 10;
-            this.circularBar.LineThickness = 10;
-            this.circularBar.Location = new System.Drawing.Point(185, 293);
-            this.circularBar.Name = "circularBar";
-            this.circularBar.ProgressAnimationSpeed = 200;
-            this.circularBar.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.circularBar.ProgressColor = System.Drawing.Color.Crimson;
-            this.circularBar.ProgressColor2 = System.Drawing.Color.Crimson;
-            this.circularBar.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.circularBar.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
-            this.circularBar.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.circularBar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.circularBar.Size = new System.Drawing.Size(187, 187);
-            this.circularBar.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularBar.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
-            this.circularBar.SubScriptText = "";
-            this.circularBar.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularBar.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
-            this.circularBar.SuperScriptText = "";
-            this.circularBar.TabIndex = 16;
-            this.circularBar.Text = "30";
-            this.circularBar.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.circularBar.Value = 30;
-            this.circularBar.ValueByTransition = 30;
-            this.circularBar.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             // 
             // PnlChart
             // 
             this.PnlChart.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnlChart.Controls.Add(this.customerFlowChart);
-            this.PnlChart.Location = new System.Drawing.Point(541, 304);
+            this.PnlChart.Location = new System.Drawing.Point(532, 289);
             this.PnlChart.Name = "PnlChart";
-            this.PnlChart.Size = new System.Drawing.Size(396, 209);
+            this.PnlChart.Size = new System.Drawing.Size(436, 240);
             this.PnlChart.TabIndex = 17;
             // 
             // panel3
@@ -190,11 +157,11 @@
             this.lblProgress.BackColor = System.Drawing.Color.Transparent;
             this.lblProgress.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblProgress.Location = new System.Drawing.Point(181, 501);
+            this.lblProgress.Location = new System.Drawing.Point(103, 508);
             this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(160, 21);
+            this.lblProgress.Size = new System.Drawing.Size(190, 21);
             this.lblProgress.TabIndex = 18;
-            this.lblProgress.Text = "Satisfied Customers";
+            this.lblProgress.Text = "Membership Customers";
             // 
             // errorProvider1
             // 
@@ -229,7 +196,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -613,12 +579,30 @@
             this.btnCustomers.UseDefaultRadiusAndThickness = true;
             this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
+            // chart
+            // 
+            this.chart.BackColor = System.Drawing.Color.MintCream;
+            chartArea2.Name = "ChartArea1";
+            this.chart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart.Legends.Add(legend2);
+            this.chart.Location = new System.Drawing.Point(107, 289);
+            this.chart.Name = "chart";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart.Series.Add(series2);
+            this.chart.Size = new System.Drawing.Size(247, 205);
+            this.chart.TabIndex = 38;
+            this.chart.Text = "chart";
+            // 
             // frmCRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1081, 547);
+            this.Controls.Add(this.chart);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnVisits);
             this.Controls.Add(this.btnFeedback);
@@ -628,7 +612,6 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.PnlChart);
-            this.Controls.Add(this.circularBar);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -648,6 +631,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -657,7 +641,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.DataVisualization.Charting.Chart customerFlowChart;
-        private Bunifu.UI.WinForms.BunifuCircleProgress circularBar;
         private System.Windows.Forms.Panel PnlChart;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
@@ -675,5 +658,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart;
     }
 }

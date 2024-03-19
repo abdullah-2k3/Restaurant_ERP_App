@@ -42,10 +42,10 @@
             // 
             this.btnDelCustomer.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnDelCustomer.Location = new System.Drawing.Point(519, 560);
-            this.btnDelCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelCustomer.Location = new System.Drawing.Point(389, 455);
+            this.btnDelCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelCustomer.Name = "btnDelCustomer";
-            this.btnDelCustomer.Size = new System.Drawing.Size(173, 36);
+            this.btnDelCustomer.Size = new System.Drawing.Size(130, 29);
             this.btnDelCustomer.TabIndex = 28;
             this.btnDelCustomer.Text = "Delete Feedback";
             this.btnDelCustomer.UseVisualStyleBackColor = true;
@@ -55,10 +55,10 @@
             // 
             this.btnAddFeedback.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFeedback.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAddFeedback.Location = new System.Drawing.Point(307, 560);
-            this.btnAddFeedback.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddFeedback.Location = new System.Drawing.Point(230, 455);
+            this.btnAddFeedback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddFeedback.Name = "btnAddFeedback";
-            this.btnAddFeedback.Size = new System.Drawing.Size(157, 36);
+            this.btnAddFeedback.Size = new System.Drawing.Size(118, 29);
             this.btnAddFeedback.TabIndex = 27;
             this.btnAddFeedback.Text = "New Feedback";
             this.btnAddFeedback.UseVisualStyleBackColor = true;
@@ -67,12 +67,12 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(88, 90);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView2.Location = new System.Drawing.Point(66, 73);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(604, 423);
+            this.dataGridView2.Size = new System.Drawing.Size(488, 344);
             this.dataGridView2.TabIndex = 26;
             // 
             // label4
@@ -80,7 +80,8 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Constantia", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label4.Location = new System.Drawing.Point(80, 25);
+            this.label4.Location = new System.Drawing.Point(60, 20);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 33);
             this.label4.TabIndex = 24;
@@ -90,27 +91,27 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(826, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(620, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(615, 673);
+            this.pictureBox1.Size = new System.Drawing.Size(461, 547);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
             // frmFeedback
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1441, 673);
+            this.ClientSize = new System.Drawing.Size(1081, 547);
             this.Controls.Add(this.btnDelCustomer);
             this.Controls.Add(this.btnAddFeedback);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmFeedback";
             this.Text = "frmFeedback";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
