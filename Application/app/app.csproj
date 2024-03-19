@@ -380,6 +380,18 @@
     <Compile Include="frmOrders.Designer.cs">
       <DependentUpon>frmOrders.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOrdersActive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdersActive.Designer.cs">
+      <DependentUpon>frmOrdersActive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdersCompleted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdersCompleted.Designer.cs">
+      <DependentUpon>frmOrdersCompleted.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSignup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -627,6 +639,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOrders.resx">
       <DependentUpon>frmOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdersActive.resx">
+      <DependentUpon>frmOrdersActive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdersCompleted.resx">
+      <DependentUpon>frmOrdersCompleted.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSignup.resx">
       <DependentUpon>frmSignup.cs</DependentUpon>

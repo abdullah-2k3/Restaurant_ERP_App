@@ -49,6 +49,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -536,5 +537,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbCategory;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

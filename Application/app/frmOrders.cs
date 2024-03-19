@@ -13,7 +13,9 @@ namespace app
     public partial class frmOrders : Form
     {
 
-        private frmAddOrder frm = new frmAddOrder();
+        private frmAddOrder add = new frmAddOrder();
+        private frmOrdersActive active = new frmOrdersActive();
+        private frmOrdersCompleted completed = new frmOrdersCompleted();
         public frmOrders()
         {
             InitializeComponent();
@@ -36,15 +38,19 @@ namespace app
             newForm.Show();
         }
 
-
         private void btnAddOrder_Click(object sender, EventArgs e)
         {
-          
+            LoadForm(add);
         }
 
-        private void btnAddOrder_Click_1(object sender, EventArgs e)
+        private void btnActive_Click(object sender, EventArgs e)
         {
-            LoadForm(frm);
+            LoadForm(active);
+        }
+
+        private void btnCompleted_Click(object sender, EventArgs e)
+        {
+            LoadForm(completed);
         }
     }
 }

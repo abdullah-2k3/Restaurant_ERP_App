@@ -838,3 +838,5 @@ C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Deb
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.csproj.CopyComplete
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.exe
 C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.pdb
+C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmOrdersCompleted.resources
+C:\Users\abdullah\Desktop\DB projects\Restaurant_ERP_App\Application\app\obj\Debug\app.frmOrdersActive.resources
