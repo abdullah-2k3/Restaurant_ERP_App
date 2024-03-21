@@ -23,6 +23,7 @@ namespace app
         public HR_Attendance()
         {
             InitializeComponent();
+            InitializeAttendance();
             dataGridView1.CellPainting += dataGridView1_CellPainting;
             showAttendance();
         }

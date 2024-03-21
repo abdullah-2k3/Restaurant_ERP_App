@@ -120,7 +120,8 @@
             this.btnRecruitment.IdleIconLeftImage = null;
             this.btnRecruitment.IdleIconRightImage = null;
             this.btnRecruitment.IndicateFocus = false;
-            this.btnRecruitment.Location = new System.Drawing.Point(378, 434);
+            this.btnRecruitment.Location = new System.Drawing.Point(567, 668);
+            this.btnRecruitment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRecruitment.Name = "btnRecruitment";
             this.btnRecruitment.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRecruitment.OnDisabledState.BorderRadius = 25;
@@ -154,7 +155,7 @@
             this.btnRecruitment.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnRecruitment.OnPressedState.IconLeftImage = null;
             this.btnRecruitment.OnPressedState.IconRightImage = null;
-            this.btnRecruitment.Size = new System.Drawing.Size(150, 39);
+            this.btnRecruitment.Size = new System.Drawing.Size(225, 60);
             this.btnRecruitment.TabIndex = 22;
             this.btnRecruitment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRecruitment.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -210,7 +211,8 @@
             this.btnPayroll.IdleIconLeftImage = null;
             this.btnPayroll.IdleIconRightImage = null;
             this.btnPayroll.IndicateFocus = false;
-            this.btnPayroll.Location = new System.Drawing.Point(378, 348);
+            this.btnPayroll.Location = new System.Drawing.Point(567, 535);
+            this.btnPayroll.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPayroll.Name = "btnPayroll";
             this.btnPayroll.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPayroll.OnDisabledState.BorderRadius = 25;
@@ -244,7 +246,7 @@
             this.btnPayroll.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnPayroll.OnPressedState.IconLeftImage = null;
             this.btnPayroll.OnPressedState.IconRightImage = null;
-            this.btnPayroll.Size = new System.Drawing.Size(150, 39);
+            this.btnPayroll.Size = new System.Drawing.Size(225, 60);
             this.btnPayroll.TabIndex = 23;
             this.btnPayroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnPayroll.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -300,7 +302,8 @@
             this.btnPerformance.IdleIconLeftImage = null;
             this.btnPerformance.IdleIconRightImage = null;
             this.btnPerformance.IndicateFocus = false;
-            this.btnPerformance.Location = new System.Drawing.Point(378, 263);
+            this.btnPerformance.Location = new System.Drawing.Point(567, 405);
+            this.btnPerformance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPerformance.Name = "btnPerformance";
             this.btnPerformance.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPerformance.OnDisabledState.BorderRadius = 25;
@@ -334,7 +337,7 @@
             this.btnPerformance.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnPerformance.OnPressedState.IconLeftImage = null;
             this.btnPerformance.OnPressedState.IconRightImage = null;
-            this.btnPerformance.Size = new System.Drawing.Size(150, 39);
+            this.btnPerformance.Size = new System.Drawing.Size(225, 60);
             this.btnPerformance.TabIndex = 24;
             this.btnPerformance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnPerformance.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -390,7 +393,8 @@
             this.btnAttendance.IdleIconLeftImage = null;
             this.btnAttendance.IdleIconRightImage = null;
             this.btnAttendance.IndicateFocus = false;
-            this.btnAttendance.Location = new System.Drawing.Point(91, 434);
+            this.btnAttendance.Location = new System.Drawing.Point(136, 668);
+            this.btnAttendance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAttendance.OnDisabledState.BorderRadius = 25;
@@ -424,7 +428,7 @@
             this.btnAttendance.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAttendance.OnPressedState.IconLeftImage = null;
             this.btnAttendance.OnPressedState.IconRightImage = null;
-            this.btnAttendance.Size = new System.Drawing.Size(150, 39);
+            this.btnAttendance.Size = new System.Drawing.Size(225, 60);
             this.btnAttendance.TabIndex = 25;
             this.btnAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAttendance.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -480,7 +484,8 @@
             this.btnTiimecards.IdleIconLeftImage = null;
             this.btnTiimecards.IdleIconRightImage = null;
             this.btnTiimecards.IndicateFocus = false;
-            this.btnTiimecards.Location = new System.Drawing.Point(91, 348);
+            this.btnTiimecards.Location = new System.Drawing.Point(136, 535);
+            this.btnTiimecards.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTiimecards.Name = "btnTiimecards";
             this.btnTiimecards.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnTiimecards.OnDisabledState.BorderRadius = 25;
@@ -514,7 +519,7 @@
             this.btnTiimecards.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnTiimecards.OnPressedState.IconLeftImage = null;
             this.btnTiimecards.OnPressedState.IconRightImage = null;
-            this.btnTiimecards.Size = new System.Drawing.Size(150, 39);
+            this.btnTiimecards.Size = new System.Drawing.Size(225, 60);
             this.btnTiimecards.TabIndex = 26;
             this.btnTiimecards.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTiimecards.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -527,9 +532,10 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(9, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(14, 17);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(27, 25);
+            this.pictureBox3.Size = new System.Drawing.Size(40, 38);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
@@ -542,15 +548,14 @@
             this.customerFlowChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.customerFlowChart.Legends.Add(legend1);
-            this.customerFlowChart.Location = new System.Drawing.Point(625, 253);
-            this.customerFlowChart.Margin = new System.Windows.Forms.Padding(2);
+            this.customerFlowChart.Location = new System.Drawing.Point(938, 389);
             this.customerFlowChart.Name = "customerFlowChart";
             this.customerFlowChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.customerFlowChart.Series.Add(series1);
-            this.customerFlowChart.Size = new System.Drawing.Size(347, 258);
+            this.customerFlowChart.Size = new System.Drawing.Size(520, 397);
             this.customerFlowChart.TabIndex = 30;
             this.customerFlowChart.Text = "CustomerFlow";
             // 
@@ -558,9 +563,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 17);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 25);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -571,20 +577,18 @@
             this.panel1.Controls.Add(this.lblManagerName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(64, 45);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(96, 69);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(215, 110);
+            this.panel1.Size = new System.Drawing.Size(322, 169);
             this.panel1.TabIndex = 31;
             // 
             // lblManagerName
             // 
             this.lblManagerName.AutoSize = true;
             this.lblManagerName.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagerName.Location = new System.Drawing.Point(60, 61);
-            this.lblManagerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblManagerName.Location = new System.Drawing.Point(90, 94);
             this.lblManagerName.Name = "lblManagerName";
-            this.lblManagerName.Size = new System.Drawing.Size(63, 25);
+            this.lblManagerName.Size = new System.Drawing.Size(78, 32);
             this.lblManagerName.TabIndex = 16;
             this.lblManagerName.Text = "Nigga";
             // 
@@ -592,10 +596,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(62, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 30);
+            this.label1.Size = new System.Drawing.Size(178, 37);
             this.label1.TabIndex = 14;
             this.label1.Text = "HR Manager";
             // 
@@ -605,20 +608,18 @@
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.lblEmployeeCount);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(376, 45);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(564, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(215, 110);
+            this.panel2.Size = new System.Drawing.Size(322, 169);
             this.panel2.TabIndex = 32;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(31, 33);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(46, 51);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(171, 30);
+            this.label8.Size = new System.Drawing.Size(226, 37);
             this.label8.TabIndex = 21;
             this.label8.Text = "Total Employees";
             // 
@@ -626,10 +627,9 @@
             // 
             this.lblEmployeeCount.AutoSize = true;
             this.lblEmployeeCount.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeCount.Location = new System.Drawing.Point(75, 61);
-            this.lblEmployeeCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmployeeCount.Location = new System.Drawing.Point(112, 94);
             this.lblEmployeeCount.Name = "lblEmployeeCount";
-            this.lblEmployeeCount.Size = new System.Drawing.Size(46, 30);
+            this.lblEmployeeCount.Size = new System.Drawing.Size(62, 37);
             this.lblEmployeeCount.TabIndex = 15;
             this.lblEmployeeCount.Text = "250";
             // 
@@ -638,20 +638,18 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(190)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.lblEvent);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(690, 45);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(1035, 69);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(215, 110);
+            this.panel3.Size = new System.Drawing.Size(322, 169);
             this.panel3.TabIndex = 32;
             // 
             // lblEvent
             // 
             this.lblEvent.AutoSize = true;
             this.lblEvent.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEvent.Location = new System.Drawing.Point(61, 61);
-            this.lblEvent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEvent.Location = new System.Drawing.Point(92, 94);
             this.lblEvent.Name = "lblEvent";
-            this.lblEvent.Size = new System.Drawing.Size(58, 25);
+            this.lblEvent.Size = new System.Drawing.Size(73, 32);
             this.lblEvent.TabIndex = 17;
             this.lblEvent.Text = "None";
             // 
@@ -659,10 +657,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(21, 33);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(32, 51);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(175, 30);
+            this.label7.Size = new System.Drawing.Size(228, 37);
             this.label7.TabIndex = 20;
             this.label7.Text = "Upcoming Event";
             // 
@@ -713,7 +710,8 @@
             this.btnEmployees.IdleIconLeftImage = null;
             this.btnEmployees.IdleIconRightImage = null;
             this.btnEmployees.IndicateFocus = false;
-            this.btnEmployees.Location = new System.Drawing.Point(91, 263);
+            this.btnEmployees.Location = new System.Drawing.Point(136, 405);
+            this.btnEmployees.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEmployees.Name = "btnEmployees";
             this.btnEmployees.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEmployees.OnDisabledState.BorderRadius = 25;
@@ -747,7 +745,7 @@
             this.btnEmployees.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEmployees.OnPressedState.IconLeftImage = null;
             this.btnEmployees.OnPressedState.IconRightImage = null;
-            this.btnEmployees.Size = new System.Drawing.Size(150, 39);
+            this.btnEmployees.Size = new System.Drawing.Size(225, 60);
             this.btnEmployees.TabIndex = 33;
             this.btnEmployees.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEmployees.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -803,7 +801,8 @@
             this.btnManager.IdleIconLeftImage = null;
             this.btnManager.IdleIconRightImage = null;
             this.btnManager.IndicateFocus = false;
-            this.btnManager.Location = new System.Drawing.Point(222, 190);
+            this.btnManager.Location = new System.Drawing.Point(333, 292);
+            this.btnManager.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnManager.Name = "btnManager";
             this.btnManager.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManager.OnDisabledState.BorderRadius = 25;
@@ -837,7 +836,7 @@
             this.btnManager.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnManager.OnPressedState.IconLeftImage = null;
             this.btnManager.OnPressedState.IconRightImage = null;
-            this.btnManager.Size = new System.Drawing.Size(69, 20);
+            this.btnManager.Size = new System.Drawing.Size(104, 31);
             this.btnManager.TabIndex = 34;
             this.btnManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnManager.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -848,19 +847,19 @@
             // 
             // tbManager
             // 
-            this.tbManager.Location = new System.Drawing.Point(95, 190);
+            this.tbManager.Location = new System.Drawing.Point(142, 292);
+            this.tbManager.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbManager.Name = "tbManager";
-            this.tbManager.Size = new System.Drawing.Size(100, 20);
+            this.tbManager.Size = new System.Drawing.Size(148, 26);
             this.tbManager.TabIndex = 35;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(78, 166);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(117, 255);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 21);
+            this.label2.Size = new System.Drawing.Size(172, 28);
             this.label2.TabIndex = 17;
             this.label2.Text = "Change Manager";
             // 
@@ -868,18 +867,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(721, 166);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(1082, 255);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 21);
+            this.label3.Size = new System.Drawing.Size(109, 28);
             this.label3.TabIndex = 36;
             this.label3.Text = "Add Event";
             // 
             // tbEvent
             // 
-            this.tbEvent.Location = new System.Drawing.Point(725, 190);
+            this.tbEvent.Location = new System.Drawing.Point(1088, 292);
+            this.tbEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbEvent.Name = "tbEvent";
-            this.tbEvent.Size = new System.Drawing.Size(100, 20);
+            this.tbEvent.Size = new System.Drawing.Size(148, 26);
             this.tbEvent.TabIndex = 38;
             // 
             // btnEvent
@@ -929,7 +928,8 @@
             this.btnEvent.IdleIconLeftImage = null;
             this.btnEvent.IdleIconRightImage = null;
             this.btnEvent.IndicateFocus = false;
-            this.btnEvent.Location = new System.Drawing.Point(856, 190);
+            this.btnEvent.Location = new System.Drawing.Point(1284, 292);
+            this.btnEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEvent.Name = "btnEvent";
             this.btnEvent.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEvent.OnDisabledState.BorderRadius = 25;
@@ -963,7 +963,7 @@
             this.btnEvent.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEvent.OnPressedState.IconLeftImage = null;
             this.btnEvent.OnPressedState.IconRightImage = null;
-            this.btnEvent.Size = new System.Drawing.Size(69, 20);
+            this.btnEvent.Size = new System.Drawing.Size(104, 31);
             this.btnEvent.TabIndex = 37;
             this.btnEvent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEvent.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -974,10 +974,10 @@
             // 
             // frmHR
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1081, 547);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1622, 842);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbEvent);
             this.Controls.Add(this.btnEvent);
@@ -995,7 +995,6 @@
             this.Controls.Add(this.btnPayroll);
             this.Controls.Add(this.btnRecruitment);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHR";
             this.Text = "frmHR";
             this.Load += new System.EventHandler(this.frmHR_Load);

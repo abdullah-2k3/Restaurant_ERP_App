@@ -63,8 +63,7 @@ namespace app
 
             customerFlowChart.Series.Add(series);
 
-            customerFlowChart.ChartAreas[0].AxisX.Title = "Days";
-            customerFlowChart.ChartAreas[0].AxisY.Title = "Average Customers";
+
             customerFlowChart.ChartAreas[0].AxisX.TitleFont = new Font("Arial", 10, FontStyle.Bold);
             customerFlowChart.ChartAreas[0].AxisY.TitleFont = new Font("Arial", 8, FontStyle.Bold);
 

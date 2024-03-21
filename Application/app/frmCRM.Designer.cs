@@ -87,14 +87,13 @@
             legend1.Name = "Legend1";
             this.customerFlowChart.Legends.Add(legend1);
             this.customerFlowChart.Location = new System.Drawing.Point(0, 0);
-            this.customerFlowChart.Margin = new System.Windows.Forms.Padding(2);
             this.customerFlowChart.Name = "customerFlowChart";
             this.customerFlowChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.customerFlowChart.Series.Add(series1);
-            this.customerFlowChart.Size = new System.Drawing.Size(432, 236);
+            this.customerFlowChart.Size = new System.Drawing.Size(648, 363);
             this.customerFlowChart.TabIndex = 8;
             this.customerFlowChart.Text = "CustomerFlow";
             // 
@@ -102,18 +101,18 @@
             // 
             this.PnlChart.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.PnlChart.Controls.Add(this.customerFlowChart);
-            this.PnlChart.Location = new System.Drawing.Point(532, 289);
+            this.PnlChart.Location = new System.Drawing.Point(798, 445);
+            this.PnlChart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PnlChart.Name = "PnlChart";
-            this.PnlChart.Size = new System.Drawing.Size(436, 240);
+            this.PnlChart.Size = new System.Drawing.Size(652, 367);
             this.PnlChart.TabIndex = 17;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(845, 83);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(1268, 128);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(171, 106);
+            this.panel3.Size = new System.Drawing.Size(256, 163);
             this.panel3.TabIndex = 6;
             // 
             // pictureBox3
@@ -122,9 +121,8 @@
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(171, 106);
+            this.pictureBox3.Size = new System.Drawing.Size(256, 163);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
@@ -132,10 +130,9 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.pictureBox2);
-            this.panel5.Location = new System.Drawing.Point(576, 83);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(864, 128);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(173, 106);
+            this.panel5.Size = new System.Drawing.Size(260, 163);
             this.panel5.TabIndex = 6;
             // 
             // pictureBox2
@@ -144,9 +141,8 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(173, 106);
+            this.pictureBox2.Size = new System.Drawing.Size(260, 163);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -157,9 +153,10 @@
             this.lblProgress.BackColor = System.Drawing.Color.Transparent;
             this.lblProgress.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProgress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblProgress.Location = new System.Drawing.Point(103, 508);
+            this.lblProgress.Location = new System.Drawing.Point(154, 782);
+            this.lblProgress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProgress.Name = "lblProgress";
-            this.lblProgress.Size = new System.Drawing.Size(190, 21);
+            this.lblProgress.Size = new System.Drawing.Size(235, 28);
             this.lblProgress.TabIndex = 18;
             this.lblProgress.Text = "Membership Customers";
             // 
@@ -178,10 +175,9 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(50, 83);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(75, 128);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(175, 106);
+            this.panel1.Size = new System.Drawing.Size(262, 163);
             this.panel1.TabIndex = 5;
             // 
             // pictureBox1
@@ -190,9 +186,8 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 106);
+            this.pictureBox1.Size = new System.Drawing.Size(262, 163);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -200,10 +195,9 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Location = new System.Drawing.Point(302, 83);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(453, 128);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(175, 106);
+            this.panel2.Size = new System.Drawing.Size(262, 163);
             this.panel2.TabIndex = 6;
             // 
             // pictureBox5
@@ -212,9 +206,8 @@
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(175, 106);
+            this.pictureBox5.Size = new System.Drawing.Size(262, 163);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
@@ -266,7 +259,8 @@
             this.btnVisits.IdleIconLeftImage = null;
             this.btnVisits.IdleIconRightImage = null;
             this.btnVisits.IndicateFocus = false;
-            this.btnVisits.Location = new System.Drawing.Point(317, 194);
+            this.btnVisits.Location = new System.Drawing.Point(476, 298);
+            this.btnVisits.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnVisits.Name = "btnVisits";
             this.btnVisits.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnVisits.OnDisabledState.BorderRadius = 25;
@@ -300,7 +294,7 @@
             this.btnVisits.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnVisits.OnPressedState.IconLeftImage = null;
             this.btnVisits.OnPressedState.IconRightImage = null;
-            this.btnVisits.Size = new System.Drawing.Size(150, 39);
+            this.btnVisits.Size = new System.Drawing.Size(225, 60);
             this.btnVisits.TabIndex = 37;
             this.btnVisits.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnVisits.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -356,7 +350,8 @@
             this.btnFeedback.IdleIconLeftImage = null;
             this.btnFeedback.IdleIconRightImage = null;
             this.btnFeedback.IndicateFocus = false;
-            this.btnFeedback.Location = new System.Drawing.Point(585, 194);
+            this.btnFeedback.Location = new System.Drawing.Point(878, 298);
+            this.btnFeedback.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFeedback.Name = "btnFeedback";
             this.btnFeedback.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnFeedback.OnDisabledState.BorderRadius = 25;
@@ -390,7 +385,7 @@
             this.btnFeedback.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnFeedback.OnPressedState.IconLeftImage = null;
             this.btnFeedback.OnPressedState.IconRightImage = null;
-            this.btnFeedback.Size = new System.Drawing.Size(150, 39);
+            this.btnFeedback.Size = new System.Drawing.Size(225, 60);
             this.btnFeedback.TabIndex = 36;
             this.btnFeedback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnFeedback.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -446,7 +441,8 @@
             this.btnLoyalty.IdleIconLeftImage = null;
             this.btnLoyalty.IdleIconRightImage = null;
             this.btnLoyalty.IndicateFocus = false;
-            this.btnLoyalty.Location = new System.Drawing.Point(855, 194);
+            this.btnLoyalty.Location = new System.Drawing.Point(1282, 298);
+            this.btnLoyalty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLoyalty.Name = "btnLoyalty";
             this.btnLoyalty.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoyalty.OnDisabledState.BorderRadius = 25;
@@ -480,7 +476,7 @@
             this.btnLoyalty.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLoyalty.OnPressedState.IconLeftImage = null;
             this.btnLoyalty.OnPressedState.IconRightImage = null;
-            this.btnLoyalty.Size = new System.Drawing.Size(150, 39);
+            this.btnLoyalty.Size = new System.Drawing.Size(225, 60);
             this.btnLoyalty.TabIndex = 35;
             this.btnLoyalty.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLoyalty.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -536,7 +532,8 @@
             this.btnCustomers.IdleIconLeftImage = null;
             this.btnCustomers.IdleIconRightImage = null;
             this.btnCustomers.IndicateFocus = false;
-            this.btnCustomers.Location = new System.Drawing.Point(63, 194);
+            this.btnCustomers.Location = new System.Drawing.Point(94, 298);
+            this.btnCustomers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCustomers.Name = "btnCustomers";
             this.btnCustomers.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCustomers.OnDisabledState.BorderRadius = 25;
@@ -570,7 +567,7 @@
             this.btnCustomers.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCustomers.OnPressedState.IconLeftImage = null;
             this.btnCustomers.OnPressedState.IconRightImage = null;
-            this.btnCustomers.Size = new System.Drawing.Size(150, 39);
+            this.btnCustomers.Size = new System.Drawing.Size(225, 60);
             this.btnCustomers.TabIndex = 34;
             this.btnCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCustomers.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -586,22 +583,23 @@
             this.chart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart.Legends.Add(legend2);
-            this.chart.Location = new System.Drawing.Point(107, 289);
+            this.chart.Location = new System.Drawing.Point(160, 445);
+            this.chart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chart.Name = "chart";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart.Series.Add(series2);
-            this.chart.Size = new System.Drawing.Size(247, 205);
+            this.chart.Size = new System.Drawing.Size(370, 315);
             this.chart.TabIndex = 38;
             this.chart.Text = "chart";
             // 
             // frmCRM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1081, 547);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1622, 842);
             this.Controls.Add(this.chart);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnVisits);
@@ -614,7 +612,6 @@
             this.Controls.Add(this.PnlChart);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCRM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCRM";

@@ -16,5 +16,32 @@ namespace app
         {
             InitializeComponent();
         }
+
+        private void btnEmployees_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            Table_tbl frmFb = new Table_tbl() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmFb.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmFb);
+            frmFb.Show();
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            Reservation_tbl frmFb = new Reservation_tbl() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmFb.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmFb);
+            frmFb.Show();
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            Status_tbl frmFb = new Status_tbl() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            frmFb.FormBorderStyle = FormBorderStyle.None;
+            this.Controls.Add(frmFb);
+            frmFb.Show();
+        }
     }
 }
