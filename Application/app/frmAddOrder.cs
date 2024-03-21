@@ -20,6 +20,8 @@ namespace app
         string connectionString = "Data Source = Menu.db; Version = 3";
         string connectionCustomer = "Data Source = Customer.db; Version = 3";
         private double totalprice = 0;
+        private string items = "";
+
         public frmAddOrder()
         {
             InitializeComponent();
@@ -98,11 +100,11 @@ namespace app
             con.Open();
 
             string c_id = tbCustomerID.Text;
-            string items = cbItems.Text;
+            string itemName = cbItems.Text;
             int quantity = int.Parse(tbQuantity.Text);
             DateTime selectedDate = datePicker.Value;
             string date = selectedDate.ToString("dd-MM-yyyy");
-            double amount = getOrderAmount(items, quantity);
+            double amount = getOrderAmount(itemName, quantity);
 
             lblPrice.Text = amount.ToString();
 
@@ -115,7 +117,7 @@ namespace app
                 {
                     cmd.Parameters.AddWithValue("@c_id", c_id);
                     cmd.Parameters.AddWithValue("@items", items);
-                    cmd.Parameters.AddWithValue("@amount", amount);
+                    cmd.Parameters.AddWithValue("@amount", totalprice);
                     cmd.Parameters.AddWithValue("@date", date);
 
 
@@ -201,6 +203,8 @@ namespace app
 
                         // Add the item information to the ListBox
                         listBox.Items.Add(itemInfo);
+                        items += itemName;
+                        items += " ";
 
                         lblPrice.Text = totalprice.ToString();
 

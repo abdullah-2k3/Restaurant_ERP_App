@@ -46,7 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblOrders = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -74,7 +74,7 @@
             // 
             // chartRevenue
             // 
-            this.chartRevenue.BackColor = System.Drawing.Color.PapayaWhip;
+            this.chartRevenue.BackColor = System.Drawing.Color.LightGray;
             this.chartRevenue.BorderlineColor = System.Drawing.Color.LightGray;
             chartArea1.Name = "ChartArea1";
             this.chartRevenue.ChartAreas.Add(chartArea1);
@@ -82,7 +82,7 @@
             legend1.Name = "Legend1";
             this.chartRevenue.Legends.Add(legend1);
             this.chartRevenue.Location = new System.Drawing.Point(0, 0);
-            this.chartRevenue.Margin = new System.Windows.Forms.Padding(2);
+            this.chartRevenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartRevenue.Name = "chartRevenue";
             this.chartRevenue.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series1.ChartArea = "ChartArea1";
@@ -95,16 +95,16 @@
             // 
             // chartMenu
             // 
-            this.chartMenu.BackColor = System.Drawing.Color.Linen;
+            this.chartMenu.BackColor = System.Drawing.Color.LightGray;
             chartArea2.Name = "ChartArea1";
             this.chartMenu.ChartAreas.Add(chartArea2);
             this.chartMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             legend2.Name = "Legend1";
             this.chartMenu.Legends.Add(legend2);
             this.chartMenu.Location = new System.Drawing.Point(0, 0);
-            this.chartMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.chartMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chartMenu.Name = "chartMenu";
-            this.chartMenu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SemiTransparent;
+            this.chartMenu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Grayscale;
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
@@ -116,12 +116,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.label4.Location = new System.Drawing.Point(350, 18);
+            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label4.Location = new System.Drawing.Point(237, 19);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(390, 45);
+            this.label4.Size = new System.Drawing.Size(579, 61);
             this.label4.TabIndex = 18;
             this.label4.Text = "Welcome to CuisineCraft";
             // 
@@ -134,8 +134,8 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.chartRevenue);
-            this.panel1.Location = new System.Drawing.Point(582, 238);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(587, 264);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 270);
             this.panel1.TabIndex = 30;
@@ -146,8 +146,8 @@
             this.panel2.Controls.Add(this.lblMenu);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(50, 84);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(55, 110);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(190, 106);
             this.panel2.TabIndex = 32;
@@ -191,27 +191,27 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.lblOrders);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(294, 84);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(312, 110);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(190, 106);
             this.panel3.TabIndex = 33;
             // 
-            // label2
+            // lblOrders
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(69, 51);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 25);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "4100";
+            this.lblOrders.AutoSize = true;
+            this.lblOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblOrders.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrders.ForeColor = System.Drawing.Color.White;
+            this.lblOrders.Location = new System.Drawing.Point(69, 51);
+            this.lblOrders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOrders.Name = "lblOrders";
+            this.lblOrders.Size = new System.Drawing.Size(52, 25);
+            this.lblOrders.TabIndex = 16;
+            this.lblOrders.Text = "4100";
             // 
             // label10
             // 
@@ -240,12 +240,12 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(250)))), ((int)(((byte)(125)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(90)))));
             this.panel4.Controls.Add(this.lblCustomers);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(540, 84);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(575, 110);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(193, 106);
             this.panel4.TabIndex = 33;
@@ -285,12 +285,12 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(250)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Location = new System.Drawing.Point(790, 84);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(841, 110);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(190, 106);
             this.panel5.TabIndex = 33;
@@ -332,8 +332,8 @@
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel6.Controls.Add(this.chartMenu);
-            this.panel6.Location = new System.Drawing.Point(63, 240);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Location = new System.Drawing.Point(68, 266);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(434, 270);
             this.panel6.TabIndex = 31;
@@ -342,7 +342,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1081, 547);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
@@ -352,7 +352,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmHome";
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).EndInit();
@@ -383,7 +383,7 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblOrders;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblCustomers;

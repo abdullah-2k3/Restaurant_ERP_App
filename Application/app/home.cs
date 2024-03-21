@@ -26,6 +26,8 @@ namespace app
             lblMenu.Text = getItemCount(connectionstringMenu, query).ToString();
             query = "SELECT Count(*) FROM CustomerProfTbl";
             lblCustomers.Text = getItemCount(connectionstringCustomers, query).ToString();
+            query = "SELECT Count(*) FROM Orders";
+            lblOrders.Text = getItemCount(connectionstringCustomers, query).ToString();
         }
 
 
@@ -45,6 +47,8 @@ namespace app
             }
             return count;
         }
+
+
 
         private void InitializeMenuChart()
         {

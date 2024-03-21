@@ -17,6 +17,13 @@ namespace app
 
         private string ConnectionString = "Data Source=HR.db;Version=3;";
 
+        private HR_Employees employees = new HR_Employees();
+        private HR_Attendance attendance = new HR_Attendance();
+        private HR_PayJournal journal = new HR_PayJournal();
+        private HR_Performance performance = new HR_Performance();
+        private HR_Recruitment recruitment = new HR_Recruitment();
+        private HR_Timecards timecards = new HR_Timecards();
+
         public frmHR()
         {
             InitializeComponent();
@@ -63,8 +70,7 @@ namespace app
 
             customerFlowChart.Series.Add(series);
 
-            customerFlowChart.ChartAreas[0].AxisX.Title = "Days";
-            customerFlowChart.ChartAreas[0].AxisY.Title = "Average Customers";
+
             customerFlowChart.ChartAreas[0].AxisX.TitleFont = new Font("Arial", 10, FontStyle.Bold);
             customerFlowChart.ChartAreas[0].AxisY.TitleFont = new Font("Arial", 8, FontStyle.Bold);
 
@@ -91,31 +97,7 @@ namespace app
             newForm.Show();
         }
 
-       
-        private void btnPerformance_Click(object sender, EventArgs e)
-        {
-            LoadForm(new HR_Performance());
-        }
-
-        private void btnTiimecards_Click(object sender, EventArgs e)
-        {
-            LoadForm(new HR_Timecards());
-        }
-
-        private void btnPayroll_Click(object sender, EventArgs e)
-        {
-            LoadForm(new HR_PayJournal());
-        }
-
-        private void btnAttendance_Click(object sender, EventArgs e)
-        {
-            LoadForm(new HR_Attendance());
-        }
-
-        private void btnRecruitment_Click(object sender, EventArgs e)
-        {
-            LoadForm(new HR_Recruitment());
-        }
+      
 
         private int getEmployees()
         {
@@ -152,10 +134,6 @@ namespace app
             return manager;
         }
 
-        private void btnEmployees_Click_1(object sender, EventArgs e)
-        {
-            LoadForm(new HR_Employees());
-        }
 
         private void btnManager_Click(object sender, EventArgs e)
         {
@@ -178,6 +156,36 @@ namespace app
         private void frmHR_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEmp_Click(object sender, EventArgs e)
+        {
+            LoadForm(employees);
+        }
+
+        private void btnTimecards_Click(object sender, EventArgs e)
+        {
+            LoadForm(timecards);
+        }
+
+        private void btnAttendance_Click_1(object sender, EventArgs e)
+        {
+            LoadForm(attendance);
+        }
+
+        private void btnPerformance_Click(object sender, EventArgs e)
+        {
+            LoadForm(performance);
+        }
+
+        private void btnPayroll_Click(object sender, EventArgs e)
+        {
+            LoadForm(journal);
+        }
+
+        private void btnRecruitments_Click(object sender, EventArgs e)
+        {
+            LoadForm(recruitment);
         }
     }
 }

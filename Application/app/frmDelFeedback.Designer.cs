@@ -38,9 +38,10 @@
             // 
             this.btnAddExit.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddExit.ForeColor = System.Drawing.Color.Black;
-            this.btnAddExit.Location = new System.Drawing.Point(322, 246);
+            this.btnAddExit.Location = new System.Drawing.Point(242, 200);
+            this.btnAddExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddExit.Name = "btnAddExit";
-            this.btnAddExit.Size = new System.Drawing.Size(157, 36);
+            this.btnAddExit.Size = new System.Drawing.Size(118, 29);
             this.btnAddExit.TabIndex = 33;
             this.btnAddExit.Text = "Cancel";
             this.btnAddExit.UseVisualStyleBackColor = true;
@@ -50,9 +51,10 @@
             // 
             this.btnDelCustomer.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelCustomer.ForeColor = System.Drawing.Color.Red;
-            this.btnDelCustomer.Location = new System.Drawing.Point(120, 246);
+            this.btnDelCustomer.Location = new System.Drawing.Point(90, 200);
+            this.btnDelCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelCustomer.Name = "btnDelCustomer";
-            this.btnDelCustomer.Size = new System.Drawing.Size(157, 36);
+            this.btnDelCustomer.Size = new System.Drawing.Size(118, 29);
             this.btnDelCustomer.TabIndex = 32;
             this.btnDelCustomer.Text = "Delete";
             this.btnDelCustomer.UseVisualStyleBackColor = true;
@@ -60,17 +62,19 @@
             // 
             // tbID
             // 
-            this.tbID.Location = new System.Drawing.Point(193, 174);
+            this.tbID.Location = new System.Drawing.Point(145, 141);
+            this.tbID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbID.Name = "tbID";
-            this.tbID.Size = new System.Drawing.Size(202, 22);
+            this.tbID.Size = new System.Drawing.Size(152, 20);
             this.tbID.TabIndex = 31;
             // 
             // lblDelCust
             // 
             this.lblDelCust.AutoSize = true;
             this.lblDelCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDelCust.ForeColor = System.Drawing.Color.Red;
-            this.lblDelCust.Location = new System.Drawing.Point(185, 107);
+            this.lblDelCust.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblDelCust.Location = new System.Drawing.Point(126, 87);
+            this.lblDelCust.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDelCust.Name = "lblDelCust";
             this.lblDelCust.Size = new System.Drawing.Size(210, 26);
             this.lblDelCust.TabIndex = 30;
@@ -78,15 +82,16 @@
             // 
             // frmDelFeedback
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(616, 406);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(462, 330);
             this.Controls.Add(this.btnAddExit);
             this.Controls.Add(this.btnDelCustomer);
             this.Controls.Add(this.tbID);
             this.Controls.Add(this.lblDelCust);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmDelFeedback";
             this.Text = "frmDelFeedback";
             this.ResumeLayout(false);

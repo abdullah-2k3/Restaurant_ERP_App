@@ -62,7 +62,7 @@
             this.btnAddExit.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.btnAddExit.Location = new System.Drawing.Point(319, 298);
-            this.btnAddExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddExit.Name = "btnAddExit";
             this.btnAddExit.Size = new System.Drawing.Size(118, 29);
             this.btnAddExit.TabIndex = 8;
@@ -75,7 +75,7 @@
             this.btnAddCustomer.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnAddCustomer.Location = new System.Drawing.Point(159, 298);
-            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(118, 29);
             this.btnAddCustomer.TabIndex = 7;
@@ -141,7 +141,7 @@
             // tbmembership
             // 
             this.tbmembership.Location = new System.Drawing.Point(82, 258);
-            this.tbmembership.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbmembership.Margin = new System.Windows.Forms.Padding(2);
             this.tbmembership.Name = "tbmembership";
             this.tbmembership.Size = new System.Drawing.Size(158, 20);
             this.tbmembership.TabIndex = 6;
@@ -149,7 +149,7 @@
             // tbName
             // 
             this.tbName.Location = new System.Drawing.Point(286, 111);
-            this.tbName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbName.Margin = new System.Windows.Forms.Padding(2);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(76, 20);
             this.tbName.TabIndex = 2;
@@ -157,7 +157,7 @@
             // tbVisits
             // 
             this.tbVisits.Location = new System.Drawing.Point(472, 111);
-            this.tbVisits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbVisits.Margin = new System.Windows.Forms.Padding(2);
             this.tbVisits.Name = "tbVisits";
             this.tbVisits.Size = new System.Drawing.Size(76, 20);
             this.tbVisits.TabIndex = 3;
@@ -165,7 +165,7 @@
             // tbID
             // 
             this.tbID.Location = new System.Drawing.Point(82, 111);
-            this.tbID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbID.Margin = new System.Windows.Forms.Padding(2);
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(76, 20);
             this.tbID.TabIndex = 1;
@@ -173,7 +173,7 @@
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(82, 182);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(153, 20);
             this.tbEmail.TabIndex = 4;
@@ -200,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
@@ -217,7 +217,7 @@
             this.Controls.Add(this.tbmembership);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.tbVisits);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAddLoyalty";
             this.Text = "frmAddLoyalty";
             this.ResumeLayout(false);

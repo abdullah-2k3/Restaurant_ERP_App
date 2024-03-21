@@ -54,11 +54,11 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 63);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(650, 319);
+            this.dataGridView1.Size = new System.Drawing.Size(650, 404);
             this.dataGridView1.TabIndex = 20;
             // 
             // btnAddCustomer
@@ -66,8 +66,8 @@
             this.btnAddCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnAddCustomer.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAddCustomer.Location = new System.Drawing.Point(248, 399);
-            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddCustomer.Location = new System.Drawing.Point(286, 484);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddCustomer.Name = "btnAddCustomer";
             this.btnAddCustomer.Size = new System.Drawing.Size(130, 32);
             this.btnAddCustomer.TabIndex = 21;
@@ -80,8 +80,8 @@
             this.btnDelCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnDelCustomer.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelCustomer.ForeColor = System.Drawing.Color.Red;
-            this.btnDelCustomer.Location = new System.Drawing.Point(411, 399);
-            this.btnDelCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelCustomer.Location = new System.Drawing.Point(485, 484);
+            this.btnDelCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelCustomer.Name = "btnDelCustomer";
             this.btnDelCustomer.Size = new System.Drawing.Size(130, 32);
             this.btnDelCustomer.TabIndex = 22;
@@ -94,7 +94,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(703, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(378, 547);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1081, 547);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnDelCustomer);
@@ -113,7 +113,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblLoyalty);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLoyalty";
             this.Text = "frmLoyalty";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

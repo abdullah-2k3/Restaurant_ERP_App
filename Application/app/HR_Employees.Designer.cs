@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HR_Employees));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAddEmp = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -61,7 +61,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(35, 9);
+            this.label1.Location = new System.Drawing.Point(26, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(288, 45);
             this.label1.TabIndex = 0;
@@ -70,10 +71,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(403, 93);
+            this.dataGridView1.Location = new System.Drawing.Point(302, 76);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1013, 457);
+            this.dataGridView1.Size = new System.Drawing.Size(760, 371);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnAddEmp
@@ -95,11 +97,11 @@
             this.btnAddEmp.ColorContrastOnClick = 45;
             this.btnAddEmp.ColorContrastOnHover = 45;
             this.btnAddEmp.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnAddEmp.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnAddEmp.CustomizableEdges = borderEdges1;
             this.btnAddEmp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddEmp.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddEmp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -123,8 +125,7 @@
             this.btnAddEmp.IdleIconLeftImage = null;
             this.btnAddEmp.IdleIconRightImage = null;
             this.btnAddEmp.IndicateFocus = false;
-            this.btnAddEmp.Location = new System.Drawing.Point(511, 582);
-            this.btnAddEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddEmp.Location = new System.Drawing.Point(383, 473);
             this.btnAddEmp.Name = "btnAddEmp";
             this.btnAddEmp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddEmp.OnDisabledState.BorderRadius = 25;
@@ -158,7 +159,7 @@
             this.btnAddEmp.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnAddEmp.OnPressedState.IconLeftImage = null;
             this.btnAddEmp.OnPressedState.IconRightImage = null;
-            this.btnAddEmp.Size = new System.Drawing.Size(200, 48);
+            this.btnAddEmp.Size = new System.Drawing.Size(150, 39);
             this.btnAddEmp.TabIndex = 9;
             this.btnAddEmp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddEmp.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -186,11 +187,11 @@
             this.btnDelEmp.ColorContrastOnClick = 45;
             this.btnDelEmp.ColorContrastOnHover = 45;
             this.btnDelEmp.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnDelEmp.CustomizableEdges = borderEdges8;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnDelEmp.CustomizableEdges = borderEdges2;
             this.btnDelEmp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDelEmp.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDelEmp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -214,8 +215,7 @@
             this.btnDelEmp.IdleIconLeftImage = null;
             this.btnDelEmp.IdleIconRightImage = null;
             this.btnDelEmp.IndicateFocus = false;
-            this.btnDelEmp.Location = new System.Drawing.Point(1038, 582);
-            this.btnDelEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelEmp.Location = new System.Drawing.Point(778, 473);
             this.btnDelEmp.Name = "btnDelEmp";
             this.btnDelEmp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDelEmp.OnDisabledState.BorderRadius = 25;
@@ -249,7 +249,7 @@
             this.btnDelEmp.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnDelEmp.OnPressedState.IconLeftImage = null;
             this.btnDelEmp.OnPressedState.IconRightImage = null;
-            this.btnDelEmp.Size = new System.Drawing.Size(200, 48);
+            this.btnDelEmp.Size = new System.Drawing.Size(150, 39);
             this.btnDelEmp.TabIndex = 11;
             this.btnDelEmp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelEmp.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -277,11 +277,11 @@
             this.btnUpdateEmp.ColorContrastOnClick = 45;
             this.btnUpdateEmp.ColorContrastOnHover = 45;
             this.btnUpdateEmp.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnUpdateEmp.CustomizableEdges = borderEdges9;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnUpdateEmp.CustomizableEdges = borderEdges3;
             this.btnUpdateEmp.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnUpdateEmp.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUpdateEmp.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -305,8 +305,7 @@
             this.btnUpdateEmp.IdleIconLeftImage = null;
             this.btnUpdateEmp.IdleIconRightImage = null;
             this.btnUpdateEmp.IndicateFocus = false;
-            this.btnUpdateEmp.Location = new System.Drawing.Point(770, 582);
-            this.btnUpdateEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdateEmp.Location = new System.Drawing.Point(578, 473);
             this.btnUpdateEmp.Name = "btnUpdateEmp";
             this.btnUpdateEmp.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUpdateEmp.OnDisabledState.BorderRadius = 25;
@@ -340,7 +339,7 @@
             this.btnUpdateEmp.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnUpdateEmp.OnPressedState.IconLeftImage = null;
             this.btnUpdateEmp.OnPressedState.IconRightImage = null;
-            this.btnUpdateEmp.Size = new System.Drawing.Size(211, 48);
+            this.btnUpdateEmp.Size = new System.Drawing.Size(158, 39);
             this.btnUpdateEmp.TabIndex = 10;
             this.btnUpdateEmp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdateEmp.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -351,9 +350,10 @@
             // 
             // tbID
             // 
-            this.tbID.Location = new System.Drawing.Point(236, 129);
+            this.tbID.Location = new System.Drawing.Point(177, 105);
+            this.tbID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbID.Name = "tbID";
-            this.tbID.Size = new System.Drawing.Size(108, 22);
+            this.tbID.Size = new System.Drawing.Size(82, 20);
             this.tbID.TabIndex = 1;
             // 
             // lblID
@@ -361,7 +361,8 @@
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblID.Location = new System.Drawing.Point(54, 130);
+            this.lblID.Location = new System.Drawing.Point(40, 106);
+            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(107, 21);
             this.lblID.TabIndex = 31;
@@ -369,9 +370,10 @@
             // 
             // tbAge
             // 
-            this.tbAge.Location = new System.Drawing.Point(236, 241);
+            this.tbAge.Location = new System.Drawing.Point(177, 196);
+            this.tbAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbAge.Name = "tbAge";
-            this.tbAge.Size = new System.Drawing.Size(108, 22);
+            this.tbAge.Size = new System.Drawing.Size(82, 20);
             this.tbAge.TabIndex = 3;
             // 
             // label2
@@ -379,7 +381,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(54, 242);
+            this.label2.Location = new System.Drawing.Point(40, 197);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 21);
             this.label2.TabIndex = 33;
@@ -387,9 +390,10 @@
             // 
             // tbStatus
             // 
-            this.tbStatus.Location = new System.Drawing.Point(236, 505);
+            this.tbStatus.Location = new System.Drawing.Point(177, 410);
+            this.tbStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbStatus.Name = "tbStatus";
-            this.tbStatus.Size = new System.Drawing.Size(108, 22);
+            this.tbStatus.Size = new System.Drawing.Size(82, 20);
             this.tbStatus.TabIndex = 8;
             // 
             // label3
@@ -397,7 +401,8 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(54, 505);
+            this.label3.Location = new System.Drawing.Point(40, 410);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 21);
             this.label3.TabIndex = 35;
@@ -405,9 +410,10 @@
             // 
             // tbSalary
             // 
-            this.tbSalary.Location = new System.Drawing.Point(236, 449);
+            this.tbSalary.Location = new System.Drawing.Point(177, 365);
+            this.tbSalary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbSalary.Name = "tbSalary";
-            this.tbSalary.Size = new System.Drawing.Size(108, 22);
+            this.tbSalary.Size = new System.Drawing.Size(82, 20);
             this.tbSalary.TabIndex = 7;
             // 
             // label4
@@ -415,7 +421,8 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label4.Location = new System.Drawing.Point(54, 450);
+            this.label4.Location = new System.Drawing.Point(40, 366);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 21);
             this.label4.TabIndex = 37;
@@ -423,9 +430,10 @@
             // 
             // tbDept
             // 
-            this.tbDept.Location = new System.Drawing.Point(236, 395);
+            this.tbDept.Location = new System.Drawing.Point(177, 321);
+            this.tbDept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbDept.Name = "tbDept";
-            this.tbDept.Size = new System.Drawing.Size(108, 22);
+            this.tbDept.Size = new System.Drawing.Size(82, 20);
             this.tbDept.TabIndex = 6;
             // 
             // label5
@@ -433,7 +441,8 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label5.Location = new System.Drawing.Point(54, 394);
+            this.label5.Location = new System.Drawing.Point(40, 320);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 21);
             this.label5.TabIndex = 39;
@@ -441,9 +450,10 @@
             // 
             // tbPhone
             // 
-            this.tbPhone.Location = new System.Drawing.Point(236, 341);
+            this.tbPhone.Location = new System.Drawing.Point(177, 277);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(108, 22);
+            this.tbPhone.Size = new System.Drawing.Size(82, 20);
             this.tbPhone.TabIndex = 5;
             // 
             // label6
@@ -451,7 +461,8 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label6.Location = new System.Drawing.Point(54, 341);
+            this.label6.Location = new System.Drawing.Point(40, 277);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 21);
             this.label6.TabIndex = 41;
@@ -459,9 +470,10 @@
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(236, 289);
+            this.tbEmail.Location = new System.Drawing.Point(177, 235);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(108, 22);
+            this.tbEmail.Size = new System.Drawing.Size(82, 20);
             this.tbEmail.TabIndex = 4;
             // 
             // label7
@@ -469,7 +481,8 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(54, 290);
+            this.label7.Location = new System.Drawing.Point(40, 236);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 21);
             this.label7.TabIndex = 43;
@@ -477,9 +490,10 @@
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(236, 190);
+            this.tbName.Location = new System.Drawing.Point(177, 154);
+            this.tbName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(108, 22);
+            this.tbName.Size = new System.Drawing.Size(82, 20);
             this.tbName.TabIndex = 2;
             // 
             // label8
@@ -487,7 +501,8 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(54, 189);
+            this.label8.Location = new System.Drawing.Point(40, 154);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 21);
             this.label8.TabIndex = 45;
@@ -495,10 +510,10 @@
             // 
             // HR_Employees
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1441, 673);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1081, 547);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.tbEmail);
@@ -521,7 +536,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HR_Employees";
             this.Text = "HR_Employees";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

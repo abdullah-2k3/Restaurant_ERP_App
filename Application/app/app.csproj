@@ -260,12 +260,6 @@
     <Compile Include="frmAbout.Designer.cs">
       <DependentUpon>frmAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddAttendance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAddAttendance.Designer.cs">
-      <DependentUpon>frmAddAttendance.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -506,6 +500,18 @@
     <Compile Include="IncomeStatementFR.Designer.cs">
       <DependentUpon>IncomeStatementFR.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inv_item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inv_item.Designer.cs">
+      <DependentUpon>Inv_item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LowStockInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LowStockInv.Designer.cs">
+      <DependentUpon>LowStockInv.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -532,6 +538,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation_tbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservation_tbl.Designer.cs">
+      <DependentUpon>Reservation_tbl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchCsuggestion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -544,11 +556,29 @@
     <Compile Include="StatementCashFlow.Designer.cs">
       <DependentUpon>StatementCashFlow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Status_tbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status_tbl.Designer.cs">
+      <DependentUpon>Status_tbl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SummaryFR.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SummaryFR.Designer.cs">
       <DependentUpon>SummaryFR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierInv.Designer.cs">
+      <DependentUpon>SupplierInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table_tbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table_tbl.Designer.cs">
+      <DependentUpon>Table_tbl.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateTransaction.cs">
       <SubType>Form</SubType>
@@ -703,6 +733,12 @@
     <EmbeddedResource Include="IncomeStatementFR.resx">
       <DependentUpon>IncomeStatementFR.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inv_item.resx">
+      <DependentUpon>Inv_item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LowStockInv.resx">
+      <DependentUpon>LowStockInv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
@@ -723,14 +759,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reservation_tbl.resx">
+      <DependentUpon>Reservation_tbl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SearchCsuggestion.resx">
       <DependentUpon>SearchCsuggestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StatementCashFlow.resx">
       <DependentUpon>StatementCashFlow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Status_tbl.resx">
+      <DependentUpon>Status_tbl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SummaryFR.resx">
       <DependentUpon>SummaryFR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierInv.resx">
+      <DependentUpon>SupplierInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table_tbl.resx">
+      <DependentUpon>Table_tbl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateTransaction.resx">
       <DependentUpon>UpdateTransaction.cs</DependentUpon>
