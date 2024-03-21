@@ -28,8 +28,8 @@ namespace app
         public main() 
         {
 
-            //frmLogin login = new frmLogin();
-            //login.ShowDialog();
+            frmLogin login = new frmLogin();
+            login.ShowDialog();
             
             InitializeComponent();
 
@@ -123,6 +123,13 @@ namespace app
         private void PnlFormLoader_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            main frm = new main();
+            frm.Show();
         }
     }
 }
