@@ -70,6 +70,11 @@ namespace app
         {
 
         }
+
+        private void FR_Payments_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
