@@ -1239,7 +1239,6 @@ C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.AddInvoiceForm.resources
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.AddPaymentForm.resources
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.AddTransaction.resources
-C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.Analytics.resources
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.AnnualFinancialReport.resources
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.DeleteInvoice.resources
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.DeletePayment.resources
@@ -1306,3 +1305,5 @@ C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.exe
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.pdb
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\bin\Debug\Table.db
+C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.INV_Analysis.resources
+C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\bin\Debug\inventory.db

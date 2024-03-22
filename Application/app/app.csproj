@@ -223,11 +223,11 @@
     <Compile Include="AddTransaction.designer.cs">
       <DependentUpon>AddTransaction.cs</DependentUpon>
     </Compile>
-    <Compile Include="Analytics.cs">
+    <Compile Include="INV_Analysis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Analytics.Designer.cs">
-      <DependentUpon>Analytics.cs</DependentUpon>
+    <Compile Include="INV_Analysis.Designer.cs">
+      <DependentUpon>INV_Analysis.cs</DependentUpon>
     </Compile>
     <Compile Include="AnnualFinancialReport.cs">
       <SubType>Form</SubType>
@@ -256,9 +256,11 @@
     </Compile>
     <Compile Include="frmAbout.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="frmAbout.Designer.cs">
       <DependentUpon>frmAbout.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="frmAddCustomer.cs">
       <SubType>Form</SubType>
@@ -595,8 +597,8 @@
     <EmbeddedResource Include="AddTransaction.resx">
       <DependentUpon>AddTransaction.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Analytics.resx">
-      <DependentUpon>Analytics.cs</DependentUpon>
+    <EmbeddedResource Include="INV_Analysis.resx">
+      <DependentUpon>INV_Analysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnnualFinancialReport.resx">
       <DependentUpon>AnnualFinancialReport.cs</DependentUpon>
@@ -612,6 +614,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddCustomer.resx">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
@@ -793,7 +796,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="HR.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="inventory.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Menu.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

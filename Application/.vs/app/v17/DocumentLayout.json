@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\frmtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\frmtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\pro\\current\\restaurant_erp_app\\application\\app\\frmtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\frmtables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\pro\\current\\restaurant_erp_app\\application\\app\\table_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\table_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\pro\\current\\restaurant_erp_app\\application\\app\\reservation_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\reservation_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\pro\\current\\restaurant_erp_app\\application\\app\\reservation_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\reservation_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\pro\\current\\restaurant_erp_app\\application\\app\\status_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\status_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\pro\\current\\restaurant_erp_app\\application\\app\\status_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\status_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|c:\\users\\shame\\desktop\\pro\\current\\restaurant_erp_app\\application\\app\\table_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A31980E-A0EC-425A-A904-858D34C3C8BD}|app\\app.csproj|solutionrelative:app\\table_tbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,106 +26,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmTables.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\frmTables.cs",
-              "RelativeDocumentMoniker": "app\\frmTables.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\frmTables.cs [Design]",
-              "RelativeToolTip": "app\\frmTables.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T07:50:46.413Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Table_tbl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Table_tbl.cs",
-              "RelativeDocumentMoniker": "app\\Table_tbl.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Table_tbl.cs [Design]",
-              "RelativeToolTip": "app\\Table_tbl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T07:45:37.594Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Status_tbl.cs",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Status_tbl.cs",
-              "RelativeDocumentMoniker": "app\\Status_tbl.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Status_tbl.cs",
-              "RelativeToolTip": "app\\Status_tbl.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAwwBoAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T07:40:15.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Status_tbl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Status_tbl.cs",
-              "RelativeDocumentMoniker": "app\\Status_tbl.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Status_tbl.cs [Design]",
-              "RelativeToolTip": "app\\Status_tbl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T07:40:11.88Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Reservation_tbl.cs",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Reservation_tbl.cs",
-              "RelativeDocumentMoniker": "app\\Reservation_tbl.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Reservation_tbl.cs",
-              "RelativeToolTip": "app\\Reservation_tbl.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T22:23:18.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Table_tbl.cs",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Table_tbl.cs",
-              "RelativeDocumentMoniker": "app\\Table_tbl.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Table_tbl.cs",
-              "RelativeToolTip": "app\\Table_tbl.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAQwB8AAABzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T22:10:29.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Reservation_tbl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Reservation_tbl.cs",
-              "RelativeDocumentMoniker": "app\\Reservation_tbl.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\Reservation_tbl.cs [Design]",
-              "RelativeToolTip": "app\\Reservation_tbl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T21:18:18.889Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmTables.cs",
-              "DocumentMoniker": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\frmTables.cs",
-              "RelativeDocumentMoniker": "app\\frmTables.cs",
-              "ToolTip": "C:\\Users\\shame\\Desktop\\Pro\\current\\Restaurant_ERP_App\\Application\\app\\frmTables.cs",
-              "RelativeToolTip": "app\\frmTables.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T05:42:11.142Z",
-              "EditorCaption": ""
             }
           ]
         }

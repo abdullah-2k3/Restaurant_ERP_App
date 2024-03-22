@@ -13586,4 +13586,15 @@
         znvmzeCCfIQM6rn8f1mv72M0jbJAAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="srcCode.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Unispace'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(205, 92, 92); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'MV Boli'; font-size: 14pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel1.Text" xml:space="preserve">
+    <value>We are a team of four friends who collaborated to create this app. Our journey together has been filled with 
+learning, creativity, and teamwork.  Each member brought unique skills and perspectives to the table,
+ allowing us to develop this app from start to finish.</value>
+  </data>
 </root>

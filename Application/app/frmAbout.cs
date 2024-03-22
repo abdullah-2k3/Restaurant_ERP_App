@@ -17,12 +17,13 @@ namespace app
         {
             InitializeComponent();
 
-            srcCode.Click += new EventHandler(srcCode_Click);
+            srcCode.Click += OpenWebsite;
+        }
 
-            //srcCode.Location = new System.Drawing.Point(50, 50); // Adjust the X and Y coordinates as needed
-
-            this.Controls.Add(srcCode);
-
+        private void OpenWebsite(object sender, EventArgs e)
+        {
+            string url = "https://github.com/abdullah-2k3/Restaurant_ERP_App"; 
+            Process.Start(url);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -37,7 +38,7 @@ namespace app
 
         private void srcCode_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/ahmddbilall/Resturent_ERP_Csharp");
+           
         }
     }
 }
