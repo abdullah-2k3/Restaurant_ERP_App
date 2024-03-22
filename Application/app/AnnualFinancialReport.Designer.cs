@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnnualFinancialReport));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.annualincome = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -201,7 +201,7 @@
             this.bunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel7.Font = new System.Drawing.Font("Roboto Slab Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel7.Location = new System.Drawing.Point(326, 224);
+            this.bunifuLabel7.Location = new System.Drawing.Point(260, 224);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(102, 26);
@@ -244,7 +244,7 @@
             this.options.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
             this.options.ItemHighLightForeColor = System.Drawing.Color.White;
             this.options.ItemTopMargin = 3;
-            this.options.Location = new System.Drawing.Point(450, 220);
+            this.options.Location = new System.Drawing.Point(384, 220);
             this.options.Name = "options";
             this.options.Size = new System.Drawing.Size(260, 32);
             this.options.TabIndex = 5;
@@ -359,11 +359,11 @@
             this.getbtn.ColorContrastOnClick = 45;
             this.getbtn.ColorContrastOnHover = 45;
             this.getbtn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.getbtn.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.getbtn.CustomizableEdges = borderEdges1;
             this.getbtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.getbtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.getbtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -387,7 +387,7 @@
             this.getbtn.IdleIconLeftImage = null;
             this.getbtn.IdleIconRightImage = null;
             this.getbtn.IndicateFocus = false;
-            this.getbtn.Location = new System.Drawing.Point(737, 217);
+            this.getbtn.Location = new System.Drawing.Point(671, 217);
             this.getbtn.Name = "getbtn";
             this.getbtn.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.getbtn.OnDisabledState.BorderRadius = 35;

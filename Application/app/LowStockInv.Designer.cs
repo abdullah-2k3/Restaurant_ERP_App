@@ -49,7 +49,7 @@
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(245, 80);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -59,6 +59,7 @@
             this.chart1.Size = new System.Drawing.Size(601, 366);
             this.chart1.TabIndex = 71;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // bunifuPictureBox1
             // 
@@ -100,7 +101,7 @@
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.bunifuPictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LowStockInv";
             this.Text = "LowStockInv";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();

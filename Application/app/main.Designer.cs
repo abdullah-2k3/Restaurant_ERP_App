@@ -101,7 +101,7 @@
             this.PnlTop.Margin = new System.Windows.Forms.Padding(0);
             this.PnlTop.Name = "PnlTop";
             this.PnlTop.ShowBorders = true;
-            this.PnlTop.Size = new System.Drawing.Size(1080, 110);
+            this.PnlTop.Size = new System.Drawing.Size(1080, 80);
             this.PnlTop.TabIndex = 4;
             // 
             // btnExit
@@ -123,7 +123,7 @@
             this.lblTitle2.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle2.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle2.ForeColor = System.Drawing.Color.White;
-            this.lblTitle2.Location = new System.Drawing.Point(38, 39);
+            this.lblTitle2.Location = new System.Drawing.Point(38, 22);
             this.lblTitle2.Name = "lblTitle2";
             this.lblTitle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.lblTitle2.Size = new System.Drawing.Size(87, 32);
@@ -138,10 +138,10 @@
             this.PnlFormLoader.BorderColor = System.Drawing.Color.Transparent;
             this.PnlFormLoader.BorderRadius = 3;
             this.PnlFormLoader.BorderThickness = 1;
-            this.PnlFormLoader.Location = new System.Drawing.Point(200, 103);
+            this.PnlFormLoader.Location = new System.Drawing.Point(200, 79);
             this.PnlFormLoader.Name = "PnlFormLoader";
             this.PnlFormLoader.ShowBorders = true;
-            this.PnlFormLoader.Size = new System.Drawing.Size(1081, 547);
+            this.PnlFormLoader.Size = new System.Drawing.Size(1081, 570);
             this.PnlFormLoader.TabIndex = 3;
             this.PnlFormLoader.Click += new System.EventHandler(this.PnlFormLoader_Click);
             // 

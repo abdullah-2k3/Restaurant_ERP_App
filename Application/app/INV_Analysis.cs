@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace app
 {
@@ -49,7 +50,10 @@ namespace app
                         {
                             string name = reader["name"].ToString();
                             int count = Convert.ToInt32(reader["count"]);
-
+                            if (chart2.Series.IndexOf("Items") == -1)
+                            {
+                                chart2.Series.Add("Items");
+                            }
                             chart2.Series["Items"].Points.AddXY(name, count);
                         }
                     }
@@ -83,11 +87,16 @@ namespace app
                             string category = reader["category"].ToString();
                             int count = Convert.ToInt32(reader["count"]);
 
+                            if (chart1.Series.IndexOf("Items") == -1)
+                            {
+                                chart1.Series.Add("Items");
+                            }
+
                             chart1.Series["Items"].Points.AddXY(category, count);
                         }
                     }
-                    chart1.Titles.Add("Items by Category");
 
+                    chart1.Titles.Add("Items by Category");
                     chart1.ChartAreas[0].AxisX.Title = "Category";
                     chart1.ChartAreas[0].AxisY.Title = "Count";
                 }
@@ -96,6 +105,14 @@ namespace app
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+
+
+
+        }
+
+        private void INV_Analysis_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

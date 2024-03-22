@@ -44,7 +44,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(176, 33);
+            this.label2.Location = new System.Drawing.Point(86, 33);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 26);
@@ -55,8 +55,8 @@
             // 
             this.btnExit.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.btnExit.Location = new System.Drawing.Point(318, 303);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Location = new System.Drawing.Point(227, 303);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(118, 29);
             this.btnExit.TabIndex = 5;
@@ -68,8 +68,8 @@
             // 
             this.btnAddFb.Font = new System.Drawing.Font("Constantia", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnAddFb.Location = new System.Drawing.Point(158, 303);
-            this.btnAddFb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddFb.Location = new System.Drawing.Point(67, 303);
+            this.btnAddFb.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddFb.Name = "btnAddFb";
             this.btnAddFb.Size = new System.Drawing.Size(118, 29);
             this.btnAddFb.TabIndex = 4;
@@ -81,7 +81,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(91, 221);
+            this.label7.Location = new System.Drawing.Point(47, 238);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 20);
@@ -92,7 +92,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(76, 85);
+            this.label6.Location = new System.Drawing.Point(47, 104);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 20);
@@ -103,7 +103,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(91, 150);
+            this.label3.Location = new System.Drawing.Point(47, 172);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 20);
@@ -112,24 +112,24 @@
             // 
             // tbPhone
             // 
-            this.tbPhone.Location = new System.Drawing.Point(80, 172);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPhone.Location = new System.Drawing.Point(174, 172);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(2);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(158, 20);
             this.tbPhone.TabIndex = 2;
             // 
             // tbId
             // 
-            this.tbId.Location = new System.Drawing.Point(80, 108);
-            this.tbId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbId.Location = new System.Drawing.Point(174, 106);
+            this.tbId.Margin = new System.Windows.Forms.Padding(2);
             this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(76, 20);
+            this.tbId.Size = new System.Drawing.Size(158, 20);
             this.tbId.TabIndex = 1;
             // 
             // tbFb
             // 
-            this.tbFb.Location = new System.Drawing.Point(80, 252);
-            this.tbFb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbFb.Location = new System.Drawing.Point(174, 237);
+            this.tbFb.Margin = new System.Windows.Forms.Padding(2);
             this.tbFb.Name = "tbFb";
             this.tbFb.Size = new System.Drawing.Size(158, 20);
             this.tbFb.TabIndex = 3;
@@ -139,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(420, 366);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAddFb);
@@ -149,7 +149,7 @@
             this.Controls.Add(this.tbPhone);
             this.Controls.Add(this.tbId);
             this.Controls.Add(this.tbFb);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAddFeedback";
             this.Text = "frmAddFeedback";
             this.ResumeLayout(false);

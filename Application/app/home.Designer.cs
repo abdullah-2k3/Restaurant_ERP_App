@@ -39,7 +39,6 @@
             this.chartRevenue = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartMenu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label4 = new System.Windows.Forms.Label();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMenu = new System.Windows.Forms.Label();
@@ -54,10 +53,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblRevenue = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartMenu)).BeginInit();
             this.panel1.SuspendLayout();
@@ -82,7 +82,7 @@
             legend1.Name = "Legend1";
             this.chartRevenue.Legends.Add(legend1);
             this.chartRevenue.Location = new System.Drawing.Point(0, 0);
-            this.chartRevenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartRevenue.Margin = new System.Windows.Forms.Padding(2);
             this.chartRevenue.Name = "chartRevenue";
             this.chartRevenue.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series1.ChartArea = "ChartArea1";
@@ -102,7 +102,7 @@
             legend2.Name = "Legend1";
             this.chartMenu.Legends.Add(legend2);
             this.chartMenu.Location = new System.Drawing.Point(0, 0);
-            this.chartMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartMenu.Margin = new System.Windows.Forms.Padding(2);
             this.chartMenu.Name = "chartMenu";
             this.chartMenu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Grayscale;
             series2.ChartArea = "ChartArea1";
@@ -125,17 +125,12 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Welcome to CuisineCraft";
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 35;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.chartRevenue);
             this.panel1.Location = new System.Drawing.Point(587, 264);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 270);
             this.panel1.TabIndex = 30;
@@ -147,7 +142,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(55, 110);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(190, 106);
             this.panel2.TabIndex = 32;
@@ -195,7 +190,7 @@
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(312, 110);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(190, 106);
             this.panel3.TabIndex = 33;
@@ -245,7 +240,7 @@
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Location = new System.Drawing.Point(575, 110);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(193, 106);
             this.panel4.TabIndex = 33;
@@ -286,25 +281,25 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.lblRevenue);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Location = new System.Drawing.Point(841, 110);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(190, 106);
             this.panel5.TabIndex = 33;
             // 
-            // label8
+            // lblRevenue
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(69, 58);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 25);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "6537010";
+            this.lblRevenue.AutoSize = true;
+            this.lblRevenue.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRevenue.Location = new System.Drawing.Point(69, 58);
+            this.lblRevenue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRevenue.Name = "lblRevenue";
+            this.lblRevenue.Size = new System.Drawing.Size(82, 25);
+            this.lblRevenue.TabIndex = 16;
+            this.lblRevenue.Text = "6537010";
             // 
             // label9
             // 
@@ -333,17 +328,22 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel6.Controls.Add(this.chartMenu);
             this.panel6.Location = new System.Drawing.Point(68, 266);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(434, 270);
             this.panel6.TabIndex = 31;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 35;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1081, 547);
+            this.ClientSize = new System.Drawing.Size(1081, 573);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -352,9 +352,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHome";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.frmHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartMenu)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -380,7 +381,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartRevenue;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartMenu;
         private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblOrders;
@@ -390,7 +390,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblRevenue;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel2;
@@ -399,5 +399,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

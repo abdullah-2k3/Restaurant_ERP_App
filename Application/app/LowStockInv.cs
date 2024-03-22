@@ -41,7 +41,10 @@ namespace app
                         {
                             string name = reader["name"].ToString();
                             int count = Convert.ToInt32(reader["count"]);
-
+                            if (chart1.Series.IndexOf("Items") == -1)
+                            {
+                                chart1.Series.Add("Items");
+                            }
                             chart1.Series["Items"].Points.AddXY(name, count);
                         }
                     }
@@ -69,6 +72,11 @@ namespace app
             frmFb.FormBorderStyle = FormBorderStyle.None;
             this.Controls.Add(frmFb);
             frmFb.Show();
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

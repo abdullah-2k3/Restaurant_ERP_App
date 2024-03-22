@@ -140,7 +140,7 @@
             // 
             // tbmembership
             // 
-            this.tbmembership.Location = new System.Drawing.Point(82, 258);
+            this.tbmembership.Location = new System.Drawing.Point(75, 258);
             this.tbmembership.Margin = new System.Windows.Forms.Padding(2);
             this.tbmembership.Name = "tbmembership";
             this.tbmembership.Size = new System.Drawing.Size(158, 20);
@@ -148,23 +148,23 @@
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(286, 111);
+            this.tbName.Location = new System.Drawing.Point(239, 111);
             this.tbName.Margin = new System.Windows.Forms.Padding(2);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(76, 20);
+            this.tbName.Size = new System.Drawing.Size(132, 20);
             this.tbName.TabIndex = 2;
             // 
             // tbVisits
             // 
-            this.tbVisits.Location = new System.Drawing.Point(472, 111);
+            this.tbVisits.Location = new System.Drawing.Point(426, 111);
             this.tbVisits.Margin = new System.Windows.Forms.Padding(2);
             this.tbVisits.Name = "tbVisits";
-            this.tbVisits.Size = new System.Drawing.Size(76, 20);
+            this.tbVisits.Size = new System.Drawing.Size(122, 20);
             this.tbVisits.TabIndex = 3;
             // 
             // tbID
             // 
-            this.tbID.Location = new System.Drawing.Point(82, 111);
+            this.tbID.Location = new System.Drawing.Point(74, 111);
             this.tbID.Margin = new System.Windows.Forms.Padding(2);
             this.tbID.Name = "tbID";
             this.tbID.Size = new System.Drawing.Size(76, 20);
@@ -172,7 +172,7 @@
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(82, 182);
+            this.tbEmail.Location = new System.Drawing.Point(75, 182);
             this.tbEmail.Margin = new System.Windows.Forms.Padding(2);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(153, 20);

@@ -1307,3 +1307,6 @@ C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\bin\Debug\Table.db
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\obj\Debug\app.INV_Analysis.resources
 C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\bin\Debug\inventory.db
+C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\bin\Debug\frmAbout.resx
+C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\bin\Debug\frmAbout.cs
+C:\Users\shame\Desktop\Pro\current\Restaurant_ERP_App\Application\app\bin\Debug\frmAbout.Designer.cs

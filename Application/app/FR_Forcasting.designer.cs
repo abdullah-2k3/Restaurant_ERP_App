@@ -57,6 +57,7 @@
             this.txtForecastPeriod = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtForecastResults = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +88,7 @@
             this.txtSalesData.IconRight = null;
             this.txtSalesData.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSalesData.Lines = new string[0];
-            this.txtSalesData.Location = new System.Drawing.Point(266, 119);
+            this.txtSalesData.Location = new System.Drawing.Point(266, 168);
             this.txtSalesData.MaxLength = 32767;
             this.txtSalesData.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtSalesData.Modified = false;
@@ -116,7 +117,7 @@
             this.txtSalesData.Padding = new System.Windows.Forms.Padding(3);
             this.txtSalesData.PasswordChar = '\0';
             this.txtSalesData.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtSalesData.PlaceholderText = "100 200 300 400 etc";
+            this.txtSalesData.PlaceholderText = "100 \r\n200 \r\n300 \r\n400 \r\netc";
             this.txtSalesData.ReadOnly = false;
             this.txtSalesData.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtSalesData.SelectedText = "";
@@ -130,7 +131,7 @@
             this.txtSalesData.TextMarginBottom = 0;
             this.txtSalesData.TextMarginLeft = 3;
             this.txtSalesData.TextMarginTop = 0;
-            this.txtSalesData.TextPlaceholder = "100 200 300 400 etc";
+            this.txtSalesData.TextPlaceholder = "100 \r\n200 \r\n300 \r\n400 \r\netc";
             this.txtSalesData.UseSystemPasswordChar = false;
             this.txtSalesData.WordWrap = true;
             // 
@@ -255,7 +256,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto Slab Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(83, 121);
+            this.label2.Location = new System.Drawing.Point(83, 170);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 22);
             this.label2.TabIndex = 14;
@@ -265,7 +266,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto Slab Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(456, 238);
+            this.label3.Location = new System.Drawing.Point(456, 287);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 22);
             this.label3.TabIndex = 16;
@@ -298,7 +299,7 @@
             this.txtNumPeriods.IconRight = null;
             this.txtNumPeriods.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNumPeriods.Lines = new string[0];
-            this.txtNumPeriods.Location = new System.Drawing.Point(266, 228);
+            this.txtNumPeriods.Location = new System.Drawing.Point(266, 277);
             this.txtNumPeriods.MaxLength = 32767;
             this.txtNumPeriods.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNumPeriods.Modified = false;
@@ -349,7 +350,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto Slab Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(30, 238);
+            this.label4.Location = new System.Drawing.Point(30, 287);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(221, 22);
             this.label4.TabIndex = 18;
@@ -382,7 +383,7 @@
             this.txtForecastPeriod.IconRight = null;
             this.txtForecastPeriod.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtForecastPeriod.Lines = new string[0];
-            this.txtForecastPeriod.Location = new System.Drawing.Point(597, 227);
+            this.txtForecastPeriod.Location = new System.Drawing.Point(597, 276);
             this.txtForecastPeriod.MaxLength = 32767;
             this.txtForecastPeriod.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtForecastPeriod.Modified = false;
@@ -456,7 +457,7 @@
             this.txtForecastResults.IconRight = null;
             this.txtForecastResults.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtForecastResults.Lines = new string[0];
-            this.txtForecastResults.Location = new System.Drawing.Point(819, 119);
+            this.txtForecastResults.Location = new System.Drawing.Point(819, 168);
             this.txtForecastResults.MaxLength = 32767;
             this.txtForecastResults.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtForecastResults.Modified = false;
@@ -507,11 +508,21 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto Slab Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(872, 94);
+            this.label5.Location = new System.Drawing.Point(872, 143);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 22);
             this.label5.TabIndex = 20;
             this.label5.Text = "Output";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(113, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(853, 31);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Get your Financial Forecast based on historical data using moving average";
             // 
             // FR_Forcasting
             // 
@@ -519,6 +530,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1058, 463);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtForecastResults);
             this.Controls.Add(this.label4);
@@ -553,5 +565,6 @@
         private Bunifu.UI.WinForms.BunifuTextBox txtForecastPeriod;
         private Bunifu.UI.WinForms.BunifuTextBox txtForecastResults;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
