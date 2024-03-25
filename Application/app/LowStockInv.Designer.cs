@@ -35,6 +35,7 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(245, 80);
+            this.chart1.Location = new System.Drawing.Point(279, 112);
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
@@ -56,7 +57,7 @@
             series1.Name = "Series1";
             series1.YValuesPerPoint = 4;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(601, 366);
+            this.chart1.Size = new System.Drawing.Size(570, 340);
             this.chart1.TabIndex = 71;
             this.chart1.Text = "chart1";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -91,12 +92,28 @@
             this.label1.TabIndex = 72;
             this.label1.Text = "Low Stocks";
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Unispace", 15.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(345, 88);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(377, 25);
+            this.bunifuLabel1.TabIndex = 73;
+            this.bunifuLabel1.Text = "Items with Count Less Than 15";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // LowStockInv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1058, 463);
+            this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.bunifuPictureBox1);
@@ -116,5 +133,6 @@
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label label1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
     }
 }

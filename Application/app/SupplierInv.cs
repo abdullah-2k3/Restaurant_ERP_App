@@ -136,7 +136,7 @@ namespace app
                     }
                     if (!string.IsNullOrEmpty(phone))
                     {
-                        queryBuilder.Append(" price = @Price");
+                        queryBuilder.Append(" phone = @phone");
                         parameters.Add(new SQLiteParameter("@phone", phone));
                     }
 

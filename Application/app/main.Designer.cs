@@ -168,6 +168,7 @@
             this.bunifuPanel1.Controls.Add(this.bunifuShadowPanel1);
             this.bunifuPanel1.Controls.Add(this.lblTitle1);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuPanel1.Font = new System.Drawing.Font("OCR A Extended", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
@@ -203,7 +204,7 @@
             this.buttonAbout.DisabledFillColor = System.Drawing.Color.Transparent;
             this.buttonAbout.DisabledForecolor = System.Drawing.Color.Red;
             this.buttonAbout.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAbout.Font = new System.Drawing.Font("Unispace", 9.25F, System.Drawing.FontStyle.Bold);
             this.buttonAbout.ForeColor = System.Drawing.Color.Silver;
             this.buttonAbout.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAbout.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -221,7 +222,7 @@
             this.buttonAbout.IdleIconLeftImage = null;
             this.buttonAbout.IdleIconRightImage = null;
             this.buttonAbout.IndicateFocus = false;
-            this.buttonAbout.Location = new System.Drawing.Point(27, 611);
+            this.buttonAbout.Location = new System.Drawing.Point(27, 612);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
             this.buttonAbout.OnDisabledState.BorderRadius = 1;
@@ -293,7 +294,7 @@
             this.buttonCRM.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonCRM.DisabledForecolor = System.Drawing.Color.White;
             this.buttonCRM.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonCRM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCRM.Font = new System.Drawing.Font("Sans Serif Collection", 10.25F);
             this.buttonCRM.ForeColor = System.Drawing.Color.White;
             this.buttonCRM.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCRM.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -311,7 +312,7 @@
             this.buttonCRM.IdleIconLeftImage = null;
             this.buttonCRM.IdleIconRightImage = null;
             this.buttonCRM.IndicateFocus = false;
-            this.buttonCRM.Location = new System.Drawing.Point(-41, 217);
+            this.buttonCRM.Location = new System.Drawing.Point(-45, 217);
             this.buttonCRM.Name = "buttonCRM";
             this.buttonCRM.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonCRM.OnDisabledState.BorderRadius = 35;
@@ -383,7 +384,7 @@
             this.buttonHR.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonHR.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.buttonHR.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonHR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonHR.Font = new System.Drawing.Font("Sans Serif Collection", 8.25F);
             this.buttonHR.ForeColor = System.Drawing.Color.White;
             this.buttonHR.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonHR.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -401,7 +402,7 @@
             this.buttonHR.IdleIconLeftImage = null;
             this.buttonHR.IdleIconRightImage = null;
             this.buttonHR.IndicateFocus = false;
-            this.buttonHR.Location = new System.Drawing.Point(-28, 532);
+            this.buttonHR.Location = new System.Drawing.Point(-33, 530);
             this.buttonHR.Name = "buttonHR";
             this.buttonHR.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonHR.OnDisabledState.BorderRadius = 35;
@@ -473,7 +474,7 @@
             this.buttonFR.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonFR.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.buttonFR.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonFR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonFR.Font = new System.Drawing.Font("Sans Serif Collection", 8.25F);
             this.buttonFR.ForeColor = System.Drawing.Color.White;
             this.buttonFR.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonFR.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -491,7 +492,7 @@
             this.buttonFR.IdleIconLeftImage = null;
             this.buttonFR.IdleIconRightImage = null;
             this.buttonFR.IndicateFocus = false;
-            this.buttonFR.Location = new System.Drawing.Point(-28, 487);
+            this.buttonFR.Location = new System.Drawing.Point(-33, 487);
             this.buttonFR.Name = "buttonFR";
             this.buttonFR.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonFR.OnDisabledState.BorderRadius = 35;
@@ -563,7 +564,7 @@
             this.buttonInv.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonInv.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.buttonInv.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonInv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInv.Font = new System.Drawing.Font("Sans Serif Collection", 10.25F);
             this.buttonInv.ForeColor = System.Drawing.Color.White;
             this.buttonInv.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonInv.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -581,7 +582,7 @@
             this.buttonInv.IdleIconLeftImage = null;
             this.buttonInv.IdleIconRightImage = null;
             this.buttonInv.IndicateFocus = false;
-            this.buttonInv.Location = new System.Drawing.Point(-50, 397);
+            this.buttonInv.Location = new System.Drawing.Point(-51, 397);
             this.buttonInv.Name = "buttonInv";
             this.buttonInv.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonInv.OnDisabledState.BorderRadius = 35;
@@ -653,7 +654,7 @@
             this.buttonCS.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonCS.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.buttonCS.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonCS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.buttonCS.Font = new System.Drawing.Font("Sans Serif Collection", 8.25F);
             this.buttonCS.ForeColor = System.Drawing.Color.White;
             this.buttonCS.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonCS.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -671,7 +672,7 @@
             this.buttonCS.IdleIconLeftImage = null;
             this.buttonCS.IdleIconRightImage = null;
             this.buttonCS.IndicateFocus = false;
-            this.buttonCS.Location = new System.Drawing.Point(-41, 442);
+            this.buttonCS.Location = new System.Drawing.Point(-44, 442);
             this.buttonCS.Name = "buttonCS";
             this.buttonCS.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonCS.OnDisabledState.BorderRadius = 35;
@@ -743,7 +744,7 @@
             this.buttonTables.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonTables.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.buttonTables.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonTables.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTables.Font = new System.Drawing.Font("Sans Serif Collection", 10.25F);
             this.buttonTables.ForeColor = System.Drawing.Color.White;
             this.buttonTables.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonTables.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -761,7 +762,7 @@
             this.buttonTables.IdleIconLeftImage = null;
             this.buttonTables.IdleIconRightImage = null;
             this.buttonTables.IndicateFocus = false;
-            this.buttonTables.Location = new System.Drawing.Point(-40, 352);
+            this.buttonTables.Location = new System.Drawing.Point(-42, 352);
             this.buttonTables.Name = "buttonTables";
             this.buttonTables.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonTables.OnDisabledState.BorderRadius = 35;
@@ -833,7 +834,7 @@
             this.buttonOrders.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonOrders.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.buttonOrders.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrders.Font = new System.Drawing.Font("Sans Serif Collection", 10.25F);
             this.buttonOrders.ForeColor = System.Drawing.Color.White;
             this.buttonOrders.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonOrders.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -851,7 +852,7 @@
             this.buttonOrders.IdleIconLeftImage = null;
             this.buttonOrders.IdleIconRightImage = null;
             this.buttonOrders.IndicateFocus = false;
-            this.buttonOrders.Location = new System.Drawing.Point(-40, 307);
+            this.buttonOrders.Location = new System.Drawing.Point(-43, 307);
             this.buttonOrders.Name = "buttonOrders";
             this.buttonOrders.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonOrders.OnDisabledState.BorderRadius = 35;
@@ -923,7 +924,7 @@
             this.buttonMenu.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonMenu.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.buttonMenu.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenu.Font = new System.Drawing.Font("Sans Serif Collection", 10.25F);
             this.buttonMenu.ForeColor = System.Drawing.Color.White;
             this.buttonMenu.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonMenu.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -941,7 +942,7 @@
             this.buttonMenu.IdleIconLeftImage = null;
             this.buttonMenu.IdleIconRightImage = null;
             this.buttonMenu.IndicateFocus = false;
-            this.buttonMenu.Location = new System.Drawing.Point(-40, 262);
+            this.buttonMenu.Location = new System.Drawing.Point(-46, 262);
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonMenu.OnDisabledState.BorderRadius = 35;
@@ -1013,7 +1014,7 @@
             this.buttonHome.DisabledFillColor = System.Drawing.Color.Red;
             this.buttonHome.DisabledForecolor = System.Drawing.Color.White;
             this.buttonHome.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.buttonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHome.Font = new System.Drawing.Font("Sans Serif Collection", 10.25F);
             this.buttonHome.ForeColor = System.Drawing.Color.White;
             this.buttonHome.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonHome.IconLeftCursor = System.Windows.Forms.Cursors.Default;
@@ -1031,7 +1032,7 @@
             this.buttonHome.IdleIconLeftImage = null;
             this.buttonHome.IdleIconRightImage = null;
             this.buttonHome.IndicateFocus = false;
-            this.buttonHome.Location = new System.Drawing.Point(-41, 172);
+            this.buttonHome.Location = new System.Drawing.Point(-45, 172);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.OnDisabledState.BorderColor = System.Drawing.Color.Red;
             this.buttonHome.OnDisabledState.BorderRadius = 35;

@@ -50,7 +50,7 @@ namespace app
                     }
                 }
 
-                chart1.Titles.Add("Items with Count Less Than 15");
+                
 
                 chart1.ChartAreas[0].AxisX.Title = "Name";
                 chart1.ChartAreas[0].AxisY.Title = "Count";

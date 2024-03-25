@@ -184,10 +184,14 @@ namespace app
                     }
                     if (!string.IsNullOrEmpty(price))
                     {
-                        queryBuilder.Append(" price = @Price");
+                        queryBuilder.Append(" price = @Price,");
                         parameters.Add(new SQLiteParameter("@Price", price));
                     }
 
+                    if (queryBuilder[queryBuilder.Length - 1] == ',')
+                    {
+                        queryBuilder.Remove(queryBuilder.Length - 1, 1);
+                    }
 
                     queryBuilder.Append(" WHERE Id = @Id");
                     parameters.Add(new SQLiteParameter("@Id", id));
