@@ -41,9 +41,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.brandbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.descriptionbox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.pricebox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.descriptionbox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.quantitybox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -126,13 +126,13 @@
             this.label6.TabIndex = 99;
             this.label6.Text = "Brand:";
             // 
-            // descriptionbox
+            // pricebox
             // 
-            this.descriptionbox.Location = new System.Drawing.Point(175, 328);
-            this.descriptionbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.descriptionbox.Name = "descriptionbox";
-            this.descriptionbox.Size = new System.Drawing.Size(99, 20);
-            this.descriptionbox.TabIndex = 93;
+            this.pricebox.Location = new System.Drawing.Point(175, 328);
+            this.pricebox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pricebox.Name = "pricebox";
+            this.pricebox.Size = new System.Drawing.Size(99, 20);
+            this.pricebox.TabIndex = 93;
             // 
             // label5
             // 
@@ -146,13 +146,13 @@
             this.label5.TabIndex = 98;
             this.label5.Text = "Description:";
             // 
-            // pricebox
+            // descriptionbox
             // 
-            this.pricebox.Location = new System.Drawing.Point(175, 371);
-            this.pricebox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.pricebox.Name = "pricebox";
-            this.pricebox.Size = new System.Drawing.Size(99, 20);
-            this.pricebox.TabIndex = 94;
+            this.descriptionbox.Location = new System.Drawing.Point(175, 371);
+            this.descriptionbox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.descriptionbox.Name = "descriptionbox";
+            this.descriptionbox.Size = new System.Drawing.Size(99, 20);
+            this.descriptionbox.TabIndex = 94;
             // 
             // label4
             // 
@@ -581,9 +581,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.brandbox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.descriptionbox);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.pricebox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.descriptionbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.quantitybox);
             this.Controls.Add(this.label2);
@@ -616,9 +616,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox brandbox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox descriptionbox;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox pricebox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox descriptionbox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox quantitybox;
         private System.Windows.Forms.Label label2;
