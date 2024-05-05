@@ -126,7 +126,7 @@
             this.lblTitle2.Location = new System.Drawing.Point(38, 22);
             this.lblTitle2.Name = "lblTitle2";
             this.lblTitle2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.lblTitle2.Size = new System.Drawing.Size(87, 32);
+            this.lblTitle2.Size = new System.Drawing.Size(169, 65);
             this.lblTitle2.TabIndex = 28;
             this.lblTitle2.Text = "Home";
             // 
@@ -639,7 +639,7 @@
             this.buttonCS.BackColor1 = System.Drawing.Color.Transparent;
             this.buttonCS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCS.BackgroundImage")));
             this.buttonCS.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.buttonCS.ButtonText = "Cusine Suggestions";
+            this.buttonCS.ButtonText = "Cusine Search";
             this.buttonCS.ButtonTextMarginLeft = 0;
             this.buttonCS.ColorContrastOnClick = 45;
             this.buttonCS.ColorContrastOnHover = 45;
@@ -1147,7 +1147,7 @@
             this.lblTitle1.Location = new System.Drawing.Point(3, 128);
             this.lblTitle1.Name = "lblTitle1";
             this.lblTitle1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.lblTitle1.Size = new System.Drawing.Size(158, 32);
+            this.lblTitle1.Size = new System.Drawing.Size(308, 65);
             this.lblTitle1.TabIndex = 0;
             this.lblTitle1.Text = "Cusine Craft";
             // 

@@ -199,7 +199,7 @@ namespace app
 
         private void buttonCS_Click_1(object sender, EventArgs e)
         {
-            LoadForm(cs, "Cuisine Suggestions");
+            LoadForm(new SearchCsuggestion(), "Cuisine Search");
             Previous = current;
             current = "CS";
             buttonCS.BackColor1 = Color.Red;
